@@ -16,5 +16,7 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
         {
             InitializeComponent();
         }
+        //private string ConnectionString = "Data Source=DESKTOP-1TTOTC5\\SQLEXPRESS;Initial Catalog=onmuhasebe;Integrated Security=True;MultipleActiveResultSets=True";
+
     }
 }

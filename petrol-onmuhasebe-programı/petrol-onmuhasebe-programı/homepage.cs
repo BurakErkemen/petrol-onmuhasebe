@@ -1,4 +1,6 @@
-﻿using petrol_onmuhasebe_programı.Vardıya_Bılgılerı;
+﻿using petrol_onmuhasebe_programı.Model;
+using petrol_onmuhasebe_programı.Model.Depo_İslemleri;
+using petrol_onmuhasebe_programı.Vardıya_Bılgılerı;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,7 +10,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace petrol_onmuhasebe_programı
 {
     public partial class homepage : Form
@@ -20,7 +21,6 @@ namespace petrol_onmuhasebe_programı
         {
             InitializeComponent();
         }
-        //private string ConnectionString = "Data Source=DESKTOP-1TTOTC5\\SQLEXPRESS;Initial Catalog=onmuhasebe;Integrated Security=True;MultipleActiveResultSets=True";
         private void homepage_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;

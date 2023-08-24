@@ -35,8 +35,8 @@
             this.btn_KK_raporu = new System.Windows.Forms.Button();
             this.btn_depo_ayar = new System.Windows.Forms.Button();
             this.btn_personel_ayar = new System.Windows.Forms.Button();
-            this.btn_kullanıcı_tanımlama = new System.Windows.Forms.Button();
             this.btn_musterı_ayar = new System.Windows.Forms.Button();
+            this.btn_kullanıcı_tanımlama = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_faturagirisi = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
@@ -128,6 +128,16 @@
             this.btn_personel_ayar.Text = "Personel Ayarları";
             this.btn_personel_ayar.UseVisualStyleBackColor = true;
             // 
+            // btn_musterı_ayar
+            // 
+            this.btn_musterı_ayar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_musterı_ayar.Location = new System.Drawing.Point(1011, 3);
+            this.btn_musterı_ayar.Name = "btn_musterı_ayar";
+            this.btn_musterı_ayar.Size = new System.Drawing.Size(74, 69);
+            this.btn_musterı_ayar.TabIndex = 12;
+            this.btn_musterı_ayar.Text = "Veresiye Müşteri Ayarları";
+            this.btn_musterı_ayar.UseVisualStyleBackColor = true;
+            // 
             // btn_kullanıcı_tanımlama
             // 
             this.btn_kullanıcı_tanımlama.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -137,16 +147,6 @@
             this.btn_kullanıcı_tanımlama.TabIndex = 11;
             this.btn_kullanıcı_tanımlama.Text = "Kullanıcı Tanımla Ayarları";
             this.btn_kullanıcı_tanımlama.UseVisualStyleBackColor = true;
-            // 
-            // btn_musterı_ayar
-            // 
-            this.btn_musterı_ayar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_musterı_ayar.Location = new System.Drawing.Point(1011, 3);
-            this.btn_musterı_ayar.Name = "btn_musterı_ayar";
-            this.btn_musterı_ayar.Size = new System.Drawing.Size(74, 69);
-            this.btn_musterı_ayar.TabIndex = 12;
-            this.btn_musterı_ayar.Text = "Müşteri Ayarları";
-            this.btn_musterı_ayar.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
