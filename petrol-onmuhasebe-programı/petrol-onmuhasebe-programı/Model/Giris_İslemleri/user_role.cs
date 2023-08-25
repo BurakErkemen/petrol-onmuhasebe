@@ -12,6 +12,8 @@ namespace petrol_onmuhasebe_programı.Model
         [Key]
         public int user_role_ıd { get; set; }
         public string role_name { get; set; }
-        public ICollection<login> logins { get; set; }
+
+        //Bir rol birden fazla kişide olabilir
+        public ICollection<user> user { get; set; }
     }
 }

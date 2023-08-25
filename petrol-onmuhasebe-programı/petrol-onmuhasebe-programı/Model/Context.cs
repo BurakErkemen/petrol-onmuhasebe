@@ -11,7 +11,7 @@ namespace petrol_onmuhasebe_programı.Model
     class Context:DbContext
     {
         public DbSet<giris_tarihleri> giris_tarihleris { get; set; }
-        public DbSet<login> logins { get; set; }
+        public DbSet<user> users { get; set; }
         public DbSet<user_role> user_roles { get; set; }
         public DbSet<tank_bilgi> tank_Bilgis { get; set; }
     }

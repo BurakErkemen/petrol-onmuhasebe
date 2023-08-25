@@ -12,7 +12,7 @@ namespace petrol_onmuhasebe_programı.Model.Giris_İslemleri
         [Key]
         public int giris_ıd { get; set; }
         public DateTime giris_tarih { get; set; }
-        public login login { get; set; }
-
+        public int ıd { get; set; }
+        public user user { get; set; }
     }
 }
