@@ -1,6 +1,6 @@
 ﻿namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
 {
-    partial class vardıya_raporu_gır
+    partial class Vardıya_raporu_gır
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(vardıya_raporu_gır));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vardıya_raporu_gır));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -64,6 +64,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -89,10 +90,11 @@
             this.txt_optimum_litre = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txt_benzin_tutar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txt_optimum_tutar = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.DataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.btn_veresiye_ekle = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Btn_veresiye_ekle = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Btn_kredikart_gir = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.veresiye_tablosu = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veresiye_tablosu)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -127,8 +129,9 @@
             this.tableLayoutPanel1.Controls.Add(this.txt_optimum_litre, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.txt_benzin_tutar, 1, 11);
             this.tableLayoutPanel1.Controls.Add(this.txt_optimum_tutar, 1, 9);
-            this.tableLayoutPanel1.Controls.Add(this.DataGridView1, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btn_veresiye_ekle, 1, 12);
+            this.tableLayoutPanel1.Controls.Add(this.Btn_veresiye_ekle, 1, 12);
+            this.tableLayoutPanel1.Controls.Add(this.Btn_kredikart_gir, 0, 12);
+            this.tableLayoutPanel1.Controls.Add(this.veresiye_tablosu, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -924,45 +927,100 @@
             this.txt_optimum_tutar.UseSystemPasswordChar = false;
             this.txt_optimum_tutar.WordWrap = true;
             // 
-            // DataGridView1
+            // Btn_veresiye_ekle
             // 
-            this.DataGridView1.AllowCustomTheming = false;
+            this.Btn_veresiye_ekle.ActiveBorderThickness = 1;
+            this.Btn_veresiye_ekle.ActiveCornerRadius = 20;
+            this.Btn_veresiye_ekle.ActiveFillColor = System.Drawing.Color.Green;
+            this.Btn_veresiye_ekle.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_veresiye_ekle.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_veresiye_ekle.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Btn_veresiye_ekle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_veresiye_ekle.BackgroundImage")));
+            this.Btn_veresiye_ekle.ButtonText = "Veresiye Gir";
+            this.Btn_veresiye_ekle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_veresiye_ekle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Btn_veresiye_ekle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_veresiye_ekle.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_veresiye_ekle.IdleBorderThickness = 1;
+            this.Btn_veresiye_ekle.IdleCornerRadius = 20;
+            this.Btn_veresiye_ekle.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_veresiye_ekle.IdleForecolor = System.Drawing.Color.Black;
+            this.Btn_veresiye_ekle.IdleLineColor = System.Drawing.Color.Black;
+            this.Btn_veresiye_ekle.Location = new System.Drawing.Point(301, 653);
+            this.Btn_veresiye_ekle.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_veresiye_ekle.Name = "Btn_veresiye_ekle";
+            this.Btn_veresiye_ekle.Size = new System.Drawing.Size(286, 44);
+            this.Btn_veresiye_ekle.TabIndex = 48;
+            this.Btn_veresiye_ekle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_veresiye_ekle.Click += new System.EventHandler(this.Btn_veresiye_ekle_Click);
+            // 
+            // Btn_kredikart_gir
+            // 
+            this.Btn_kredikart_gir.ActiveBorderThickness = 1;
+            this.Btn_kredikart_gir.ActiveCornerRadius = 20;
+            this.Btn_kredikart_gir.ActiveFillColor = System.Drawing.Color.Green;
+            this.Btn_kredikart_gir.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_kredikart_gir.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_kredikart_gir.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Btn_kredikart_gir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_kredikart_gir.BackgroundImage")));
+            this.Btn_kredikart_gir.ButtonText = "Kredi Kartı Gir";
+            this.Btn_kredikart_gir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_kredikart_gir.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Btn_kredikart_gir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_kredikart_gir.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_kredikart_gir.IdleBorderThickness = 1;
+            this.Btn_kredikart_gir.IdleCornerRadius = 20;
+            this.Btn_kredikart_gir.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_kredikart_gir.IdleForecolor = System.Drawing.Color.Black;
+            this.Btn_kredikart_gir.IdleLineColor = System.Drawing.Color.Black;
+            this.Btn_kredikart_gir.Location = new System.Drawing.Point(5, 653);
+            this.Btn_kredikart_gir.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_kredikart_gir.Name = "Btn_kredikart_gir";
+            this.Btn_kredikart_gir.Size = new System.Drawing.Size(286, 44);
+            this.Btn_kredikart_gir.TabIndex = 49;
+            this.Btn_kredikart_gir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_kredikart_gir.Click += new System.EventHandler(this.Btn_kredikart_gir_Click);
+            // 
+            // veresiye_tablosu
+            // 
+            this.veresiye_tablosu.AllowCustomTheming = false;
+            this.veresiye_tablosu.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DataGridView1.BackgroundColor = System.Drawing.Color.Silver;
-            this.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.veresiye_tablosu.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.veresiye_tablosu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.veresiye_tablosu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            this.veresiye_tablosu.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.veresiye_tablosu.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.veresiye_tablosu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel1.SetColumnSpan(this.DataGridView1, 3);
-            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.DataGridView1.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.DataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.DataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.DataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.DataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.DataGridView1.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.DataGridView1.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.DataGridView1.CurrentTheme.Name = null;
-            this.DataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.DataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.DataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.DataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.DataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.veresiye_tablosu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.veresiye_tablosu.ColumnHeadersHeight = 40;
+            this.tableLayoutPanel1.SetColumnSpan(this.veresiye_tablosu, 3);
+            this.veresiye_tablosu.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.veresiye_tablosu.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.veresiye_tablosu.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.veresiye_tablosu.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.veresiye_tablosu.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.veresiye_tablosu.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.veresiye_tablosu.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.veresiye_tablosu.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.veresiye_tablosu.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.veresiye_tablosu.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.veresiye_tablosu.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.veresiye_tablosu.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.veresiye_tablosu.CurrentTheme.Name = null;
+            this.veresiye_tablosu.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.veresiye_tablosu.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.veresiye_tablosu.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.veresiye_tablosu.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.veresiye_tablosu.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -970,48 +1028,32 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DataGridView1.EnableHeadersVisualStyles = false;
-            this.DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.DataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.DataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.DataGridView1.Location = new System.Drawing.Point(595, 3);
-            this.DataGridView1.Name = "DataGridView1";
-            this.DataGridView1.RowHeadersVisible = false;
-            this.tableLayoutPanel1.SetRowSpan(this.DataGridView1, 5);
-            this.DataGridView1.RowTemplate.Height = 40;
-            this.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView1.Size = new System.Drawing.Size(883, 264);
-            this.DataGridView1.TabIndex = 47;
-            this.DataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.veresiye_tablosu.DefaultCellStyle = dataGridViewCellStyle3;
+            this.veresiye_tablosu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.veresiye_tablosu.EnableHeadersVisualStyles = false;
+            this.veresiye_tablosu.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.veresiye_tablosu.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.veresiye_tablosu.HeaderBgColor = System.Drawing.Color.Empty;
+            this.veresiye_tablosu.HeaderForeColor = System.Drawing.Color.White;
+            this.veresiye_tablosu.Location = new System.Drawing.Point(595, 3);
+            this.veresiye_tablosu.Name = "veresiye_tablosu";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.veresiye_tablosu.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.veresiye_tablosu.RowHeadersVisible = false;
+            this.tableLayoutPanel1.SetRowSpan(this.veresiye_tablosu, 7);
+            this.veresiye_tablosu.RowTemplate.Height = 40;
+            this.veresiye_tablosu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.veresiye_tablosu.Size = new System.Drawing.Size(883, 372);
+            this.veresiye_tablosu.TabIndex = 56;
+            this.veresiye_tablosu.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
-            // btn_veresiye_ekle
-            // 
-            this.btn_veresiye_ekle.ActiveBorderThickness = 1;
-            this.btn_veresiye_ekle.ActiveCornerRadius = 20;
-            this.btn_veresiye_ekle.ActiveFillColor = System.Drawing.Color.Green;
-            this.btn_veresiye_ekle.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.btn_veresiye_ekle.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_veresiye_ekle.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_veresiye_ekle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_veresiye_ekle.BackgroundImage")));
-            this.btn_veresiye_ekle.ButtonText = "ThinButton";
-            this.btn_veresiye_ekle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_veresiye_ekle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_veresiye_ekle.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_veresiye_ekle.IdleBorderThickness = 1;
-            this.btn_veresiye_ekle.IdleCornerRadius = 20;
-            this.btn_veresiye_ekle.IdleFillColor = System.Drawing.Color.Transparent;
-            this.btn_veresiye_ekle.IdleForecolor = System.Drawing.Color.Black;
-            this.btn_veresiye_ekle.IdleLineColor = System.Drawing.Color.Black;
-            this.btn_veresiye_ekle.Location = new System.Drawing.Point(301, 653);
-            this.btn_veresiye_ekle.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_veresiye_ekle.Name = "btn_veresiye_ekle";
-            this.btn_veresiye_ekle.Size = new System.Drawing.Size(286, 44);
-            this.btn_veresiye_ekle.TabIndex = 48;
-            this.btn_veresiye_ekle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // vardıya_raporu_gır
+            // Vardıya_raporu_gır
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1019,12 +1061,12 @@
             this.ClientSize = new System.Drawing.Size(1481, 837);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "vardıya_raporu_gır";
+            this.Name = "Vardıya_raporu_gır";
             this.Text = "Vardiya Raporu Gir";
             this.Load += new System.EventHandler(this.Vardıya_raporu_gır_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veresiye_tablosu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1056,7 +1098,8 @@
         private Bunifu.UI.WinForms.BunifuTextBox txt_optimum_tutar;
         private Bunifu.UI.WinForms.BunifuTextBox txt_benzin_tutar;
         private Bunifu.UI.WinForms.BunifuTextBox txt_optimum_litre;
-        private Bunifu.UI.WinForms.BunifuDataGridView DataGridView1;
-        private Bunifu.Framework.UI.BunifuThinButton2 btn_veresiye_ekle;
+        private Bunifu.Framework.UI.BunifuThinButton2 Btn_veresiye_ekle;
+        private Bunifu.Framework.UI.BunifuThinButton2 Btn_kredikart_gir;
+        private Bunifu.UI.WinForms.BunifuDataGridView veresiye_tablosu;
     }
 }

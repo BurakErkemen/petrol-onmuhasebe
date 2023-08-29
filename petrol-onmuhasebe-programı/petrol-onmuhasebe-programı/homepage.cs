@@ -16,7 +16,7 @@ namespace petrol_onmuhasebe_programı
     {
         public int User_role_ıd { get; set; }
         public string Username { get; set; }
-        private vardıya_raporu_gır vardıya_Raporu;
+        private Vardıya_raporu_gır vardıya_Raporu;
         public Homepage()
         {
             InitializeComponent();
@@ -76,7 +76,7 @@ namespace petrol_onmuhasebe_programı
         {
             if (vardıya_Raporu == null || vardıya_Raporu.IsDisposed)
             {
-                vardıya_Raporu = new vardıya_raporu_gır();
+                vardıya_Raporu = new Vardıya_raporu_gır();
                 vardıya_Raporu.Show();
                 vardıya_Raporu.user_role_ıd = User_role_ıd;
             }
