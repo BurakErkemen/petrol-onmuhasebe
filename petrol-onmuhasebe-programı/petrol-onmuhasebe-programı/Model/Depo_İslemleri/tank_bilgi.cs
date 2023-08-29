@@ -7,12 +7,16 @@ using System.Threading.Tasks;
 
 namespace petrol_onmuhasebe_programı.Model.Depo_İslemleri
 {
-    public class tank_bilgi
+    public class Tank_bilgi
     {
         [Key] 
-        public int tank_ıd { get; set; }
-        public string tank_ad { get; set; }
-        public int tank_hacim { get; set; }
-        public int tank_yakıt_turu { get; set; }
+        public int TankId { get; set; }
+        public string Tank_ad { get; set; }
+        public int Tank_hacim { get; set; }
+        public string Tank_yakıt_turu { get; set; }
+
+        //tank_dolum tablosu ilişkisi 
+        public virtual ICollection<Tank_dolum> TankDolumlar { get; set; }
+
     }
 }

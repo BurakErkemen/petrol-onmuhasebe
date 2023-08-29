@@ -16,7 +16,7 @@ namespace petrol_onmuhasebe_programı
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new homepage());
+            Application.Run(new Homepage());
         }
     }
 }

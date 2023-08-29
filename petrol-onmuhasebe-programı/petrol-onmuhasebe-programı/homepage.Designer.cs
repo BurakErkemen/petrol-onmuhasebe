@@ -1,6 +1,6 @@
 ﻿namespace petrol_onmuhasebe_programı
 {
-    partial class homepage
+    partial class Homepage
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(homepage));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_kullanıcı_tanımlama = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_musterı_ayar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_personel_ayar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_depo_ayar = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btn_vardiya_raporu = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Btn_vardiya_raporu = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +53,7 @@
             this.tableLayoutPanel1.Controls.Add(this.btn_musterı_ayar, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn_personel_ayar, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn_depo_ayar, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btn_vardiya_raporu, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Btn_vardiya_raporu, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 6, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -172,32 +172,32 @@
             this.btn_depo_ayar.TabIndex = 17;
             this.btn_depo_ayar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btn_vardiya_raporu
+            // Btn_vardiya_raporu
             // 
-            this.btn_vardiya_raporu.ActiveBorderThickness = 1;
-            this.btn_vardiya_raporu.ActiveCornerRadius = 20;
-            this.btn_vardiya_raporu.ActiveFillColor = System.Drawing.Color.Silver;
-            this.btn_vardiya_raporu.ActiveForecolor = System.Drawing.Color.Blue;
-            this.btn_vardiya_raporu.ActiveLineColor = System.Drawing.Color.Blue;
-            this.btn_vardiya_raporu.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_vardiya_raporu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_vardiya_raporu.BackgroundImage")));
-            this.btn_vardiya_raporu.ButtonText = "Vardiya Raporu Gir";
-            this.btn_vardiya_raporu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_vardiya_raporu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_vardiya_raporu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_vardiya_raporu.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_vardiya_raporu.IdleBorderThickness = 1;
-            this.btn_vardiya_raporu.IdleCornerRadius = 20;
-            this.btn_vardiya_raporu.IdleFillColor = System.Drawing.Color.DarkGray;
-            this.btn_vardiya_raporu.IdleForecolor = System.Drawing.Color.WhiteSmoke;
-            this.btn_vardiya_raporu.IdleLineColor = System.Drawing.Color.DarkGray;
-            this.btn_vardiya_raporu.Location = new System.Drawing.Point(5, 5);
-            this.btn_vardiya_raporu.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_vardiya_raporu.Name = "btn_vardiya_raporu";
-            this.btn_vardiya_raporu.Size = new System.Drawing.Size(176, 102);
-            this.btn_vardiya_raporu.TabIndex = 16;
-            this.btn_vardiya_raporu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_vardiya_raporu.Click += new System.EventHandler(this.btn_vardiya_raporu_Click_1);
+            this.Btn_vardiya_raporu.ActiveBorderThickness = 1;
+            this.Btn_vardiya_raporu.ActiveCornerRadius = 20;
+            this.Btn_vardiya_raporu.ActiveFillColor = System.Drawing.Color.Silver;
+            this.Btn_vardiya_raporu.ActiveForecolor = System.Drawing.Color.Blue;
+            this.Btn_vardiya_raporu.ActiveLineColor = System.Drawing.Color.Blue;
+            this.Btn_vardiya_raporu.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Btn_vardiya_raporu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_vardiya_raporu.BackgroundImage")));
+            this.Btn_vardiya_raporu.ButtonText = "Vardiya Raporu Gir";
+            this.Btn_vardiya_raporu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_vardiya_raporu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Btn_vardiya_raporu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_vardiya_raporu.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_vardiya_raporu.IdleBorderThickness = 1;
+            this.Btn_vardiya_raporu.IdleCornerRadius = 20;
+            this.Btn_vardiya_raporu.IdleFillColor = System.Drawing.Color.DarkGray;
+            this.Btn_vardiya_raporu.IdleForecolor = System.Drawing.Color.WhiteSmoke;
+            this.Btn_vardiya_raporu.IdleLineColor = System.Drawing.Color.DarkGray;
+            this.Btn_vardiya_raporu.Location = new System.Drawing.Point(5, 5);
+            this.Btn_vardiya_raporu.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_vardiya_raporu.Name = "Btn_vardiya_raporu";
+            this.Btn_vardiya_raporu.Size = new System.Drawing.Size(176, 102);
+            this.Btn_vardiya_raporu.TabIndex = 16;
+            this.Btn_vardiya_raporu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_vardiya_raporu.Click += new System.EventHandler(this.Btn_vardiya_raporu_Click_1);
             // 
             // label1
             // 
@@ -222,7 +222,7 @@
             this.Name = "homepage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Anasayfa";
-            this.Load += new System.EventHandler(this.homepage_Load);
+            this.Load += new System.EventHandler(this.Homepage_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -236,7 +236,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btn_musterı_ayar;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_personel_ayar;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_depo_ayar;
-        private Bunifu.Framework.UI.BunifuThinButton2 btn_vardiya_raporu;
+        private Bunifu.Framework.UI.BunifuThinButton2 Btn_vardiya_raporu;
         private System.Windows.Forms.Label label1;
     }
 }

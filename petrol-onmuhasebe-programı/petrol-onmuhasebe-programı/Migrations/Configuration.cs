@@ -10,7 +10,6 @@
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
-            ContextKey = "petrol_onmuhasebe_programı.Model.Context";
         }
 
         protected override void Seed(petrol_onmuhasebe_programı.Model.Context context)

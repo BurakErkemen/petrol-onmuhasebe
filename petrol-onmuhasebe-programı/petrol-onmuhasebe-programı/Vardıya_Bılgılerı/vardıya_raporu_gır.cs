@@ -19,8 +19,9 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
         }
         public int user_role_ıd;
         
-        private void vardıya_raporu_gır_Load(object sender, EventArgs e)
+        private void Vardıya_raporu_gır_Load(object sender, EventArgs e)
         {
+            DataGridView1.Visible = false;
             this.WindowState = FormWindowState.Maximized;
 
             #region combobox

@@ -45,35 +45,38 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -82,11 +85,14 @@
             this.txt_otogaz_tutar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txt_motorin_litre = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txt_motorin_tutar = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.txt_optimum_litre = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.txt_optimum_tutar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txt_benzin_litre = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.txt_optimum_litre = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txt_benzin_tutar = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.txt_optimum_tutar = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.DataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.btn_veresiye_ekle = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -121,6 +127,8 @@
             this.tableLayoutPanel1.Controls.Add(this.txt_optimum_litre, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.txt_benzin_tutar, 1, 11);
             this.tableLayoutPanel1.Controls.Add(this.txt_optimum_tutar, 1, 9);
+            this.tableLayoutPanel1.Controls.Add(this.DataGridView1, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn_veresiye_ekle, 1, 12);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -156,18 +164,6 @@
             this.label1.Text = "Vardiya Personeli:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(127, 54);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 25);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Vardiya Personeli:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -179,6 +175,18 @@
             this.label3.TabIndex = 25;
             this.label3.Text = "Vardiya Tarihi:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(127, 54);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(166, 25);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Vardiya Personeli:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label4
             // 
@@ -240,6 +248,30 @@
             this.label8.Text = "Satılan Toplam Motorin Tutarı:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(58, 432);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(235, 50);
+            this.label12.TabIndex = 34;
+            this.label12.Text = "Satılan Toplam Optimum Motorin Litresi:";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(58, 486);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(235, 50);
+            this.label11.TabIndex = 33;
+            this.label11.Text = "Satılan Toplam Optimum Motorin Tutarı:";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // label9
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -263,30 +295,6 @@
             this.label10.TabIndex = 32;
             this.label10.Text = "Satılan Toplam Benzin Tutarı:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label11
-            // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(58, 486);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(235, 50);
-            this.label11.TabIndex = 33;
-            this.label11.Text = "Satılan Toplam Optimum Motorin Tutarı:";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label12
-            // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(58, 432);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(235, 50);
-            this.label12.TabIndex = 34;
-            this.label12.Text = "Satılan Toplam Optimum Motorin Litresi:";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // comboBox1
             // 
@@ -620,154 +628,6 @@
             this.txt_motorin_tutar.UseSystemPasswordChar = false;
             this.txt_motorin_tutar.WordWrap = true;
             // 
-            // txt_optimum_litre
-            // 
-            this.txt_optimum_litre.AcceptsReturn = false;
-            this.txt_optimum_litre.AcceptsTab = false;
-            this.txt_optimum_litre.AnimationSpeed = 200;
-            this.txt_optimum_litre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txt_optimum_litre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txt_optimum_litre.BackColor = System.Drawing.Color.Transparent;
-            this.txt_optimum_litre.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_optimum_litre.BackgroundImage")));
-            this.txt_optimum_litre.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txt_optimum_litre.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txt_optimum_litre.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txt_optimum_litre.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txt_optimum_litre.BorderRadius = 1;
-            this.txt_optimum_litre.BorderThickness = 1;
-            this.txt_optimum_litre.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_optimum_litre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_optimum_litre.DefaultFont = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.txt_optimum_litre.DefaultText = "";
-            this.txt_optimum_litre.FillColor = System.Drawing.Color.White;
-            this.txt_optimum_litre.HideSelection = true;
-            this.txt_optimum_litre.IconLeft = null;
-            this.txt_optimum_litre.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_optimum_litre.IconPadding = 10;
-            this.txt_optimum_litre.IconRight = null;
-            this.txt_optimum_litre.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_optimum_litre.Lines = new string[0];
-            this.txt_optimum_litre.Location = new System.Drawing.Point(299, 435);
-            this.txt_optimum_litre.MaxLength = 32767;
-            this.txt_optimum_litre.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txt_optimum_litre.Modified = false;
-            this.txt_optimum_litre.Multiline = false;
-            this.txt_optimum_litre.Name = "txt_optimum_litre";
-            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties21.FillColor = System.Drawing.Color.Empty;
-            stateProperties21.ForeColor = System.Drawing.Color.Empty;
-            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_optimum_litre.OnActiveState = stateProperties21;
-            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txt_optimum_litre.OnDisabledState = stateProperties22;
-            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties23.FillColor = System.Drawing.Color.Empty;
-            stateProperties23.ForeColor = System.Drawing.Color.Empty;
-            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_optimum_litre.OnHoverState = stateProperties23;
-            stateProperties24.BorderColor = System.Drawing.Color.Silver;
-            stateProperties24.FillColor = System.Drawing.Color.White;
-            stateProperties24.ForeColor = System.Drawing.Color.Empty;
-            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_optimum_litre.OnIdleState = stateProperties24;
-            this.txt_optimum_litre.Padding = new System.Windows.Forms.Padding(3);
-            this.txt_optimum_litre.PasswordChar = '\0';
-            this.txt_optimum_litre.PlaceholderForeColor = System.Drawing.Color.DimGray;
-            this.txt_optimum_litre.PlaceholderText = "Optimum Litresini Giriniz";
-            this.txt_optimum_litre.ReadOnly = false;
-            this.txt_optimum_litre.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txt_optimum_litre.SelectedText = "";
-            this.txt_optimum_litre.SelectionLength = 0;
-            this.txt_optimum_litre.SelectionStart = 0;
-            this.txt_optimum_litre.ShortcutsEnabled = true;
-            this.txt_optimum_litre.Size = new System.Drawing.Size(290, 46);
-            this.txt_optimum_litre.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txt_optimum_litre.TabIndex = 43;
-            this.txt_optimum_litre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_optimum_litre.TextMarginBottom = 0;
-            this.txt_optimum_litre.TextMarginLeft = 3;
-            this.txt_optimum_litre.TextMarginTop = 0;
-            this.txt_optimum_litre.TextPlaceholder = "Optimum Litresini Giriniz";
-            this.txt_optimum_litre.UseSystemPasswordChar = false;
-            this.txt_optimum_litre.WordWrap = true;
-            // 
-            // txt_optimum_tutar
-            // 
-            this.txt_optimum_tutar.AcceptsReturn = false;
-            this.txt_optimum_tutar.AcceptsTab = false;
-            this.txt_optimum_tutar.AnimationSpeed = 200;
-            this.txt_optimum_tutar.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txt_optimum_tutar.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txt_optimum_tutar.BackColor = System.Drawing.Color.Transparent;
-            this.txt_optimum_tutar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_optimum_tutar.BackgroundImage")));
-            this.txt_optimum_tutar.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txt_optimum_tutar.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txt_optimum_tutar.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txt_optimum_tutar.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txt_optimum_tutar.BorderRadius = 15;
-            this.txt_optimum_tutar.BorderThickness = 1;
-            this.txt_optimum_tutar.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_optimum_tutar.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_optimum_tutar.DefaultFont = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.txt_optimum_tutar.DefaultText = "";
-            this.txt_optimum_tutar.FillColor = System.Drawing.Color.White;
-            this.txt_optimum_tutar.HideSelection = true;
-            this.txt_optimum_tutar.IconLeft = null;
-            this.txt_optimum_tutar.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_optimum_tutar.IconPadding = 10;
-            this.txt_optimum_tutar.IconRight = null;
-            this.txt_optimum_tutar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_optimum_tutar.Lines = new string[0];
-            this.txt_optimum_tutar.Location = new System.Drawing.Point(299, 489);
-            this.txt_optimum_tutar.MaxLength = 32767;
-            this.txt_optimum_tutar.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txt_optimum_tutar.Modified = false;
-            this.txt_optimum_tutar.Multiline = false;
-            this.txt_optimum_tutar.Name = "txt_optimum_tutar";
-            stateProperties29.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties29.FillColor = System.Drawing.Color.Empty;
-            stateProperties29.ForeColor = System.Drawing.Color.Empty;
-            stateProperties29.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_optimum_tutar.OnActiveState = stateProperties29;
-            stateProperties30.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties30.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txt_optimum_tutar.OnDisabledState = stateProperties30;
-            stateProperties31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties31.FillColor = System.Drawing.Color.Empty;
-            stateProperties31.ForeColor = System.Drawing.Color.Empty;
-            stateProperties31.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_optimum_tutar.OnHoverState = stateProperties31;
-            stateProperties32.BorderColor = System.Drawing.Color.Silver;
-            stateProperties32.FillColor = System.Drawing.Color.White;
-            stateProperties32.ForeColor = System.Drawing.Color.Empty;
-            stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txt_optimum_tutar.OnIdleState = stateProperties32;
-            this.txt_optimum_tutar.Padding = new System.Windows.Forms.Padding(3);
-            this.txt_optimum_tutar.PasswordChar = '\0';
-            this.txt_optimum_tutar.PlaceholderForeColor = System.Drawing.Color.DimGray;
-            this.txt_optimum_tutar.PlaceholderText = "Optimum Tutarını Giriniz";
-            this.txt_optimum_tutar.ReadOnly = false;
-            this.txt_optimum_tutar.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txt_optimum_tutar.SelectedText = "";
-            this.txt_optimum_tutar.SelectionLength = 0;
-            this.txt_optimum_tutar.SelectionStart = 0;
-            this.txt_optimum_tutar.ShortcutsEnabled = true;
-            this.txt_optimum_tutar.Size = new System.Drawing.Size(290, 46);
-            this.txt_optimum_tutar.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txt_optimum_tutar.TabIndex = 44;
-            this.txt_optimum_tutar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_optimum_tutar.TextMarginBottom = 0;
-            this.txt_optimum_tutar.TextMarginLeft = 3;
-            this.txt_optimum_tutar.TextMarginTop = 0;
-            this.txt_optimum_tutar.TextPlaceholder = "Optimum Tutarını Giriniz";
-            this.txt_optimum_tutar.UseSystemPasswordChar = false;
-            this.txt_optimum_tutar.WordWrap = true;
-            // 
             // txt_benzin_litre
             // 
             this.txt_benzin_litre.AcceptsReturn = false;
@@ -841,6 +701,80 @@
             this.txt_benzin_litre.TextPlaceholder = "Benzin Litresini Giriniz";
             this.txt_benzin_litre.UseSystemPasswordChar = false;
             this.txt_benzin_litre.WordWrap = true;
+            // 
+            // txt_optimum_litre
+            // 
+            this.txt_optimum_litre.AcceptsReturn = false;
+            this.txt_optimum_litre.AcceptsTab = false;
+            this.txt_optimum_litre.AnimationSpeed = 200;
+            this.txt_optimum_litre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txt_optimum_litre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txt_optimum_litre.BackColor = System.Drawing.Color.Transparent;
+            this.txt_optimum_litre.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_optimum_litre.BackgroundImage")));
+            this.txt_optimum_litre.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txt_optimum_litre.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txt_optimum_litre.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txt_optimum_litre.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txt_optimum_litre.BorderRadius = 1;
+            this.txt_optimum_litre.BorderThickness = 1;
+            this.txt_optimum_litre.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txt_optimum_litre.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_optimum_litre.DefaultFont = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.txt_optimum_litre.DefaultText = "";
+            this.txt_optimum_litre.FillColor = System.Drawing.Color.White;
+            this.txt_optimum_litre.HideSelection = true;
+            this.txt_optimum_litre.IconLeft = null;
+            this.txt_optimum_litre.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_optimum_litre.IconPadding = 10;
+            this.txt_optimum_litre.IconRight = null;
+            this.txt_optimum_litre.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_optimum_litre.Lines = new string[0];
+            this.txt_optimum_litre.Location = new System.Drawing.Point(299, 435);
+            this.txt_optimum_litre.MaxLength = 32767;
+            this.txt_optimum_litre.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txt_optimum_litre.Modified = false;
+            this.txt_optimum_litre.Multiline = false;
+            this.txt_optimum_litre.Name = "txt_optimum_litre";
+            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties21.FillColor = System.Drawing.Color.Empty;
+            stateProperties21.ForeColor = System.Drawing.Color.Empty;
+            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_optimum_litre.OnActiveState = stateProperties21;
+            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txt_optimum_litre.OnDisabledState = stateProperties22;
+            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties23.FillColor = System.Drawing.Color.Empty;
+            stateProperties23.ForeColor = System.Drawing.Color.Empty;
+            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_optimum_litre.OnHoverState = stateProperties23;
+            stateProperties24.BorderColor = System.Drawing.Color.Silver;
+            stateProperties24.FillColor = System.Drawing.Color.White;
+            stateProperties24.ForeColor = System.Drawing.Color.Empty;
+            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_optimum_litre.OnIdleState = stateProperties24;
+            this.txt_optimum_litre.Padding = new System.Windows.Forms.Padding(3);
+            this.txt_optimum_litre.PasswordChar = '\0';
+            this.txt_optimum_litre.PlaceholderForeColor = System.Drawing.Color.DimGray;
+            this.txt_optimum_litre.PlaceholderText = "Optimum Litresini Giriniz";
+            this.txt_optimum_litre.ReadOnly = false;
+            this.txt_optimum_litre.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt_optimum_litre.SelectedText = "";
+            this.txt_optimum_litre.SelectionLength = 0;
+            this.txt_optimum_litre.SelectionStart = 0;
+            this.txt_optimum_litre.ShortcutsEnabled = true;
+            this.txt_optimum_litre.Size = new System.Drawing.Size(290, 46);
+            this.txt_optimum_litre.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txt_optimum_litre.TabIndex = 43;
+            this.txt_optimum_litre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_optimum_litre.TextMarginBottom = 0;
+            this.txt_optimum_litre.TextMarginLeft = 3;
+            this.txt_optimum_litre.TextMarginTop = 0;
+            this.txt_optimum_litre.TextPlaceholder = "Optimum Litresini Giriniz";
+            this.txt_optimum_litre.UseSystemPasswordChar = false;
+            this.txt_optimum_litre.WordWrap = true;
             // 
             // txt_benzin_tutar
             // 
@@ -916,6 +850,167 @@
             this.txt_benzin_tutar.UseSystemPasswordChar = false;
             this.txt_benzin_tutar.WordWrap = true;
             // 
+            // txt_optimum_tutar
+            // 
+            this.txt_optimum_tutar.AcceptsReturn = false;
+            this.txt_optimum_tutar.AcceptsTab = false;
+            this.txt_optimum_tutar.AnimationSpeed = 200;
+            this.txt_optimum_tutar.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txt_optimum_tutar.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txt_optimum_tutar.BackColor = System.Drawing.Color.Transparent;
+            this.txt_optimum_tutar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_optimum_tutar.BackgroundImage")));
+            this.txt_optimum_tutar.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txt_optimum_tutar.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txt_optimum_tutar.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txt_optimum_tutar.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txt_optimum_tutar.BorderRadius = 15;
+            this.txt_optimum_tutar.BorderThickness = 1;
+            this.txt_optimum_tutar.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txt_optimum_tutar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_optimum_tutar.DefaultFont = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.txt_optimum_tutar.DefaultText = "";
+            this.txt_optimum_tutar.FillColor = System.Drawing.Color.White;
+            this.txt_optimum_tutar.HideSelection = true;
+            this.txt_optimum_tutar.IconLeft = null;
+            this.txt_optimum_tutar.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_optimum_tutar.IconPadding = 10;
+            this.txt_optimum_tutar.IconRight = null;
+            this.txt_optimum_tutar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_optimum_tutar.Lines = new string[0];
+            this.txt_optimum_tutar.Location = new System.Drawing.Point(299, 489);
+            this.txt_optimum_tutar.MaxLength = 32767;
+            this.txt_optimum_tutar.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txt_optimum_tutar.Modified = false;
+            this.txt_optimum_tutar.Multiline = false;
+            this.txt_optimum_tutar.Name = "txt_optimum_tutar";
+            stateProperties29.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties29.FillColor = System.Drawing.Color.Empty;
+            stateProperties29.ForeColor = System.Drawing.Color.Empty;
+            stateProperties29.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_optimum_tutar.OnActiveState = stateProperties29;
+            stateProperties30.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties30.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txt_optimum_tutar.OnDisabledState = stateProperties30;
+            stateProperties31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties31.FillColor = System.Drawing.Color.Empty;
+            stateProperties31.ForeColor = System.Drawing.Color.Empty;
+            stateProperties31.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_optimum_tutar.OnHoverState = stateProperties31;
+            stateProperties32.BorderColor = System.Drawing.Color.Silver;
+            stateProperties32.FillColor = System.Drawing.Color.White;
+            stateProperties32.ForeColor = System.Drawing.Color.Empty;
+            stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txt_optimum_tutar.OnIdleState = stateProperties32;
+            this.txt_optimum_tutar.Padding = new System.Windows.Forms.Padding(3);
+            this.txt_optimum_tutar.PasswordChar = '\0';
+            this.txt_optimum_tutar.PlaceholderForeColor = System.Drawing.Color.DimGray;
+            this.txt_optimum_tutar.PlaceholderText = "Optimum Tutarını Giriniz";
+            this.txt_optimum_tutar.ReadOnly = false;
+            this.txt_optimum_tutar.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt_optimum_tutar.SelectedText = "";
+            this.txt_optimum_tutar.SelectionLength = 0;
+            this.txt_optimum_tutar.SelectionStart = 0;
+            this.txt_optimum_tutar.ShortcutsEnabled = true;
+            this.txt_optimum_tutar.Size = new System.Drawing.Size(290, 46);
+            this.txt_optimum_tutar.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txt_optimum_tutar.TabIndex = 44;
+            this.txt_optimum_tutar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_optimum_tutar.TextMarginBottom = 0;
+            this.txt_optimum_tutar.TextMarginLeft = 3;
+            this.txt_optimum_tutar.TextMarginTop = 0;
+            this.txt_optimum_tutar.TextPlaceholder = "Optimum Tutarını Giriniz";
+            this.txt_optimum_tutar.UseSystemPasswordChar = false;
+            this.txt_optimum_tutar.WordWrap = true;
+            // 
+            // DataGridView1
+            // 
+            this.DataGridView1.AllowCustomTheming = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridView1.BackgroundColor = System.Drawing.Color.Silver;
+            this.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel1.SetColumnSpan(this.DataGridView1, 3);
+            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.DataGridView1.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.DataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.DataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.DataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.DataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.DataGridView1.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.DataGridView1.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.DataGridView1.CurrentTheme.Name = null;
+            this.DataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.DataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.DataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.DataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.DataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataGridView1.EnableHeadersVisualStyles = false;
+            this.DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.DataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.DataGridView1.HeaderForeColor = System.Drawing.Color.White;
+            this.DataGridView1.Location = new System.Drawing.Point(595, 3);
+            this.DataGridView1.Name = "DataGridView1";
+            this.DataGridView1.RowHeadersVisible = false;
+            this.tableLayoutPanel1.SetRowSpan(this.DataGridView1, 5);
+            this.DataGridView1.RowTemplate.Height = 40;
+            this.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DataGridView1.Size = new System.Drawing.Size(883, 264);
+            this.DataGridView1.TabIndex = 47;
+            this.DataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // btn_veresiye_ekle
+            // 
+            this.btn_veresiye_ekle.ActiveBorderThickness = 1;
+            this.btn_veresiye_ekle.ActiveCornerRadius = 20;
+            this.btn_veresiye_ekle.ActiveFillColor = System.Drawing.Color.Green;
+            this.btn_veresiye_ekle.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.btn_veresiye_ekle.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_veresiye_ekle.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_veresiye_ekle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_veresiye_ekle.BackgroundImage")));
+            this.btn_veresiye_ekle.ButtonText = "ThinButton";
+            this.btn_veresiye_ekle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_veresiye_ekle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_veresiye_ekle.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_veresiye_ekle.IdleBorderThickness = 1;
+            this.btn_veresiye_ekle.IdleCornerRadius = 20;
+            this.btn_veresiye_ekle.IdleFillColor = System.Drawing.Color.Transparent;
+            this.btn_veresiye_ekle.IdleForecolor = System.Drawing.Color.Black;
+            this.btn_veresiye_ekle.IdleLineColor = System.Drawing.Color.Black;
+            this.btn_veresiye_ekle.Location = new System.Drawing.Point(301, 653);
+            this.btn_veresiye_ekle.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_veresiye_ekle.Name = "btn_veresiye_ekle";
+            this.btn_veresiye_ekle.Size = new System.Drawing.Size(286, 44);
+            this.btn_veresiye_ekle.TabIndex = 48;
+            this.btn_veresiye_ekle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // vardıya_raporu_gır
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -926,9 +1021,10 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "vardıya_raporu_gır";
             this.Text = "Vardiya Raporu Gir";
-            this.Load += new System.EventHandler(this.vardıya_raporu_gır_Load);
+            this.Load += new System.EventHandler(this.Vardıya_raporu_gır_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -960,5 +1056,7 @@
         private Bunifu.UI.WinForms.BunifuTextBox txt_optimum_tutar;
         private Bunifu.UI.WinForms.BunifuTextBox txt_benzin_tutar;
         private Bunifu.UI.WinForms.BunifuTextBox txt_optimum_litre;
+        private Bunifu.UI.WinForms.BunifuDataGridView DataGridView1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btn_veresiye_ekle;
     }
 }

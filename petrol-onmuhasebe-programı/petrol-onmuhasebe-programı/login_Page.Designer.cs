@@ -144,7 +144,7 @@
             this.bunifuLabel1.Text = "LOGIN";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.bunifuLabel1_MouseMove);
+            this.bunifuLabel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BunifuLabel1_MouseMove);
             // 
             // button_1
             // 
@@ -170,7 +170,7 @@
             this.button_1.Size = new System.Drawing.Size(181, 41);
             this.button_1.TabIndex = 7;
             this.button_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.button_1.Click += new System.EventHandler(this.button_1_Click);
+            this.button_1.Click += new System.EventHandler(this.Button_1_Click);
             // 
             // textBox2
             // 
@@ -245,8 +245,8 @@
             this.textBox2.TextPlaceholder = "Password";
             this.textBox2.UseSystemPasswordChar = false;
             this.textBox2.WordWrap = true;
-            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
-            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
+            this.textBox2.Enter += new System.EventHandler(this.TextBox2_Enter);
+            this.textBox2.Leave += new System.EventHandler(this.TextBox2_Leave);
             // 
             // textBox1
             // 
@@ -321,8 +321,8 @@
             this.textBox1.TextPlaceholder = "Username";
             this.textBox1.UseSystemPasswordChar = false;
             this.textBox1.WordWrap = true;
-            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
-            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
+            this.textBox1.Enter += new System.EventHandler(this.TextBox1_Enter);
+            this.textBox1.Leave += new System.EventHandler(this.TextBox1_Leave);
             // 
             // bunifuPictureBox2
             // 
@@ -339,7 +339,7 @@
             this.bunifuPictureBox2.TabIndex = 11;
             this.bunifuPictureBox2.TabStop = false;
             this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            this.bunifuPictureBox2.Click += new System.EventHandler(this.bunifuPictureBox2_Click);
+            this.bunifuPictureBox2.Click += new System.EventHandler(this.BunifuPictureBox2_Click);
             // 
             // login_Page
             // 
@@ -356,10 +356,10 @@
             this.Name = "login_Page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş Yap";
-            this.Load += new System.EventHandler(this.login_Page_Load);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.login_Page_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.login_Page_MouseMove);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.login_Page_MouseUp);
+            this.Load += new System.EventHandler(this.Login_Page_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_Page_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Login_Page_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Login_Page_MouseUp);
             this.bunifuGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.bunifuGradientPanel2.ResumeLayout(false);
