@@ -165,17 +165,17 @@
   </data>
   <data name="Btn_iptal.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAP4AAAAjCAYAAAC0NregAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH2SURBVHhe7dwt00FBHIZxURRFURRFURRFH0MTfQxRFEVR
-        FEVRFMV95lpnzzxncLKze/1mdsYcL+3e/e+bXpBUHIMvFcjgSwUy+FKBDL5UIIMvFag1+M/nM+z3+7Bc
-        LsNsNguj0Sj0ej2bzfaDjXyS08ViEXa7XXg8HlWS330N/vF4jD9E6An/6XQKt9utelfSryGf5PRwOITV
-        ahXzSwfwyVvw6SX40nw+D/f7vXoqqWvastwIPh+cTCZfewlJ3UP1Pp1OGxV7I/j0DoZeyg9TAOb/SR18
-        egVKAkl5Wq/XYbvdxtcx+KzesxDgnF7KFzlnKn+9Xl/Bp7ynzJeUN0Z8Rv4YfPb92AKQlLfL5RJH/Rj8
-        8Xgch39JeaPc7/f7r+APBoPWUz6S8hFP+qUXkspg8KUC1cGn5qf2l5S/Ovjs4XsBRypDHXxO7HFyT1Le
-        2L1jFy8GP23qS8pbOqwXg0+ZTy/gPF/KWzqsF4OPzWYTm6Q8pX/TQh18Rnuu7Z3P5+qJpFxwAY+qPh3U
-        q4MPJv7p9o6kPBB6BnXu5CeN4IMRn/Cne7uSuov5PCP9/9DjLfig7GeVn16CVUDv6UvdQTmf5vMs5n26
-        h/Mx+Am9BEv/w+Hwtelvs9l+vnHpLv079jetwZeUJ4MvFcjgSwUy+FKBDL5UnBD+AKfVP9wvCj7oAAAA
-        AElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAP0AAAAjCAYAAABfAQyjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH1SURBVHhe7dwt00FBHIZxURRFURRFURRFH0MTfQxRFEVR
+        FEVRFMV95lpnzzxncLKze/1mdsYcL+3e/e+bXpBUFEMvFcbQS4Ux9FJhDL1UGEMvFaY19M/nM+z3+7Bc
+        LsNsNguj0Sj0ej2bzfZjjWyS0cViEXa7XXg8HlWK330N/fF4jD9E4An+6XQKt9utelfSLyGbZPRwOITV
+        ahWzS/g/eQs9PQRfms/n4X6/V08ldUlbjhuh54OTyeRrDyGpW6jYp9Npo0pvhJ6ewcBLeaHsZ76f1KGn
+        R6AUkJSf9XodttttfB1Dzyo9E3/n8FKeyDhT9+v1+go9JT2lvaR8MdIz4sfQs7fHUr+kfF0ulzjax9CP
+        x+M47EvKFyV+v99/hX4wGLSe4JGUh3iCL72QlD9DLxWmDj11PvW+pLzVoWeP3ss0Uv7q0HMSjxN5kvLF
+        Dh07dTH0adNeUr7SIbwYekp7egDn9VK+0iG8GHpsNpvYJOUn/QMW6tAzynP97nw+V08k5YCLdFTy6QBe
+        HXow0U83cSR1H4FnMOdOfdIIPRjpCX66eyupm5i/M8L/DzzeQg9KfVbz6SFY8fOevdQNlPBp/s7C3ac7
+        NR9Dn9BDsMQ/HA5fm/o2m+2nG5fn0j9Yf9Maekn5MfRSYQy9VBhDLxXG0EtFCeEPi3m6U6OWXSQAAAAA
+        SUVORK5CYII=
 </value>
   </data>
   <data name="Txt_FisNo.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

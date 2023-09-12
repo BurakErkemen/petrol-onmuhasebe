@@ -91,37 +91,6 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
         private void Btn_ekle_Click(object sender, EventArgs e)
         {
             // Müşteri verilerini gridview üzerine gönderme
-            /*try
-            {
-                if (comboBox1.SelectedItem == null || comboBox2.SelectedItem == null || Txt_litre == null || comboBox3.SelectedItem == null || Txt_tutar == null)
-                {
-                    MessageBox.Show("Lütfen Gerekli Tüm Alanları Doldurunuz", "Eksik Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    Musteri_Adı = comboBox1.SelectedItem.ToString();
-                    Plaka = comboBox2.SelectedItem.ToString();
-                    Yakıt_Turu = comboBox3.SelectedItem.ToString();
-                    Litre = Txt_litre.Text;
-                    Tutar = Txt_tutar.Text;
-                    DataGridView1.Rows.Add(Musteri_Adı, Plaka, Yakıt_Turu,Litre,Tutar);
-
-                    DataGridViewRow row = new DataGridViewRow();
-                    row.Cells.Add(new DataGridViewTextBoxCell { Value = Musteri_Adı }); // 1. sütun
-                    row.Cells.Add(new DataGridViewTextBoxCell { Value = Plaka }); // 2. sütun
-                    row.Cells.Add(new DataGridViewTextBoxCell { Value = Yakıt_Turu }); // 3. sütun
-                    row.Cells.Add(new DataGridViewTextBoxCell { Value = Litre }); // 3. sütun
-                    row.Cells.Add(new DataGridViewTextBoxCell { Value = Tutar}); // 3. sütun
-
-                    // DataGridView'e satırı ekle
-                    DataGridView1.Rows.Add(row);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }*/
-            
             try
             {
                 if (combo_Musteri.SelectedItem == null || combo_Plaka.SelectedItem == null || Txt_litre.Text == "" || combo_YakıtTuru.SelectedItem == null || Txt_tutar.Text == "")
@@ -156,6 +125,7 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
         private void Btn_gonder_Click(object sender, EventArgs e)
         {
             //Datagridview içindeki columns ve rowlar vardiya_raporu form sayfasındaki veresiye_tablo'suna post edilecek
+
         }
     }
 }

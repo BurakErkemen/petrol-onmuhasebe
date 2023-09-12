@@ -8,18 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
+namespace petrol_onmuhasebe_programı.FormPages.Vardıya_Bılgılerı
 {
-    public partial class Kredikart_Formu : Form
+    public partial class EkHarcama : Form
     {
-        public Kredikart_Formu()
+        public EkHarcama()
         {
             InitializeComponent();
         }
-
-        private void Kredikart_Formu_Load(object sender, EventArgs e)
+        private void EkHarcama_Load(object sender, EventArgs e)
         {
             CenterToScreen();
+        }
+        private void Btn_İptal_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

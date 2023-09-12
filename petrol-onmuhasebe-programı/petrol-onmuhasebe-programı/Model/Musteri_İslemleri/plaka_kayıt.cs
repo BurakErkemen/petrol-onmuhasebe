@@ -17,4 +17,5 @@ namespace petrol_onmuhasebe_programı.Model.Musteri_Bilgi
         public int MusterıID { get; set; }
         public virtual Musterı_bılgı Musterı_Bılgı { get; set; }
     }
+
 }

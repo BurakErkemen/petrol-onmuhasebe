@@ -21,6 +21,7 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
         
         private void Vardıya_raporu_gır_Load(object sender, EventArgs e)
         {
+            lbl_ToplamTutar.Visible = false;
             veresiye_tablosu.Visible = false;
             this.WindowState = FormWindowState.Maximized;
 

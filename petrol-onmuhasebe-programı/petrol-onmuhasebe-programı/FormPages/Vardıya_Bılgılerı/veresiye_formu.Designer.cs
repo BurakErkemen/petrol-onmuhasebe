@@ -52,13 +52,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.Btn_iptal = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.Btn_ekle = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Txt_litre = new Bunifu.UI.WinForms.BunifuTextBox();
             this.Txt_tutar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.DataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.combo_Plaka = new System.Windows.Forms.ComboBox();
             this.combo_YakıtTuru = new System.Windows.Forms.ComboBox();
+            this.Btn_ekle = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Btn_iptal = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label6 = new System.Windows.Forms.Label();
             this.Txt_FisNo = new Bunifu.UI.WinForms.BunifuTextBox();
             this.Btn_gonder = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -115,7 +115,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(102, 45);
+            this.label1.Location = new System.Drawing.Point(101, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 45);
             this.label1.TabIndex = 38;
@@ -128,7 +128,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.combo_Musteri.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.combo_Musteri.FormattingEnabled = true;
-            this.combo_Musteri.Location = new System.Drawing.Point(267, 48);
+            this.combo_Musteri.Location = new System.Drawing.Point(266, 48);
             this.combo_Musteri.Name = "combo_Musteri";
             this.combo_Musteri.Size = new System.Drawing.Size(259, 33);
             this.combo_Musteri.TabIndex = 37;
@@ -139,7 +139,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(9, 90);
+            this.label2.Location = new System.Drawing.Point(8, 90);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(252, 45);
             this.label2.TabIndex = 39;
@@ -152,7 +152,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(200, 180);
+            this.label4.Location = new System.Drawing.Point(199, 180);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 45);
             this.label4.TabIndex = 41;
@@ -165,7 +165,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(192, 225);
+            this.label5.Location = new System.Drawing.Point(191, 225);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 45);
             this.label5.TabIndex = 42;
@@ -178,64 +178,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(145, 135);
+            this.label3.Location = new System.Drawing.Point(144, 135);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 45);
             this.label3.TabIndex = 40;
             this.label3.Text = "Yakıt Türü:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // Btn_iptal
-            // 
-            this.Btn_iptal.ActiveBorderThickness = 1;
-            this.Btn_iptal.ActiveCornerRadius = 20;
-            this.Btn_iptal.ActiveFillColor = System.Drawing.Color.Green;
-            this.Btn_iptal.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_iptal.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.Btn_iptal.BackColor = System.Drawing.Color.White;
-            this.Btn_iptal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_iptal.BackgroundImage")));
-            this.Btn_iptal.ButtonText = "İptal";
-            this.Btn_iptal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_iptal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_iptal.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Btn_iptal.IdleBorderThickness = 1;
-            this.Btn_iptal.IdleCornerRadius = 20;
-            this.Btn_iptal.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Btn_iptal.IdleForecolor = System.Drawing.Color.Black;
-            this.Btn_iptal.IdleLineColor = System.Drawing.Color.Black;
-            this.Btn_iptal.Location = new System.Drawing.Point(5, 320);
-            this.Btn_iptal.Margin = new System.Windows.Forms.Padding(5);
-            this.Btn_iptal.Name = "Btn_iptal";
-            this.Btn_iptal.Size = new System.Drawing.Size(254, 35);
-            this.Btn_iptal.TabIndex = 49;
-            this.Btn_iptal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Btn_iptal.Click += new System.EventHandler(this.Btn_iptal_Click);
-            // 
-            // Btn_ekle
-            // 
-            this.Btn_ekle.ActiveBorderThickness = 1;
-            this.Btn_ekle.ActiveCornerRadius = 20;
-            this.Btn_ekle.ActiveFillColor = System.Drawing.Color.Green;
-            this.Btn_ekle.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_ekle.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.Btn_ekle.BackColor = System.Drawing.Color.White;
-            this.Btn_ekle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_ekle.BackgroundImage")));
-            this.Btn_ekle.ButtonText = "Ekle";
-            this.Btn_ekle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_ekle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ekle.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Btn_ekle.IdleBorderThickness = 1;
-            this.Btn_ekle.IdleCornerRadius = 20;
-            this.Btn_ekle.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Btn_ekle.IdleForecolor = System.Drawing.Color.Black;
-            this.Btn_ekle.IdleLineColor = System.Drawing.Color.Black;
-            this.Btn_ekle.Location = new System.Drawing.Point(269, 320);
-            this.Btn_ekle.Margin = new System.Windows.Forms.Padding(5);
-            this.Btn_ekle.Name = "Btn_ekle";
-            this.Btn_ekle.Size = new System.Drawing.Size(255, 35);
-            this.Btn_ekle.TabIndex = 50;
-            this.Btn_ekle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Btn_ekle.Click += new System.EventHandler(this.Btn_ekle_Click);
             // 
             // Txt_litre
             // 
@@ -264,7 +212,7 @@
             this.Txt_litre.IconRight = null;
             this.Txt_litre.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_litre.Lines = new string[0];
-            this.Txt_litre.Location = new System.Drawing.Point(267, 183);
+            this.Txt_litre.Location = new System.Drawing.Point(266, 183);
             this.Txt_litre.MaxLength = 32767;
             this.Txt_litre.MinimumSize = new System.Drawing.Size(1, 1);
             this.Txt_litre.Modified = false;
@@ -338,7 +286,7 @@
             this.Txt_tutar.IconRight = null;
             this.Txt_tutar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_tutar.Lines = new string[0];
-            this.Txt_tutar.Location = new System.Drawing.Point(267, 228);
+            this.Txt_tutar.Location = new System.Drawing.Point(266, 228);
             this.Txt_tutar.MaxLength = 32767;
             this.Txt_tutar.MinimumSize = new System.Drawing.Size(1, 1);
             this.Txt_tutar.Modified = false;
@@ -398,11 +346,11 @@
             this.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DataGridView1.ColumnHeadersHeight = 40;
@@ -434,11 +382,11 @@
             this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGridView1.EnableHeadersVisualStyles = false;
-            this.DataGridView1.GridColor = System.Drawing.Color.SteelBlue;
+            this.DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.DataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.DataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
             this.DataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.DataGridView1.Location = new System.Drawing.Point(532, 3);
+            this.DataGridView1.Location = new System.Drawing.Point(531, 3);
             this.DataGridView1.Name = "DataGridView1";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
@@ -452,7 +400,7 @@
             this.tableLayoutPanel1.SetRowSpan(this.DataGridView1, 8);
             this.DataGridView1.RowTemplate.Height = 40;
             this.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView1.Size = new System.Drawing.Size(457, 354);
+            this.DataGridView1.Size = new System.Drawing.Size(458, 354);
             this.DataGridView1.TabIndex = 55;
             this.DataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -462,7 +410,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.combo_Plaka.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.combo_Plaka.FormattingEnabled = true;
-            this.combo_Plaka.Location = new System.Drawing.Point(267, 93);
+            this.combo_Plaka.Location = new System.Drawing.Point(266, 93);
             this.combo_Plaka.Name = "combo_Plaka";
             this.combo_Plaka.Size = new System.Drawing.Size(259, 33);
             this.combo_Plaka.TabIndex = 43;
@@ -473,10 +421,62 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.combo_YakıtTuru.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.combo_YakıtTuru.FormattingEnabled = true;
-            this.combo_YakıtTuru.Location = new System.Drawing.Point(267, 138);
+            this.combo_YakıtTuru.Location = new System.Drawing.Point(266, 138);
             this.combo_YakıtTuru.Name = "combo_YakıtTuru";
             this.combo_YakıtTuru.Size = new System.Drawing.Size(259, 33);
             this.combo_YakıtTuru.TabIndex = 56;
+            // 
+            // Btn_ekle
+            // 
+            this.Btn_ekle.ActiveBorderThickness = 1;
+            this.Btn_ekle.ActiveCornerRadius = 20;
+            this.Btn_ekle.ActiveFillColor = System.Drawing.Color.Green;
+            this.Btn_ekle.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_ekle.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_ekle.BackColor = System.Drawing.Color.White;
+            this.Btn_ekle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_ekle.BackgroundImage")));
+            this.Btn_ekle.ButtonText = "Ekle";
+            this.Btn_ekle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_ekle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ekle.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_ekle.IdleBorderThickness = 1;
+            this.Btn_ekle.IdleCornerRadius = 20;
+            this.Btn_ekle.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_ekle.IdleForecolor = System.Drawing.Color.Black;
+            this.Btn_ekle.IdleLineColor = System.Drawing.Color.Black;
+            this.Btn_ekle.Location = new System.Drawing.Point(268, 320);
+            this.Btn_ekle.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_ekle.Name = "Btn_ekle";
+            this.Btn_ekle.Size = new System.Drawing.Size(255, 35);
+            this.Btn_ekle.TabIndex = 50;
+            this.Btn_ekle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_ekle.Click += new System.EventHandler(this.Btn_ekle_Click);
+            // 
+            // Btn_iptal
+            // 
+            this.Btn_iptal.ActiveBorderThickness = 1;
+            this.Btn_iptal.ActiveCornerRadius = 20;
+            this.Btn_iptal.ActiveFillColor = System.Drawing.Color.Green;
+            this.Btn_iptal.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_iptal.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_iptal.BackColor = System.Drawing.Color.White;
+            this.Btn_iptal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_iptal.BackgroundImage")));
+            this.Btn_iptal.ButtonText = "İptal";
+            this.Btn_iptal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_iptal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_iptal.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_iptal.IdleBorderThickness = 1;
+            this.Btn_iptal.IdleCornerRadius = 20;
+            this.Btn_iptal.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_iptal.IdleForecolor = System.Drawing.Color.Black;
+            this.Btn_iptal.IdleLineColor = System.Drawing.Color.Black;
+            this.Btn_iptal.Location = new System.Drawing.Point(5, 320);
+            this.Btn_iptal.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_iptal.Name = "Btn_iptal";
+            this.Btn_iptal.Size = new System.Drawing.Size(253, 35);
+            this.Btn_iptal.TabIndex = 49;
+            this.Btn_iptal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_iptal.Click += new System.EventHandler(this.Btn_iptal_Click);
             // 
             // label6
             // 
@@ -484,7 +484,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(119, 270);
+            this.label6.Location = new System.Drawing.Point(118, 270);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(142, 45);
             this.label6.TabIndex = 57;
@@ -518,7 +518,7 @@
             this.Txt_FisNo.IconRight = null;
             this.Txt_FisNo.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_FisNo.Lines = new string[0];
-            this.Txt_FisNo.Location = new System.Drawing.Point(267, 273);
+            this.Txt_FisNo.Location = new System.Drawing.Point(266, 273);
             this.Txt_FisNo.MaxLength = 32767;
             this.Txt_FisNo.MinimumSize = new System.Drawing.Size(1, 1);
             this.Txt_FisNo.Modified = false;
@@ -583,7 +583,7 @@
             this.Btn_gonder.IdleFillColor = System.Drawing.Color.Transparent;
             this.Btn_gonder.IdleForecolor = System.Drawing.Color.Black;
             this.Btn_gonder.IdleLineColor = System.Drawing.Color.Black;
-            this.Btn_gonder.Location = new System.Drawing.Point(534, 365);
+            this.Btn_gonder.Location = new System.Drawing.Point(533, 365);
             this.Btn_gonder.Margin = new System.Windows.Forms.Padding(5);
             this.Btn_gonder.Name = "Btn_gonder";
             this.Btn_gonder.Size = new System.Drawing.Size(255, 35);

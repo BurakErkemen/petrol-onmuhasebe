@@ -156,17 +156,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="homepage.cs">
+    <Compile Include="FormPages\DepoForm\DepoAyarları.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="homepage.Designer.cs">
+    <Compile Include="FormPages\DepoForm\DepoAyarları.Designer.cs">
+      <DependentUpon>DepoAyarları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPages\DepoForm\DepoTanımlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPages\DepoForm\DepoTanımlama.Designer.cs">
+      <DependentUpon>DepoTanımlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPages\homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPages\homepage.Designer.cs">
       <DependentUpon>homepage.cs</DependentUpon>
     </Compile>
-    <Compile Include="login_Page.cs">
+    <Compile Include="FormPages\login_Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login_Page.Designer.cs">
+    <Compile Include="FormPages\login_Page.Designer.cs">
       <DependentUpon>login_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPages\PersonelForm\PersonelAyarları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPages\PersonelForm\PersonelAyarları.Designer.cs">
+      <DependentUpon>PersonelAyarları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPages\Vardıya_Bılgılerı\EkHarcama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPages\Vardıya_Bılgılerı\EkHarcama.Designer.cs">
+      <DependentUpon>EkHarcama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPages\VeresiyeMüşteri\MüsteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPages\VeresiyeMüşteri\MüsteriEkle.Designer.cs">
+      <DependentUpon>MüsteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPages\VeresiyeMüşteri\VeresiyeMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPages\VeresiyeMüşteri\VeresiyeMusteri.Designer.cs">
+      <DependentUpon>VeresiyeMusteri.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202308282153186_Migration.cs" />
     <Compile Include="Migrations\202308282153186_Migration.designer.cs">
@@ -188,29 +224,47 @@
     <Compile Include="Model\vardıya_ıslemlerı\vardıya_formu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vardıya_Bılgılerı\Kredikart_Formu.cs">
+    <Compile Include="FormPages\Vardıya_Bılgılerı\Kredikart_Formu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vardıya_Bılgılerı\Kredikart_Formu.Designer.cs">
+    <Compile Include="FormPages\Vardıya_Bılgılerı\Kredikart_Formu.Designer.cs">
       <DependentUpon>Kredikart_Formu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vardıya_Bılgılerı\vardıya_raporu_gır.cs">
+    <Compile Include="FormPages\Vardıya_Bılgılerı\vardıya_raporu_gır.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vardıya_Bılgılerı\vardıya_raporu_gır.Designer.cs">
+    <Compile Include="FormPages\Vardıya_Bılgılerı\vardıya_raporu_gır.Designer.cs">
       <DependentUpon>vardıya_raporu_gır.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vardıya_Bılgılerı\veresiye_formu.cs">
+    <Compile Include="FormPages\Vardıya_Bılgılerı\veresiye_formu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vardıya_Bılgılerı\veresiye_formu.Designer.cs">
+    <Compile Include="FormPages\Vardıya_Bılgılerı\veresiye_formu.Designer.cs">
       <DependentUpon>veresiye_formu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="homepage.resx">
+    <EmbeddedResource Include="FormPages\DepoForm\DepoAyarları.resx">
+      <DependentUpon>DepoAyarları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPages\DepoForm\DepoTanımlama.resx">
+      <DependentUpon>DepoTanımlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPages\homepage.resx">
       <DependentUpon>homepage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="login_Page.resx">
+    <EmbeddedResource Include="FormPages\login_Page.resx">
       <DependentUpon>login_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPages\PersonelForm\PersonelAyarları.resx">
+      <DependentUpon>PersonelAyarları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPages\Vardıya_Bılgılerı\EkHarcama.resx">
+      <DependentUpon>EkHarcama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPages\VeresiyeMüşteri\MüsteriEkle.resx">
+      <DependentUpon>MüsteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPages\VeresiyeMüşteri\VeresiyeMusteri.resx">
+      <DependentUpon>VeresiyeMusteri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202308282153186_Migration.resx">
       <DependentUpon>202308282153186_Migration.cs</DependentUpon>
@@ -225,13 +279,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vardıya_Bılgılerı\Kredikart_Formu.resx">
+    <EmbeddedResource Include="FormPages\Vardıya_Bılgılerı\Kredikart_Formu.resx">
       <DependentUpon>Kredikart_Formu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vardıya_Bılgılerı\vardıya_raporu_gır.resx">
+    <EmbeddedResource Include="FormPages\Vardıya_Bılgılerı\vardıya_raporu_gır.resx">
       <DependentUpon>vardıya_raporu_gır.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vardıya_Bılgılerı\veresiye_formu.resx">
+    <EmbeddedResource Include="FormPages\Vardıya_Bılgılerı\veresiye_formu.resx">
       <DependentUpon>veresiye_formu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

@@ -1,4 +1,7 @@
-﻿using petrol_onmuhasebe_programı.Model;
+﻿using petrol_onmuhasebe_programı.FormPages.DepoForm;
+using petrol_onmuhasebe_programı.FormPages.PersonelForm;
+using petrol_onmuhasebe_programı.FormPages.VeresiyeMüşteri;
+using petrol_onmuhasebe_programı.Model;
 using petrol_onmuhasebe_programı.Model.Depo_İslemleri;
 using petrol_onmuhasebe_programı.Vardıya_Bılgılerı;
 using System;
@@ -17,6 +20,9 @@ namespace petrol_onmuhasebe_programı
         public int User_role_ıd { get; set; }
         public string Username { get; set; }
         private Vardıya_raporu_gır vardıya_Raporu;
+        private DepoAyarları depoAyarları;
+        private PersonelAyarları personelAyarları;
+        private VeresiyeMusteri veresiyeMusteri;
         public Homepage()
         {
             InitializeComponent();
@@ -27,7 +33,7 @@ namespace petrol_onmuhasebe_programı
             //user_role_ıd 'ye göre homepage üzerinde görünmesini istemediğimiz bazı durumları saklayacağız
             if (User_role_ıd > 2)
             {
-                btn_depo_ayar.Visible = false;
+                Btn_depo_ayar.Visible = false;
                 btn_personel_ayar.Visible=false;
                 btn_kullanıcı_tanımlama.Visible=false;
             }
@@ -83,6 +89,59 @@ namespace petrol_onmuhasebe_programı
             else
             {
                 vardıya_Raporu.BringToFront();
+            }
+        }
+
+        private void Btn_depo_ayar_Click(object sender, EventArgs e)
+        {
+            if (depoAyarları == null || depoAyarları.IsDisposed)
+            {
+                depoAyarları = new DepoAyarları();
+                depoAyarları.Show();
+            }
+            else
+            {
+                depoAyarları.BringToFront();
+            }
+        }
+
+        private void Btn_personel_ayar_Click(object sender, EventArgs e)
+        {
+            if (personelAyarları == null || personelAyarları.IsDisposed)
+            {
+                personelAyarları = new PersonelAyarları();
+                personelAyarları.Show();
+            }
+            else
+            {
+                personelAyarları.BringToFront();
+            }
+        }
+
+        private void Btn_musterı_ayar_Click(object sender, EventArgs e)
+        {
+            if (veresiyeMusteri == null || veresiyeMusteri.IsDisposed)
+            {
+                veresiyeMusteri = new VeresiyeMusteri();
+                veresiyeMusteri.Show();
+            }
+            else
+            {
+                veresiyeMusteri.BringToFront();
+            }
+
+        }
+
+        private void Btn_kullanıcı_tanımlama_Click(object sender, EventArgs e)
+        {
+            if (veresiyeMusteri == null || veresiyeMusteri.IsDisposed)
+            {
+                veresiyeMusteri = new VeresiyeMusteri();
+                veresiyeMusteri.Show();
+            }
+            else
+            {
+                veresiyeMusteri.BringToFront();
             }
         }
     }

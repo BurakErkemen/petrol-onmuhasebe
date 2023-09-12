@@ -65,7 +65,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label14 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -92,19 +97,27 @@
             this.txt_optimum_tutar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.Btn_veresiye_ekle = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Btn_kredikart_gir = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.veresiye_tablosu = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.label13 = new System.Windows.Forms.Label();
+            this.Btn_Onayla = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Btn_EkHarcama = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.lbl_ToplamTutar = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.veresiye_tablosu)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 5;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.label14, 2, 8);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
@@ -131,8 +144,12 @@
             this.tableLayoutPanel1.Controls.Add(this.txt_optimum_tutar, 1, 9);
             this.tableLayoutPanel1.Controls.Add(this.Btn_veresiye_ekle, 1, 12);
             this.tableLayoutPanel1.Controls.Add(this.Btn_kredikart_gir, 0, 12);
-            this.tableLayoutPanel1.Controls.Add(this.veresiye_tablosu, 2, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Controls.Add(this.bunifuDataGridView1, 2, 9);
+            this.tableLayoutPanel1.Controls.Add(this.veresiye_tablosu, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label13, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Btn_Onayla, 4, 15);
+            this.tableLayoutPanel1.Controls.Add(this.Btn_EkHarcama, 0, 13);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_ToplamTutar, 2, 13);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 16;
@@ -151,183 +168,206 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1481, 837);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label14, 3);
+            this.label14.Font = new System.Drawing.Font("Palatino Linotype", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.Location = new System.Drawing.Point(595, 426);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(883, 32);
+            this.label14.TabIndex = 59;
+            this.label14.Text = "Kredi Kartı Satışları";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(127, 0);
+            this.label1.Location = new System.Drawing.Point(3, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 25);
+            this.label1.Size = new System.Drawing.Size(290, 25);
             this.label1.TabIndex = 23;
             this.label1.Text = "Vardiya Personeli:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(153, 108);
+            this.label3.Location = new System.Drawing.Point(3, 117);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 25);
+            this.label3.Size = new System.Drawing.Size(290, 25);
             this.label3.TabIndex = 25;
             this.label3.Text = "Vardiya Tarihi:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(127, 54);
+            this.label2.Location = new System.Drawing.Point(3, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 25);
+            this.label2.Size = new System.Drawing.Size(290, 25);
             this.label2.TabIndex = 24;
             this.label2.Text = "Vardiya Personeli:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(155, 162);
+            this.label4.Location = new System.Drawing.Point(3, 169);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 25);
+            this.label4.Size = new System.Drawing.Size(290, 25);
             this.label4.TabIndex = 26;
             this.label4.Text = "Vardiya Sırası:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 216);
+            this.label5.Location = new System.Drawing.Point(3, 221);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(281, 25);
+            this.label5.Size = new System.Drawing.Size(290, 25);
             this.label5.TabIndex = 27;
             this.label5.Text = "Satılan Toplam Otogaz Litresi:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label6
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(13, 270);
+            this.label6.Location = new System.Drawing.Point(3, 273);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(280, 25);
+            this.label6.Size = new System.Drawing.Size(290, 25);
             this.label6.TabIndex = 28;
             this.label6.Text = "Satılan Toplam Otogaz Tutarı:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(6, 324);
+            this.label7.Location = new System.Drawing.Point(3, 325);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(287, 25);
+            this.label7.Size = new System.Drawing.Size(290, 25);
             this.label7.TabIndex = 29;
             this.label7.Text = "Satılan Toplam Motorin Litresi:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(7, 378);
+            this.label8.Location = new System.Drawing.Point(3, 377);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(286, 25);
+            this.label8.Size = new System.Drawing.Size(290, 25);
             this.label8.TabIndex = 30;
             this.label8.Text = "Satılan Toplam Motorin Tutarı:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label12
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(58, 432);
+            this.label12.Location = new System.Drawing.Point(3, 417);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(235, 50);
+            this.label12.Size = new System.Drawing.Size(290, 50);
             this.label12.TabIndex = 34;
             this.label12.Text = "Satılan Toplam Optimum Motorin Litresi:";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label11
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(58, 486);
+            this.label11.Location = new System.Drawing.Point(3, 469);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(235, 50);
+            this.label11.Size = new System.Drawing.Size(290, 50);
             this.label11.TabIndex = 33;
             this.label11.Text = "Satılan Toplam Optimum Motorin Tutarı:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label9
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(18, 540);
+            this.label9.Location = new System.Drawing.Point(3, 533);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(275, 25);
+            this.label9.Size = new System.Drawing.Size(290, 25);
             this.label9.TabIndex = 31;
             this.label9.Text = "Satılan Toplam Benzin Litresi:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label10
             // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(19, 594);
+            this.label10.Location = new System.Drawing.Point(3, 585);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(274, 25);
+            this.label10.Size = new System.Drawing.Size(290, 25);
             this.label10.TabIndex = 32;
             this.label10.Text = "Satılan Toplam Benzin Tutarı:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(299, 3);
+            this.comboBox1.Location = new System.Drawing.Point(299, 9);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(290, 33);
             this.comboBox1.TabIndex = 35;
             // 
             // comboBox2
             // 
+            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox2.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(299, 57);
+            this.comboBox2.Location = new System.Drawing.Point(299, 61);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(290, 33);
             this.comboBox2.TabIndex = 36;
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.dateTimePicker1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.dateTimePicker1.Location = new System.Drawing.Point(299, 111);
+            this.dateTimePicker1.Location = new System.Drawing.Point(299, 113);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(290, 33);
             this.dateTimePicker1.TabIndex = 37;
             // 
             // comboBox3
             // 
+            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox3.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(299, 165);
@@ -339,6 +379,7 @@
             // 
             this.txt_otogaz_litre.AcceptsReturn = false;
             this.txt_otogaz_litre.AcceptsTab = false;
+            this.txt_otogaz_litre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_otogaz_litre.AnimationSpeed = 200;
             this.txt_otogaz_litre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txt_otogaz_litre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -362,7 +403,7 @@
             this.txt_otogaz_litre.IconRight = null;
             this.txt_otogaz_litre.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_otogaz_litre.Lines = new string[0];
-            this.txt_otogaz_litre.Location = new System.Drawing.Point(299, 219);
+            this.txt_otogaz_litre.Location = new System.Drawing.Point(299, 211);
             this.txt_otogaz_litre.MaxLength = 32767;
             this.txt_otogaz_litre.MinimumSize = new System.Drawing.Size(1, 1);
             this.txt_otogaz_litre.Modified = false;
@@ -413,6 +454,7 @@
             // 
             this.txt_otogaz_tutar.AcceptsReturn = false;
             this.txt_otogaz_tutar.AcceptsTab = false;
+            this.txt_otogaz_tutar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_otogaz_tutar.AnimationSpeed = 200;
             this.txt_otogaz_tutar.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txt_otogaz_tutar.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -436,7 +478,7 @@
             this.txt_otogaz_tutar.IconRight = null;
             this.txt_otogaz_tutar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_otogaz_tutar.Lines = new string[0];
-            this.txt_otogaz_tutar.Location = new System.Drawing.Point(299, 273);
+            this.txt_otogaz_tutar.Location = new System.Drawing.Point(299, 263);
             this.txt_otogaz_tutar.MaxLength = 32767;
             this.txt_otogaz_tutar.MinimumSize = new System.Drawing.Size(1, 1);
             this.txt_otogaz_tutar.Modified = false;
@@ -487,6 +529,7 @@
             // 
             this.txt_motorin_litre.AcceptsReturn = false;
             this.txt_motorin_litre.AcceptsTab = false;
+            this.txt_motorin_litre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_motorin_litre.AnimationSpeed = 200;
             this.txt_motorin_litre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txt_motorin_litre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -510,7 +553,7 @@
             this.txt_motorin_litre.IconRight = null;
             this.txt_motorin_litre.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_motorin_litre.Lines = new string[0];
-            this.txt_motorin_litre.Location = new System.Drawing.Point(299, 327);
+            this.txt_motorin_litre.Location = new System.Drawing.Point(299, 315);
             this.txt_motorin_litre.MaxLength = 32767;
             this.txt_motorin_litre.MinimumSize = new System.Drawing.Size(1, 1);
             this.txt_motorin_litre.Modified = false;
@@ -561,6 +604,7 @@
             // 
             this.txt_motorin_tutar.AcceptsReturn = false;
             this.txt_motorin_tutar.AcceptsTab = false;
+            this.txt_motorin_tutar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_motorin_tutar.AnimationSpeed = 200;
             this.txt_motorin_tutar.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txt_motorin_tutar.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -584,7 +628,7 @@
             this.txt_motorin_tutar.IconRight = null;
             this.txt_motorin_tutar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_motorin_tutar.Lines = new string[0];
-            this.txt_motorin_tutar.Location = new System.Drawing.Point(299, 381);
+            this.txt_motorin_tutar.Location = new System.Drawing.Point(299, 367);
             this.txt_motorin_tutar.MaxLength = 32767;
             this.txt_motorin_tutar.MinimumSize = new System.Drawing.Size(1, 1);
             this.txt_motorin_tutar.Modified = false;
@@ -635,6 +679,7 @@
             // 
             this.txt_benzin_litre.AcceptsReturn = false;
             this.txt_benzin_litre.AcceptsTab = false;
+            this.txt_benzin_litre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_benzin_litre.AnimationSpeed = 200;
             this.txt_benzin_litre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txt_benzin_litre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -658,7 +703,7 @@
             this.txt_benzin_litre.IconRight = null;
             this.txt_benzin_litre.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_benzin_litre.Lines = new string[0];
-            this.txt_benzin_litre.Location = new System.Drawing.Point(299, 543);
+            this.txt_benzin_litre.Location = new System.Drawing.Point(299, 523);
             this.txt_benzin_litre.MaxLength = 32767;
             this.txt_benzin_litre.MinimumSize = new System.Drawing.Size(1, 1);
             this.txt_benzin_litre.Modified = false;
@@ -709,6 +754,7 @@
             // 
             this.txt_optimum_litre.AcceptsReturn = false;
             this.txt_optimum_litre.AcceptsTab = false;
+            this.txt_optimum_litre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_optimum_litre.AnimationSpeed = 200;
             this.txt_optimum_litre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txt_optimum_litre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -732,7 +778,7 @@
             this.txt_optimum_litre.IconRight = null;
             this.txt_optimum_litre.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_optimum_litre.Lines = new string[0];
-            this.txt_optimum_litre.Location = new System.Drawing.Point(299, 435);
+            this.txt_optimum_litre.Location = new System.Drawing.Point(299, 419);
             this.txt_optimum_litre.MaxLength = 32767;
             this.txt_optimum_litre.MinimumSize = new System.Drawing.Size(1, 1);
             this.txt_optimum_litre.Modified = false;
@@ -783,6 +829,7 @@
             // 
             this.txt_benzin_tutar.AcceptsReturn = false;
             this.txt_benzin_tutar.AcceptsTab = false;
+            this.txt_benzin_tutar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_benzin_tutar.AnimationSpeed = 200;
             this.txt_benzin_tutar.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txt_benzin_tutar.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -806,7 +853,7 @@
             this.txt_benzin_tutar.IconRight = null;
             this.txt_benzin_tutar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_benzin_tutar.Lines = new string[0];
-            this.txt_benzin_tutar.Location = new System.Drawing.Point(299, 597);
+            this.txt_benzin_tutar.Location = new System.Drawing.Point(299, 575);
             this.txt_benzin_tutar.MaxLength = 32767;
             this.txt_benzin_tutar.MinimumSize = new System.Drawing.Size(1, 1);
             this.txt_benzin_tutar.Modified = false;
@@ -857,6 +904,7 @@
             // 
             this.txt_optimum_tutar.AcceptsReturn = false;
             this.txt_optimum_tutar.AcceptsTab = false;
+            this.txt_optimum_tutar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_optimum_tutar.AnimationSpeed = 200;
             this.txt_optimum_tutar.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txt_optimum_tutar.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -880,7 +928,7 @@
             this.txt_optimum_tutar.IconRight = null;
             this.txt_optimum_tutar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_optimum_tutar.Lines = new string[0];
-            this.txt_optimum_tutar.Location = new System.Drawing.Point(299, 489);
+            this.txt_optimum_tutar.Location = new System.Drawing.Point(299, 471);
             this.txt_optimum_tutar.MaxLength = 32767;
             this.txt_optimum_tutar.MinimumSize = new System.Drawing.Size(1, 1);
             this.txt_optimum_tutar.Modified = false;
@@ -934,11 +982,11 @@
             this.Btn_veresiye_ekle.ActiveFillColor = System.Drawing.Color.Green;
             this.Btn_veresiye_ekle.ActiveForecolor = System.Drawing.Color.Transparent;
             this.Btn_veresiye_ekle.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_veresiye_ekle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.Btn_veresiye_ekle.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Btn_veresiye_ekle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_veresiye_ekle.BackgroundImage")));
             this.Btn_veresiye_ekle.ButtonText = "Veresiye Gir";
             this.Btn_veresiye_ekle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_veresiye_ekle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Btn_veresiye_ekle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_veresiye_ekle.ForeColor = System.Drawing.Color.SeaGreen;
             this.Btn_veresiye_ekle.IdleBorderThickness = 1;
@@ -946,10 +994,10 @@
             this.Btn_veresiye_ekle.IdleFillColor = System.Drawing.Color.Transparent;
             this.Btn_veresiye_ekle.IdleForecolor = System.Drawing.Color.Black;
             this.Btn_veresiye_ekle.IdleLineColor = System.Drawing.Color.Black;
-            this.Btn_veresiye_ekle.Location = new System.Drawing.Point(301, 653);
+            this.Btn_veresiye_ekle.Location = new System.Drawing.Point(301, 629);
             this.Btn_veresiye_ekle.Margin = new System.Windows.Forms.Padding(5);
             this.Btn_veresiye_ekle.Name = "Btn_veresiye_ekle";
-            this.Btn_veresiye_ekle.Size = new System.Drawing.Size(286, 44);
+            this.Btn_veresiye_ekle.Size = new System.Drawing.Size(286, 42);
             this.Btn_veresiye_ekle.TabIndex = 48;
             this.Btn_veresiye_ekle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Btn_veresiye_ekle.Click += new System.EventHandler(this.Btn_veresiye_ekle_Click);
@@ -961,11 +1009,11 @@
             this.Btn_kredikart_gir.ActiveFillColor = System.Drawing.Color.Green;
             this.Btn_kredikart_gir.ActiveForecolor = System.Drawing.Color.Transparent;
             this.Btn_kredikart_gir.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_kredikart_gir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.Btn_kredikart_gir.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Btn_kredikart_gir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_kredikart_gir.BackgroundImage")));
             this.Btn_kredikart_gir.ButtonText = "Kredi Kartı Gir";
             this.Btn_kredikart_gir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_kredikart_gir.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Btn_kredikart_gir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_kredikart_gir.ForeColor = System.Drawing.Color.SeaGreen;
             this.Btn_kredikart_gir.IdleBorderThickness = 1;
@@ -973,26 +1021,27 @@
             this.Btn_kredikart_gir.IdleFillColor = System.Drawing.Color.Transparent;
             this.Btn_kredikart_gir.IdleForecolor = System.Drawing.Color.Black;
             this.Btn_kredikart_gir.IdleLineColor = System.Drawing.Color.Black;
-            this.Btn_kredikart_gir.Location = new System.Drawing.Point(5, 653);
+            this.Btn_kredikart_gir.Location = new System.Drawing.Point(5, 629);
             this.Btn_kredikart_gir.Margin = new System.Windows.Forms.Padding(5);
             this.Btn_kredikart_gir.Name = "Btn_kredikart_gir";
-            this.Btn_kredikart_gir.Size = new System.Drawing.Size(286, 44);
+            this.Btn_kredikart_gir.Size = new System.Drawing.Size(286, 42);
             this.Btn_kredikart_gir.TabIndex = 49;
             this.Btn_kredikart_gir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Btn_kredikart_gir.Click += new System.EventHandler(this.Btn_kredikart_gir_Click);
             // 
-            // veresiye_tablosu
+            // bunifuDataGridView1
             // 
-            this.veresiye_tablosu.AllowCustomTheming = false;
-            this.veresiye_tablosu.AllowUserToOrderColumns = true;
+            this.bunifuDataGridView1.AllowCustomTheming = false;
+            this.bunifuDataGridView1.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.veresiye_tablosu.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.veresiye_tablosu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.veresiye_tablosu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.veresiye_tablosu.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.veresiye_tablosu.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.veresiye_tablosu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.bunifuDataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
@@ -1000,7 +1049,79 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.veresiye_tablosu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.bunifuDataGridView1.ColumnHeadersHeight = 40;
+            this.tableLayoutPanel1.SetColumnSpan(this.bunifuDataGridView1, 3);
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView1.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.Name = null;
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
+            this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
+            this.bunifuDataGridView1.Location = new System.Drawing.Point(595, 471);
+            this.bunifuDataGridView1.Name = "bunifuDataGridView1";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.bunifuDataGridView1.RowHeadersVisible = false;
+            this.tableLayoutPanel1.SetRowSpan(this.bunifuDataGridView1, 4);
+            this.bunifuDataGridView1.RowTemplate.Height = 40;
+            this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.bunifuDataGridView1.Size = new System.Drawing.Size(883, 202);
+            this.bunifuDataGridView1.TabIndex = 57;
+            this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // veresiye_tablosu
+            // 
+            this.veresiye_tablosu.AllowCustomTheming = false;
+            this.veresiye_tablosu.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            this.veresiye_tablosu.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.veresiye_tablosu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.veresiye_tablosu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.veresiye_tablosu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            this.veresiye_tablosu.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.veresiye_tablosu.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.veresiye_tablosu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.veresiye_tablosu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.veresiye_tablosu.ColumnHeadersHeight = 40;
             this.tableLayoutPanel1.SetColumnSpan(this.veresiye_tablosu, 3);
             this.veresiye_tablosu.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
@@ -1021,37 +1142,113 @@
             this.veresiye_tablosu.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.veresiye_tablosu.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.veresiye_tablosu.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.veresiye_tablosu.DefaultCellStyle = dataGridViewCellStyle3;
-            this.veresiye_tablosu.Dock = System.Windows.Forms.DockStyle.Fill;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.veresiye_tablosu.DefaultCellStyle = dataGridViewCellStyle7;
             this.veresiye_tablosu.EnableHeadersVisualStyles = false;
             this.veresiye_tablosu.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.veresiye_tablosu.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.veresiye_tablosu.HeaderBgColor = System.Drawing.Color.Empty;
             this.veresiye_tablosu.HeaderForeColor = System.Drawing.Color.White;
-            this.veresiye_tablosu.Location = new System.Drawing.Point(595, 3);
+            this.veresiye_tablosu.Location = new System.Drawing.Point(595, 55);
             this.veresiye_tablosu.Name = "veresiye_tablosu";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.veresiye_tablosu.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.veresiye_tablosu.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.veresiye_tablosu.RowHeadersVisible = false;
             this.tableLayoutPanel1.SetRowSpan(this.veresiye_tablosu, 7);
             this.veresiye_tablosu.RowTemplate.Height = 40;
             this.veresiye_tablosu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.veresiye_tablosu.Size = new System.Drawing.Size(883, 372);
+            this.veresiye_tablosu.Size = new System.Drawing.Size(883, 358);
             this.veresiye_tablosu.TabIndex = 56;
             this.veresiye_tablosu.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label13, 3);
+            this.label13.Font = new System.Drawing.Font("Palatino Linotype", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label13.Location = new System.Drawing.Point(595, 10);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(883, 32);
+            this.label13.TabIndex = 58;
+            this.label13.Text = "Veresili Satışlar";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // Btn_Onayla
+            // 
+            this.Btn_Onayla.ActiveBorderThickness = 1;
+            this.Btn_Onayla.ActiveCornerRadius = 20;
+            this.Btn_Onayla.ActiveFillColor = System.Drawing.Color.Green;
+            this.Btn_Onayla.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_Onayla.ActiveLineColor = System.Drawing.Color.Green;
+            this.Btn_Onayla.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Onayla.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Btn_Onayla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Onayla.BackgroundImage")));
+            this.Btn_Onayla.ButtonText = "Onayla/Kaydet";
+            this.Btn_Onayla.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Onayla.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Btn_Onayla.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_Onayla.IdleBorderThickness = 1;
+            this.Btn_Onayla.IdleCornerRadius = 20;
+            this.Btn_Onayla.IdleFillColor = System.Drawing.Color.Gainsboro;
+            this.Btn_Onayla.IdleForecolor = System.Drawing.Color.Blue;
+            this.Btn_Onayla.IdleLineColor = System.Drawing.Color.Blue;
+            this.Btn_Onayla.Location = new System.Drawing.Point(1188, 786);
+            this.Btn_Onayla.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_Onayla.Name = "Btn_Onayla";
+            this.Btn_Onayla.Size = new System.Drawing.Size(289, 44);
+            this.Btn_Onayla.TabIndex = 60;
+            this.Btn_Onayla.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Btn_EkHarcama
+            // 
+            this.Btn_EkHarcama.ActiveBorderThickness = 1;
+            this.Btn_EkHarcama.ActiveCornerRadius = 20;
+            this.Btn_EkHarcama.ActiveFillColor = System.Drawing.Color.Green;
+            this.Btn_EkHarcama.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_EkHarcama.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_EkHarcama.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_EkHarcama.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Btn_EkHarcama.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_EkHarcama.BackgroundImage")));
+            this.Btn_EkHarcama.ButtonText = "Ek Harcama Gir";
+            this.Btn_EkHarcama.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_EkHarcama.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_EkHarcama.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_EkHarcama.IdleBorderThickness = 1;
+            this.Btn_EkHarcama.IdleCornerRadius = 20;
+            this.Btn_EkHarcama.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_EkHarcama.IdleForecolor = System.Drawing.Color.Black;
+            this.Btn_EkHarcama.IdleLineColor = System.Drawing.Color.Black;
+            this.Btn_EkHarcama.Location = new System.Drawing.Point(5, 681);
+            this.Btn_EkHarcama.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_EkHarcama.Name = "Btn_EkHarcama";
+            this.Btn_EkHarcama.Size = new System.Drawing.Size(286, 42);
+            this.Btn_EkHarcama.TabIndex = 61;
+            this.Btn_EkHarcama.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_ToplamTutar
+            // 
+            this.lbl_ToplamTutar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_ToplamTutar.AutoSize = true;
+            this.lbl_ToplamTutar.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ToplamTutar.Location = new System.Drawing.Point(595, 689);
+            this.lbl_ToplamTutar.Name = "lbl_ToplamTutar";
+            this.lbl_ToplamTutar.Size = new System.Drawing.Size(290, 25);
+            this.lbl_ToplamTutar.TabIndex = 62;
+            this.lbl_ToplamTutar.Text = "Toplam Tutar";
+            this.lbl_ToplamTutar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Vardıya_raporu_gır
             // 
@@ -1066,6 +1263,7 @@
             this.Load += new System.EventHandler(this.Vardıya_raporu_gır_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.veresiye_tablosu)).EndInit();
             this.ResumeLayout(false);
 
@@ -1101,5 +1299,11 @@
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_veresiye_ekle;
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_kredikart_gir;
         private Bunifu.UI.WinForms.BunifuDataGridView veresiye_tablosu;
+        private Bunifu.UI.WinForms.BunifuDataGridView bunifuDataGridView1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private Bunifu.Framework.UI.BunifuThinButton2 Btn_Onayla;
+        private Bunifu.Framework.UI.BunifuThinButton2 Btn_EkHarcama;
+        private System.Windows.Forms.Label lbl_ToplamTutar;
     }
 }

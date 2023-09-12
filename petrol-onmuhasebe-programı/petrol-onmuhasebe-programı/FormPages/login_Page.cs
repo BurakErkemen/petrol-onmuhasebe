@@ -12,9 +12,9 @@ using System.Windows.Forms;
 using petrol_onmuhasebe_programı.Model;
 namespace petrol_onmuhasebe_programı
 {
-    public partial class login_Page : Form
+    public partial class Login_Page : Form
     {
-        public login_Page()
+        public Login_Page()
         {
             InitializeComponent();
         }

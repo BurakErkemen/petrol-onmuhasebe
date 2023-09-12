@@ -17,6 +17,10 @@ namespace petrol_onmuhasebe_programı.Model.Depo_İslemleri
 
         //tank_dolum tablosu ilişkisi 
         public virtual ICollection<Tank_dolum> TankDolumlar { get; set; }
+        public override string ToString()
+        {
+            return this.Tank_ad; // Tank_ad özelliğini döndürerek sütunun verisini Tank_ad'a göre göster
+        }
 
     }
 }

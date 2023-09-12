@@ -19,4 +19,5 @@ namespace petrol_onmuhasebe_programı.Model.Musteri_Bilgi
         public DateTime OdemeTarıhı { get; set; }
         public bool OdemeTuru { get; set; }
     }
+
 }
