@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,7 +18,7 @@ namespace petrol_onmuhasebe_programı.Model.Musteri_Bilgi
 
         public int Tutar { get; set; }
         public DateTime OdemeTarıhı { get; set; }
-        public bool OdemeTuru { get; set; }
+        public string OdemeTuru { get; set; }
     }
 
 }

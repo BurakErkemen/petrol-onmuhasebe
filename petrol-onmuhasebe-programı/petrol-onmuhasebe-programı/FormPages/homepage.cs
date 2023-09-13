@@ -22,7 +22,7 @@ namespace petrol_onmuhasebe_programı
         private Vardıya_raporu_gır vardıya_Raporu;
         private DepoAyarları depoAyarları;
         private PersonelAyarları personelAyarları;
-        private VeresiyeMusteri veresiyeMusteri;
+        private Musteri_Islemlerı veresiyeMusteri;
         public Homepage()
         {
             InitializeComponent();
@@ -122,7 +122,7 @@ namespace petrol_onmuhasebe_programı
         {
             if (veresiyeMusteri == null || veresiyeMusteri.IsDisposed)
             {
-                veresiyeMusteri = new VeresiyeMusteri();
+                veresiyeMusteri = new Musteri_Islemlerı();
                 veresiyeMusteri.Show();
             }
             else
@@ -136,7 +136,7 @@ namespace petrol_onmuhasebe_programı
         {
             if (veresiyeMusteri == null || veresiyeMusteri.IsDisposed)
             {
-                veresiyeMusteri = new VeresiyeMusteri();
+                veresiyeMusteri = new Musteri_Islemlerı();
                 veresiyeMusteri.Show();
             }
             else

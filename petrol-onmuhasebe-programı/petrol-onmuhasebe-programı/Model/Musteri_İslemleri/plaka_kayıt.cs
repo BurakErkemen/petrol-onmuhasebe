@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Security.Policy;
 using System.Text;
@@ -16,6 +17,10 @@ namespace petrol_onmuhasebe_programı.Model.Musteri_Bilgi
 
         public int MusterıID { get; set; }
         public virtual Musterı_bılgı Musterı_Bılgı { get; set; }
+        public override string ToString()
+        {
+            return this.PlakaNo; // Tank_ad özelliğini döndürerek sütunun verisini Tank_ad'a göre göster
+        }
     }
 
 }

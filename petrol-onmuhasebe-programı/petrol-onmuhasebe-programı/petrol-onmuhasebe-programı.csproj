@@ -192,17 +192,11 @@
     <Compile Include="FormPages\Vardıya_Bılgılerı\EkHarcama.Designer.cs">
       <DependentUpon>EkHarcama.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPages\VeresiyeMüşteri\MüsteriEkle.cs">
+    <Compile Include="FormPages\VeresiyeMüşteri\Musteri_Islemlerı.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPages\VeresiyeMüşteri\MüsteriEkle.Designer.cs">
-      <DependentUpon>MüsteriEkle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormPages\VeresiyeMüşteri\VeresiyeMusteri.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormPages\VeresiyeMüşteri\VeresiyeMusteri.Designer.cs">
-      <DependentUpon>VeresiyeMusteri.cs</DependentUpon>
+    <Compile Include="FormPages\VeresiyeMüşteri\Musteri_Islemlerı.Designer.cs">
+      <DependentUpon>Musteri_Islemlerı.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202308282153186_Migration.cs" />
     <Compile Include="Migrations\202308282153186_Migration.designer.cs">
@@ -260,11 +254,8 @@
     <EmbeddedResource Include="FormPages\Vardıya_Bılgılerı\EkHarcama.resx">
       <DependentUpon>EkHarcama.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPages\VeresiyeMüşteri\MüsteriEkle.resx">
-      <DependentUpon>MüsteriEkle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormPages\VeresiyeMüşteri\VeresiyeMusteri.resx">
-      <DependentUpon>VeresiyeMusteri.cs</DependentUpon>
+    <EmbeddedResource Include="FormPages\VeresiyeMüşteri\Musteri_Islemlerı.resx">
+      <DependentUpon>Musteri_Islemlerı.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202308282153186_Migration.resx">
       <DependentUpon>202308282153186_Migration.cs</DependentUpon>
