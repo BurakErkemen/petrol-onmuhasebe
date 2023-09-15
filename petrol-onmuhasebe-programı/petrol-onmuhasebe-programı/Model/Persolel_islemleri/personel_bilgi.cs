@@ -14,8 +14,10 @@ namespace petrol_onmuhasebe_programı.Model.Persolel_Bilgi
         public int PersonelId { get; set; }
         public string PersonelAd { get; set; }
         public string PersonelSoyad { get; set; }
-        public int Personel_TcNo { get; set; }
-        public int PersonelMaas{ get; set; }
+        public string Personel_TcNo { get; set; }
+        public string PersonelMaas{ get; set; }
+        public DateTime BaslamaTarıhı { get; set; }
+        public DateTime BıtısTarıhı{ get; set; }
         public virtual ICollection<Vardıya_formu> VardıyaFormlar { get; set; }
 
     }
