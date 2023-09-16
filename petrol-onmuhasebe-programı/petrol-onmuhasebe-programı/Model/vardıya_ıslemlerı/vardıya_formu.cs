@@ -17,7 +17,6 @@ namespace petrol_onmuhasebe_programı.Model.vardıya_ıslemlerı
         public virtual personel_bilgi Personel1 { get; set; }
         public virtual personel_bilgi Personel2 { get; set; }
 
-        public virtual ICollection<Kredıkart_vardıya_satıs> KrediKartSatislar { get; set; }
         // Normal Kayıtlar
         public int Vardıya_sıra_no { get; set; }
         public DateTime Vardıya_tarıhı { get; set; }

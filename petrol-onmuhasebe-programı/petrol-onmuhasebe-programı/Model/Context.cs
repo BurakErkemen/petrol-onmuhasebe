@@ -21,8 +21,8 @@ namespace petrol_onmuhasebe_programı.Model
         public DbSet<user_role> User_roles { get; set; }
         
         //kredikart işlemleri
-        public DbSet<Kredıkart_vardıya_satıs> KrediKartVardiyaSatislar { get; set; }
-        public DbSet<Kredıkart_turu_ekleme> KrediKartTurleri { get; set; }
+        public DbSet<Kredıkart_vardıya_satıs> KrediKartVardiyaSatislars { get; set; }
+        public DbSet<Kredıkart_turu_ekleme> KrediKartTurleris { get; set; }
 
         //depo işlemleri
         public DbSet<Tank_bilgi> Tank_Bilgis { get; set; }

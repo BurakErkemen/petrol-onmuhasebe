@@ -1,4 +1,5 @@
 ﻿using petrol_onmuhasebe_programı.FormPages.DepoForm;
+using petrol_onmuhasebe_programı.FormPages.Kredikart;
 using petrol_onmuhasebe_programı.FormPages.PersonelForm;
 using petrol_onmuhasebe_programı.FormPages.VeresiyeMüşteri;
 using petrol_onmuhasebe_programı.Model;
@@ -142,6 +143,19 @@ namespace petrol_onmuhasebe_programı
             else
             {
                 veresiyeMusteri.BringToFront();
+            }
+        }
+        private kredikart kredikart;
+        private void Txt_KartTanımlama_Click(object sender, EventArgs e)
+        {
+            if (kredikart == null || kredikart.IsDisposed)
+            {
+                kredikart = new kredikart();
+                kredikart.Show();
+            }
+            else
+            {
+                kredikart.BringToFront();
             }
         }
     }

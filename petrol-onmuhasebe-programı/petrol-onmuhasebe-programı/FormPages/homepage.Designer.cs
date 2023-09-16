@@ -36,6 +36,7 @@
             this.Btn_depo_ayar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Btn_vardiya_raporu = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label1 = new System.Windows.Forms.Label();
+            this.Txt_KartTanımlama = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,12 +50,13 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.Controls.Add(this.btn_kullanıcı_tanımlama, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn_musterı_ayar, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn_personel_ayar, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.Btn_depo_ayar, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.Btn_vardiya_raporu, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 6, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn_kullanıcı_tanımlama, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Txt_KartTanımlama, 4, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -87,7 +89,7 @@
             this.btn_kullanıcı_tanımlama.IdleFillColor = System.Drawing.Color.DarkGray;
             this.btn_kullanıcı_tanımlama.IdleForecolor = System.Drawing.Color.WhiteSmoke;
             this.btn_kullanıcı_tanımlama.IdleLineColor = System.Drawing.Color.DarkGray;
-            this.btn_kullanıcı_tanımlama.Location = new System.Drawing.Point(749, 5);
+            this.btn_kullanıcı_tanımlama.Location = new System.Drawing.Point(935, 5);
             this.btn_kullanıcı_tanımlama.Margin = new System.Windows.Forms.Padding(5);
             this.btn_kullanıcı_tanımlama.Name = "btn_kullanıcı_tanımlama";
             this.btn_kullanıcı_tanımlama.Size = new System.Drawing.Size(176, 99);
@@ -215,6 +217,33 @@
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // Txt_KartTanımlama
+            // 
+            this.Txt_KartTanımlama.ActiveBorderThickness = 1;
+            this.Txt_KartTanımlama.ActiveCornerRadius = 20;
+            this.Txt_KartTanımlama.ActiveFillColor = System.Drawing.Color.Silver;
+            this.Txt_KartTanımlama.ActiveForecolor = System.Drawing.Color.Blue;
+            this.Txt_KartTanımlama.ActiveLineColor = System.Drawing.Color.Blue;
+            this.Txt_KartTanımlama.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Txt_KartTanımlama.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Txt_KartTanımlama.BackgroundImage")));
+            this.Txt_KartTanımlama.ButtonText = "Kredi Kartı Ayarları";
+            this.Txt_KartTanımlama.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Txt_KartTanımlama.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Txt_KartTanımlama.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_KartTanımlama.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Txt_KartTanımlama.IdleBorderThickness = 1;
+            this.Txt_KartTanımlama.IdleCornerRadius = 20;
+            this.Txt_KartTanımlama.IdleFillColor = System.Drawing.Color.DarkGray;
+            this.Txt_KartTanımlama.IdleForecolor = System.Drawing.Color.WhiteSmoke;
+            this.Txt_KartTanımlama.IdleLineColor = System.Drawing.Color.DarkGray;
+            this.Txt_KartTanımlama.Location = new System.Drawing.Point(749, 5);
+            this.Txt_KartTanımlama.Margin = new System.Windows.Forms.Padding(5);
+            this.Txt_KartTanımlama.Name = "Txt_KartTanımlama";
+            this.Txt_KartTanımlama.Size = new System.Drawing.Size(176, 99);
+            this.Txt_KartTanımlama.TabIndex = 23;
+            this.Txt_KartTanımlama.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Txt_KartTanımlama.Click += new System.EventHandler(this.Txt_KartTanımlama_Click);
+            // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -242,5 +271,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_depo_ayar;
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_vardiya_raporu;
         private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuThinButton2 Txt_KartTanımlama;
     }
 }

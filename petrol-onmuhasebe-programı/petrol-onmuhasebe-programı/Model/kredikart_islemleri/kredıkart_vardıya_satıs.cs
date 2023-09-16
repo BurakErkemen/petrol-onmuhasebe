@@ -18,7 +18,6 @@ namespace petrol_onmuhasebe_programı.Model.kredikart_islemleri
 
 
         //vardiya_formu ile ilişki
-        [ForeignKey("Vardiya")]
         public int VardıyaId { get; set; }
         public virtual Vardıya_formu Vardiya { get; set; }
     }
