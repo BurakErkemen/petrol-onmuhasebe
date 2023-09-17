@@ -32,19 +32,19 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kredikart));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kredikart));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.KartListesi = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.Txt_BankaAd = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.Btn_İptal = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.Btn_Onayla = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.Btn_Güncelle = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Btn_Sil = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Btn_Güncelle = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Btn_Onayla = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Btn_İptal = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Txt_BankaAd = new Bunifu.UI.WinForms.BunifuTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.KartListesi)).BeginInit();
             this.SuspendLayout();
@@ -76,19 +76,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(623, 378);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(158, 216);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 54);
-            this.label1.TabIndex = 68;
-            this.label1.Text = "Banka Adı:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // KartListesi
             // 
@@ -161,6 +148,128 @@
             this.KartListesi.Size = new System.Drawing.Size(617, 210);
             this.KartListesi.TabIndex = 69;
             this.KartListesi.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.KartListesi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.KartListesi_CellClick);
+            // 
+            // Btn_Sil
+            // 
+            this.Btn_Sil.ActiveBorderThickness = 1;
+            this.Btn_Sil.ActiveCornerRadius = 20;
+            this.Btn_Sil.ActiveFillColor = System.Drawing.Color.Green;
+            this.Btn_Sil.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_Sil.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_Sil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Sil.BackColor = System.Drawing.SystemColors.Control;
+            this.Btn_Sil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Sil.BackgroundImage")));
+            this.Btn_Sil.ButtonText = "Sil";
+            this.Btn_Sil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Sil.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Sil.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_Sil.IdleBorderThickness = 1;
+            this.Btn_Sil.IdleCornerRadius = 20;
+            this.Btn_Sil.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_Sil.IdleForecolor = System.Drawing.Color.Black;
+            this.Btn_Sil.IdleLineColor = System.Drawing.Color.Black;
+            this.Btn_Sil.Location = new System.Drawing.Point(470, 333);
+            this.Btn_Sil.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_Sil.Name = "Btn_Sil";
+            this.Btn_Sil.Size = new System.Drawing.Size(148, 35);
+            this.Btn_Sil.TabIndex = 84;
+            this.Btn_Sil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_Sil.Click += new System.EventHandler(this.Btn_Sil_Click);
+            // 
+            // Btn_Güncelle
+            // 
+            this.Btn_Güncelle.ActiveBorderThickness = 1;
+            this.Btn_Güncelle.ActiveCornerRadius = 20;
+            this.Btn_Güncelle.ActiveFillColor = System.Drawing.Color.Green;
+            this.Btn_Güncelle.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_Güncelle.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_Güncelle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Güncelle.BackColor = System.Drawing.SystemColors.Control;
+            this.Btn_Güncelle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Güncelle.BackgroundImage")));
+            this.Btn_Güncelle.ButtonText = "Güncelle";
+            this.Btn_Güncelle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Güncelle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Güncelle.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_Güncelle.IdleBorderThickness = 1;
+            this.Btn_Güncelle.IdleCornerRadius = 20;
+            this.Btn_Güncelle.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_Güncelle.IdleForecolor = System.Drawing.Color.Black;
+            this.Btn_Güncelle.IdleLineColor = System.Drawing.Color.Black;
+            this.Btn_Güncelle.Location = new System.Drawing.Point(315, 333);
+            this.Btn_Güncelle.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_Güncelle.Name = "Btn_Güncelle";
+            this.Btn_Güncelle.Size = new System.Drawing.Size(145, 35);
+            this.Btn_Güncelle.TabIndex = 83;
+            this.Btn_Güncelle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_Güncelle.Click += new System.EventHandler(this.Btn_Güncelle_Click);
+            // 
+            // Btn_Onayla
+            // 
+            this.Btn_Onayla.ActiveBorderThickness = 1;
+            this.Btn_Onayla.ActiveCornerRadius = 20;
+            this.Btn_Onayla.ActiveFillColor = System.Drawing.Color.Green;
+            this.Btn_Onayla.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_Onayla.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_Onayla.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Onayla.BackColor = System.Drawing.SystemColors.Control;
+            this.Btn_Onayla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Onayla.BackgroundImage")));
+            this.Btn_Onayla.ButtonText = "Onayla";
+            this.Btn_Onayla.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Onayla.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Onayla.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_Onayla.IdleBorderThickness = 1;
+            this.Btn_Onayla.IdleCornerRadius = 20;
+            this.Btn_Onayla.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_Onayla.IdleForecolor = System.Drawing.Color.Black;
+            this.Btn_Onayla.IdleLineColor = System.Drawing.Color.Black;
+            this.Btn_Onayla.Location = new System.Drawing.Point(160, 333);
+            this.Btn_Onayla.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_Onayla.Name = "Btn_Onayla";
+            this.Btn_Onayla.Size = new System.Drawing.Size(145, 35);
+            this.Btn_Onayla.TabIndex = 82;
+            this.Btn_Onayla.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_Onayla.Click += new System.EventHandler(this.Btn_Onayla_Click);
+            // 
+            // Btn_İptal
+            // 
+            this.Btn_İptal.ActiveBorderThickness = 1;
+            this.Btn_İptal.ActiveCornerRadius = 20;
+            this.Btn_İptal.ActiveFillColor = System.Drawing.Color.Red;
+            this.Btn_İptal.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_İptal.ActiveLineColor = System.Drawing.Color.Red;
+            this.Btn_İptal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_İptal.BackColor = System.Drawing.SystemColors.Control;
+            this.Btn_İptal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_İptal.BackgroundImage")));
+            this.Btn_İptal.ButtonText = "İptal";
+            this.Btn_İptal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_İptal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_İptal.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_İptal.IdleBorderThickness = 1;
+            this.Btn_İptal.IdleCornerRadius = 20;
+            this.Btn_İptal.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_İptal.IdleForecolor = System.Drawing.Color.Black;
+            this.Btn_İptal.IdleLineColor = System.Drawing.Color.Black;
+            this.Btn_İptal.Location = new System.Drawing.Point(5, 333);
+            this.Btn_İptal.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_İptal.Name = "Btn_İptal";
+            this.Btn_İptal.Size = new System.Drawing.Size(145, 35);
+            this.Btn_İptal.TabIndex = 79;
+            this.Btn_İptal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_İptal.Click += new System.EventHandler(this.Btn_İptal_Click);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(158, 216);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(149, 54);
+            this.label1.TabIndex = 68;
+            this.label1.Text = "Banka Adı:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Txt_BankaAd
             // 
@@ -237,114 +346,6 @@
             this.Txt_BankaAd.UseSystemPasswordChar = false;
             this.Txt_BankaAd.WordWrap = true;
             this.Txt_BankaAd.TextChanged += new System.EventHandler(this.Txt_BankaAd_TextChanged);
-            // 
-            // Btn_İptal
-            // 
-            this.Btn_İptal.ActiveBorderThickness = 1;
-            this.Btn_İptal.ActiveCornerRadius = 20;
-            this.Btn_İptal.ActiveFillColor = System.Drawing.Color.Red;
-            this.Btn_İptal.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_İptal.ActiveLineColor = System.Drawing.Color.Red;
-            this.Btn_İptal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_İptal.BackColor = System.Drawing.SystemColors.Control;
-            this.Btn_İptal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_İptal.BackgroundImage")));
-            this.Btn_İptal.ButtonText = "İptal";
-            this.Btn_İptal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_İptal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_İptal.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Btn_İptal.IdleBorderThickness = 1;
-            this.Btn_İptal.IdleCornerRadius = 20;
-            this.Btn_İptal.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Btn_İptal.IdleForecolor = System.Drawing.Color.Black;
-            this.Btn_İptal.IdleLineColor = System.Drawing.Color.Black;
-            this.Btn_İptal.Location = new System.Drawing.Point(5, 333);
-            this.Btn_İptal.Margin = new System.Windows.Forms.Padding(5);
-            this.Btn_İptal.Name = "Btn_İptal";
-            this.Btn_İptal.Size = new System.Drawing.Size(145, 35);
-            this.Btn_İptal.TabIndex = 79;
-            this.Btn_İptal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Btn_İptal.Click += new System.EventHandler(this.Btn_İptal_Click);
-            // 
-            // Btn_Onayla
-            // 
-            this.Btn_Onayla.ActiveBorderThickness = 1;
-            this.Btn_Onayla.ActiveCornerRadius = 20;
-            this.Btn_Onayla.ActiveFillColor = System.Drawing.Color.Green;
-            this.Btn_Onayla.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_Onayla.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.Btn_Onayla.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Onayla.BackColor = System.Drawing.SystemColors.Control;
-            this.Btn_Onayla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Onayla.BackgroundImage")));
-            this.Btn_Onayla.ButtonText = "Onayla";
-            this.Btn_Onayla.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Onayla.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Onayla.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Btn_Onayla.IdleBorderThickness = 1;
-            this.Btn_Onayla.IdleCornerRadius = 20;
-            this.Btn_Onayla.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Btn_Onayla.IdleForecolor = System.Drawing.Color.Black;
-            this.Btn_Onayla.IdleLineColor = System.Drawing.Color.Black;
-            this.Btn_Onayla.Location = new System.Drawing.Point(160, 333);
-            this.Btn_Onayla.Margin = new System.Windows.Forms.Padding(5);
-            this.Btn_Onayla.Name = "Btn_Onayla";
-            this.Btn_Onayla.Size = new System.Drawing.Size(145, 35);
-            this.Btn_Onayla.TabIndex = 82;
-            this.Btn_Onayla.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Btn_Onayla.Click += new System.EventHandler(this.Btn_Onayla_Click);
-            // 
-            // Btn_Güncelle
-            // 
-            this.Btn_Güncelle.ActiveBorderThickness = 1;
-            this.Btn_Güncelle.ActiveCornerRadius = 20;
-            this.Btn_Güncelle.ActiveFillColor = System.Drawing.Color.Green;
-            this.Btn_Güncelle.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_Güncelle.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.Btn_Güncelle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Güncelle.BackColor = System.Drawing.SystemColors.Control;
-            this.Btn_Güncelle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Güncelle.BackgroundImage")));
-            this.Btn_Güncelle.ButtonText = "Güncelle";
-            this.Btn_Güncelle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Güncelle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Güncelle.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Btn_Güncelle.IdleBorderThickness = 1;
-            this.Btn_Güncelle.IdleCornerRadius = 20;
-            this.Btn_Güncelle.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Btn_Güncelle.IdleForecolor = System.Drawing.Color.Black;
-            this.Btn_Güncelle.IdleLineColor = System.Drawing.Color.Black;
-            this.Btn_Güncelle.Location = new System.Drawing.Point(315, 333);
-            this.Btn_Güncelle.Margin = new System.Windows.Forms.Padding(5);
-            this.Btn_Güncelle.Name = "Btn_Güncelle";
-            this.Btn_Güncelle.Size = new System.Drawing.Size(145, 35);
-            this.Btn_Güncelle.TabIndex = 83;
-            this.Btn_Güncelle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Btn_Güncelle.Click += new System.EventHandler(this.Btn_Güncelle_Click);
-            // 
-            // Btn_Sil
-            // 
-            this.Btn_Sil.ActiveBorderThickness = 1;
-            this.Btn_Sil.ActiveCornerRadius = 20;
-            this.Btn_Sil.ActiveFillColor = System.Drawing.Color.Green;
-            this.Btn_Sil.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_Sil.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.Btn_Sil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Sil.BackColor = System.Drawing.SystemColors.Control;
-            this.Btn_Sil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Sil.BackgroundImage")));
-            this.Btn_Sil.ButtonText = "Sil";
-            this.Btn_Sil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Sil.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Sil.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Btn_Sil.IdleBorderThickness = 1;
-            this.Btn_Sil.IdleCornerRadius = 20;
-            this.Btn_Sil.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Btn_Sil.IdleForecolor = System.Drawing.Color.Black;
-            this.Btn_Sil.IdleLineColor = System.Drawing.Color.Black;
-            this.Btn_Sil.Location = new System.Drawing.Point(470, 333);
-            this.Btn_Sil.Margin = new System.Windows.Forms.Padding(5);
-            this.Btn_Sil.Name = "Btn_Sil";
-            this.Btn_Sil.Size = new System.Drawing.Size(148, 35);
-            this.Btn_Sil.TabIndex = 84;
-            this.Btn_Sil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Btn_Sil.Click += new System.EventHandler(this.Btn_Sil_Click);
             // 
             // kredikart
             // 

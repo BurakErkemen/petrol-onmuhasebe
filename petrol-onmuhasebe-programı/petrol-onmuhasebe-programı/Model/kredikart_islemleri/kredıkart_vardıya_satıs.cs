@@ -16,9 +16,8 @@ namespace petrol_onmuhasebe_programı.Model.kredikart_islemleri
         public int Kk_satıs_ıd { get; set; }
         public int Kk_gunluk_toplam_tutar { get; set; }
 
-
-        //vardiya_formu ile ilişki
         public int VardıyaId { get; set; }
         public virtual Vardıya_formu Vardiya { get; set; }
     }
+
 }

@@ -103,6 +103,7 @@
             this.Btn_Onayla = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Btn_EkHarcama = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lbl_ToplamTutar = new System.Windows.Forms.Label();
+            this.Lbl_ToplamLitre = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.veresiye_tablosu)).BeginInit();
@@ -149,7 +150,8 @@
             this.tableLayoutPanel1.Controls.Add(this.label13, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.Btn_Onayla, 4, 15);
             this.tableLayoutPanel1.Controls.Add(this.Btn_EkHarcama, 0, 13);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_ToplamTutar, 2, 13);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_ToplamTutar, 3, 13);
+            this.tableLayoutPanel1.Controls.Add(this.Lbl_ToplamLitre, 2, 13);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 16;
@@ -449,6 +451,7 @@
             this.txt_otogaz_litre.TextPlaceholder = "Otogaz Litresini Giriniz";
             this.txt_otogaz_litre.UseSystemPasswordChar = false;
             this.txt_otogaz_litre.WordWrap = true;
+            this.txt_otogaz_litre.TextChanged += new System.EventHandler(this.Txt_otogaz_litre_TextChanged);
             // 
             // txt_otogaz_tutar
             // 
@@ -524,6 +527,7 @@
             this.txt_otogaz_tutar.TextPlaceholder = "Otogaz Tutarını Giriniz";
             this.txt_otogaz_tutar.UseSystemPasswordChar = false;
             this.txt_otogaz_tutar.WordWrap = true;
+            this.txt_otogaz_tutar.TextChanged += new System.EventHandler(this.Txt_otogaz_tutar_TextChanged);
             // 
             // txt_motorin_litre
             // 
@@ -599,6 +603,7 @@
             this.txt_motorin_litre.TextPlaceholder = "Motorin Litresini Giriniz";
             this.txt_motorin_litre.UseSystemPasswordChar = false;
             this.txt_motorin_litre.WordWrap = true;
+            this.txt_motorin_litre.TextChanged += new System.EventHandler(this.Txt_motorin_litre_TextChanged);
             // 
             // txt_motorin_tutar
             // 
@@ -674,6 +679,7 @@
             this.txt_motorin_tutar.TextPlaceholder = "Motorin Tutarını Giriniz";
             this.txt_motorin_tutar.UseSystemPasswordChar = false;
             this.txt_motorin_tutar.WordWrap = true;
+            this.txt_motorin_tutar.TextChanged += new System.EventHandler(this.Txt_motorin_tutar_TextChanged);
             // 
             // txt_benzin_litre
             // 
@@ -749,6 +755,7 @@
             this.txt_benzin_litre.TextPlaceholder = "Benzin Litresini Giriniz";
             this.txt_benzin_litre.UseSystemPasswordChar = false;
             this.txt_benzin_litre.WordWrap = true;
+            this.txt_benzin_litre.TextChanged += new System.EventHandler(this.Txt_benzin_litre_TextChanged);
             // 
             // txt_optimum_litre
             // 
@@ -824,6 +831,7 @@
             this.txt_optimum_litre.TextPlaceholder = "Optimum Litresini Giriniz";
             this.txt_optimum_litre.UseSystemPasswordChar = false;
             this.txt_optimum_litre.WordWrap = true;
+            this.txt_optimum_litre.TextChanged += new System.EventHandler(this.Txt_optimum_litre_TextChanged);
             // 
             // txt_benzin_tutar
             // 
@@ -899,6 +907,7 @@
             this.txt_benzin_tutar.TextPlaceholder = "Benzin Tutarını Giriniz";
             this.txt_benzin_tutar.UseSystemPasswordChar = false;
             this.txt_benzin_tutar.WordWrap = true;
+            this.txt_benzin_tutar.TextChanged += new System.EventHandler(this.Txt_benzin_tutar_TextChanged);
             // 
             // txt_optimum_tutar
             // 
@@ -974,6 +983,7 @@
             this.txt_optimum_tutar.TextPlaceholder = "Optimum Tutarını Giriniz";
             this.txt_optimum_tutar.UseSystemPasswordChar = false;
             this.txt_optimum_tutar.WordWrap = true;
+            this.txt_optimum_tutar.TextChanged += new System.EventHandler(this.Txt_optimum_tutar_TextChanged);
             // 
             // Btn_veresiye_ekle
             // 
@@ -1211,6 +1221,7 @@
             this.Btn_Onayla.Size = new System.Drawing.Size(289, 44);
             this.Btn_Onayla.TabIndex = 60;
             this.Btn_Onayla.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_Onayla.Click += new System.EventHandler(this.Btn_Onayla_Click);
             // 
             // Btn_EkHarcama
             // 
@@ -1237,18 +1248,31 @@
             this.Btn_EkHarcama.Size = new System.Drawing.Size(286, 42);
             this.Btn_EkHarcama.TabIndex = 61;
             this.Btn_EkHarcama.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_EkHarcama.Click += new System.EventHandler(this.Btn_EkHarcama_Click);
             // 
             // lbl_ToplamTutar
             // 
             this.lbl_ToplamTutar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_ToplamTutar.AutoSize = true;
             this.lbl_ToplamTutar.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ToplamTutar.Location = new System.Drawing.Point(595, 689);
+            this.lbl_ToplamTutar.Location = new System.Drawing.Point(891, 689);
             this.lbl_ToplamTutar.Name = "lbl_ToplamTutar";
             this.lbl_ToplamTutar.Size = new System.Drawing.Size(290, 25);
             this.lbl_ToplamTutar.TabIndex = 62;
             this.lbl_ToplamTutar.Text = "Toplam Tutar";
             this.lbl_ToplamTutar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // Lbl_ToplamLitre
+            // 
+            this.Lbl_ToplamLitre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Lbl_ToplamLitre.AutoSize = true;
+            this.Lbl_ToplamLitre.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_ToplamLitre.Location = new System.Drawing.Point(595, 689);
+            this.Lbl_ToplamLitre.Name = "Lbl_ToplamLitre";
+            this.Lbl_ToplamLitre.Size = new System.Drawing.Size(290, 25);
+            this.Lbl_ToplamLitre.TabIndex = 63;
+            this.Lbl_ToplamLitre.Text = "Toplam Litre";
+            this.Lbl_ToplamLitre.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Vardıya_raporu_gır
             // 
@@ -1305,5 +1329,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_Onayla;
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_EkHarcama;
         private System.Windows.Forms.Label lbl_ToplamTutar;
+        private System.Windows.Forms.Label Lbl_ToplamLitre;
     }
 }

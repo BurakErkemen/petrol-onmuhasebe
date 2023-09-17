@@ -17,4 +17,5 @@ namespace petrol_onmuhasebe_programı.Model.kredikart_islemleri
         //kredikart_vardiya_sayıs ilişkisi
         public virtual ICollection<Kredıkart_vardıya_satıs> KrediKartVardiyaSatislar { get; set; }
     }
+
 }

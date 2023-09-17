@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Migration : DbMigration
+    public partial class InitialCreate : DbMigration
     {
         public override void Up()
         {
@@ -57,18 +57,12 @@
                         Kk_satıs_ıd = c.Int(nullable: false, identity: true),
                         Kk_gunluk_toplam_tutar = c.Int(nullable: false),
                         VardıyaId = c.Int(nullable: false),
-                        Vardıya_formu_VardıyaId = c.Int(),
-                        Vardıya_formu_VardıyaId1 = c.Int(),
                         Kredıkart_turu_ekleme_Kart_ıd = c.Int(),
                     })
                 .PrimaryKey(t => t.Kk_satıs_ıd)
-                .ForeignKey("dbo.Vardıya_formu", t => t.Vardıya_formu_VardıyaId)
-                .ForeignKey("dbo.Vardıya_formu", t => t.Vardıya_formu_VardıyaId1)
                 .ForeignKey("dbo.Vardıya_formu", t => t.VardıyaId, cascadeDelete: true)
                 .ForeignKey("dbo.Kredıkart_turu_ekleme", t => t.Kredıkart_turu_ekleme_Kart_ıd)
                 .Index(t => t.VardıyaId)
-                .Index(t => t.Vardıya_formu_VardıyaId)
-                .Index(t => t.Vardıya_formu_VardıyaId1)
                 .Index(t => t.Kredıkart_turu_ekleme_Kart_ıd);
             
             CreateTable(
@@ -105,8 +99,10 @@
                         PersonelId = c.Int(nullable: false, identity: true),
                         PersonelAd = c.String(),
                         PersonelSoyad = c.String(),
-                        Personel_TcNo = c.Int(nullable: false),
-                        PersonelMaas = c.Int(nullable: false),
+                        Personel_TcNo = c.String(),
+                        PersonelMaas = c.String(),
+                        BaslamaTarıhı = c.DateTime(nullable: false),
+                        BıtısTarıhı = c.DateTime(nullable: false),
                     })
                 .PrimaryKey(t => t.PersonelId);
             
@@ -117,6 +113,7 @@
                         MusterıID = c.Int(nullable: false, identity: true),
                         MusterıAd = c.String(),
                         MusterıSoyad = c.String(),
+                        MusteriBorc = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.MusterıID);
             
@@ -128,7 +125,7 @@
                         MusterıId = c.Int(nullable: false),
                         Tutar = c.Int(nullable: false),
                         OdemeTarıhı = c.DateTime(nullable: false),
-                        OdemeTuru = c.Boolean(nullable: false),
+                        OdemeTuru = c.String(),
                     })
                 .PrimaryKey(t => t.OdemeId)
                 .ForeignKey("dbo.Musterı_bılgı", t => t.MusterıId, cascadeDelete: true)
@@ -164,6 +161,7 @@
                         DolumId = c.Int(nullable: false, identity: true),
                         Dolum_Litre = c.Int(nullable: false),
                         Dolum_Tarıhı = c.DateTime(nullable: false),
+                        FaturaNo = c.String(),
                         TankID = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.DolumId)
@@ -178,12 +176,10 @@
             DropForeignKey("dbo.Plaka_kayıt", "MusterıID", "dbo.Musterı_bılgı");
             DropForeignKey("dbo.Musterı_odeme", "MusterıId", "dbo.Musterı_bılgı");
             DropForeignKey("dbo.Kredıkart_vardıya_satıs", "Kredıkart_turu_ekleme_Kart_ıd", "dbo.Kredıkart_turu_ekleme");
-            DropForeignKey("dbo.Kredıkart_vardıya_satıs", "VardıyaId", "dbo.Vardıya_formu");
             DropForeignKey("dbo.Vardıya_formu", "Personel2_PersonelId", "dbo.personel_bilgi");
             DropForeignKey("dbo.Vardıya_formu", "Personel1_PersonelId", "dbo.personel_bilgi");
             DropForeignKey("dbo.Vardıya_formu", "personel_bilgi_PersonelId", "dbo.personel_bilgi");
-            DropForeignKey("dbo.Kredıkart_vardıya_satıs", "Vardıya_formu_VardıyaId1", "dbo.Vardıya_formu");
-            DropForeignKey("dbo.Kredıkart_vardıya_satıs", "Vardıya_formu_VardıyaId", "dbo.Vardıya_formu");
+            DropForeignKey("dbo.Kredıkart_vardıya_satıs", "VardıyaId", "dbo.Vardıya_formu");
             DropForeignKey("dbo.users", "user_role_ıd", "dbo.user_role");
             DropForeignKey("dbo.giris_tarihleri", "ıd", "dbo.users");
             DropIndex("dbo.Tank_dolum", new[] { "TankID" });
@@ -193,8 +189,6 @@
             DropIndex("dbo.Vardıya_formu", new[] { "Personel1_PersonelId" });
             DropIndex("dbo.Vardıya_formu", new[] { "personel_bilgi_PersonelId" });
             DropIndex("dbo.Kredıkart_vardıya_satıs", new[] { "Kredıkart_turu_ekleme_Kart_ıd" });
-            DropIndex("dbo.Kredıkart_vardıya_satıs", new[] { "Vardıya_formu_VardıyaId1" });
-            DropIndex("dbo.Kredıkart_vardıya_satıs", new[] { "Vardıya_formu_VardıyaId" });
             DropIndex("dbo.Kredıkart_vardıya_satıs", new[] { "VardıyaId" });
             DropIndex("dbo.users", new[] { "user_role_ıd" });
             DropIndex("dbo.giris_tarihleri", new[] { "ıd" });

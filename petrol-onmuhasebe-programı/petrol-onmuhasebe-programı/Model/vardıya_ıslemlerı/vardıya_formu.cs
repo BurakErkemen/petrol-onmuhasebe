@@ -31,6 +31,8 @@ namespace petrol_onmuhasebe_programı.Model.vardıya_ıslemlerı
 
         //kredikart_vardıya_satıslar ılıskısı 
         public virtual ICollection<Kredıkart_vardıya_satıs> KrediKartSatisları { get; set; }
-
+        //Ek Harcamalar
+        public virtual ICollection<ekHarcama> EkHarcamalar { get; set; }
     }
+
 }

@@ -7,13 +7,13 @@ namespace petrol_onmuhasebe_programı.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class Migration : IMigrationMetadata
+    public sealed partial class InitialCreate : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Migration));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
         
         string IMigrationMetadata.Id
         {
-            get { return "202308282153186_Migration"; }
+            get { return "202309171851034_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source

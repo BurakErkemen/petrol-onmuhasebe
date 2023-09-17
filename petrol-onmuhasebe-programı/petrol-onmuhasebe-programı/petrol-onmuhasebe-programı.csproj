@@ -204,9 +204,9 @@
     <Compile Include="FormPages\VeresiyeMüşteri\Musteri_Islemlerı.Designer.cs">
       <DependentUpon>Musteri_Islemlerı.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202308282153186_Migration.cs" />
-    <Compile Include="Migrations\202308282153186_Migration.designer.cs">
-      <DependentUpon>202308282153186_Migration.cs</DependentUpon>
+    <Compile Include="Migrations\202309171851034_InitialCreate.cs" />
+    <Compile Include="Migrations\202309171851034_InitialCreate.designer.cs">
+      <DependentUpon>202309171851034_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Context.cs" />
@@ -221,6 +221,7 @@
     <Compile Include="Model\Musteri_İslemleri\musterı_odeme.cs" />
     <Compile Include="Model\Musteri_İslemleri\plaka_kayıt.cs" />
     <Compile Include="Model\Persolel_islemleri\personel_bilgi.cs" />
+    <Compile Include="Model\vardıya_ıslemlerı\ekHarcama.cs" />
     <Compile Include="Model\vardıya_ıslemlerı\vardıya_formu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -266,8 +267,8 @@
     <EmbeddedResource Include="FormPages\VeresiyeMüşteri\Musteri_Islemlerı.resx">
       <DependentUpon>Musteri_Islemlerı.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202308282153186_Migration.resx">
-      <DependentUpon>202308282153186_Migration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202309171851034_InitialCreate.resx">
+      <DependentUpon>202309171851034_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
