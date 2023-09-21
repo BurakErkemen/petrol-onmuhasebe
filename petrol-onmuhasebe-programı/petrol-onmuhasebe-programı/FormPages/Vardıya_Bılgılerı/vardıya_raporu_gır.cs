@@ -1,5 +1,6 @@
 ﻿using petrol_onmuhasebe_programı.FormPages.Vardıya_Bılgılerı;
 using petrol_onmuhasebe_programı.Model;
+using petrol_onmuhasebe_programı.Model.vardıya_ıslemlerı;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
@@ -20,12 +22,49 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
             InitializeComponent();
         }
         public int user_role_ıd;
-        
+        public int harcamaID;
+        public class ComboBoxItem
+        {
+            public string Text { get; set; }
+            public int Value { get; set; }
+
+            public override string ToString()
+            {
+                return Text;
+            }
+        }
         private void Vardıya_raporu_gır_Load(object sender, EventArgs e)
         {
+            label13.Visible = false;
+            label14.Visible = false;
+            using (var context = new Context())
+            {
+                // Personel tablosundan verileri çekin ve ComboBox'lara ekleyin
+                var personeller = context.Personel_Bilgis.ToList();
+
+                foreach (var personel in personeller)
+                {
+                    // ComboBox'ta görünen metni oluşturun (örneğin "Ad Soyad" gibi)
+                    string comboBoxItemText = $"{personel.PersonelAd} {personel.PersonelSoyad}";
+
+                    // ComboBox'a yeni öğeyi ekleyin ve PersonelId'yi Tag özelliğine atayın
+                    comboBox1.Items.Add(new ComboBoxItem
+                    {
+                        Text = comboBoxItemText,
+                        Value = personel.PersonelId
+                    });
+
+                    comboBox2.Items.Add(new ComboBoxItem
+                    {
+                        Text = comboBoxItemText,
+                        Value = personel.PersonelId
+                    });
+                }
+            }
             lbl_ToplamTutar.Visible = false;
             Lbl_ToplamLitre.Visible = false;
             veresiye_tablosu.Visible = false;
+            KrediKartTablosu.Visible = false;
             this.WindowState = FormWindowState.Maximized;
 
             #region combobox
@@ -65,10 +104,10 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
                 Kredikart_formu.BringToFront();
             }
         }
-       
+
         private void Btn_veresiye_ekle_Click(object sender, EventArgs e)
         {
-            if (Veresiye_Formu== null || Veresiye_Formu.IsDisposed)
+            if (Veresiye_Formu == null || Veresiye_Formu.IsDisposed)
             {
                 Veresiye_Formu = new Veresiye_formu();
                 Veresiye_Formu.Show();
@@ -127,7 +166,7 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
         {
             lt1 = int.Parse(txt_otogaz_litre.Text);
             Lbl_ToplamLitre.Text = lt1.ToString();
-            Lbl_ToplamLitre.Visible=true;
+            Lbl_ToplamLitre.Visible = true;
         }
         private void Txt_motorin_litre_TextChanged(object sender, EventArgs e)
         {
@@ -152,12 +191,52 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
         {
 
         }
+        private void Btn_VeresiyeVerileriniGetir_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Btn_KartVeriGetir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private int personel1;
+        private int personel2;
         private void Btn_Onayla_Click(object sender, EventArgs e)
         {
             try
             {
-                using(var context = new Context())
+                if (MessageBox.Show("İşlemleriniz tamamladığınızdan emin misin?", "Bildirim", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
                 {
+                    var SelectedPersonel1 = comboBox1.Text.ToString();
+                    var SelectedPersonel2 = comboBox2.Text.ToString();
+                    using (var context = new Context())
+                    {
+                        if (comboBox1.SelectedItem != null)
+                        {
+                            var row = context.Personel_Bilgis.FirstOrDefault(i => i.PersonelAd == SelectedPersonel1);
+                            if (row != null)
+                            {
+                                comboBox1.Text = row.PersonelAd + row.PersonelSoyad;
+                                personel1 = row.PersonelId; // DepoAd'ı bir int olarak tanımlayın
+                            }
+                        }
+
+                        if (comboBox2.SelectedItem != null)
+                        {
+                            var row = context.Personel_Bilgis.FirstOrDefault(i => i.PersonelAd == SelectedPersonel2);
+                            if (row != null)
+                            {
+                                comboBox2.Text = row.PersonelAd + row.PersonelSoyad;
+                                personel2 = row.PersonelId;
+                            }
+                        }
+
+                        var onayla = new Vardıya_formu
+                        {
+
+                        };
+                    }
 
                     GridYükle();
                 }

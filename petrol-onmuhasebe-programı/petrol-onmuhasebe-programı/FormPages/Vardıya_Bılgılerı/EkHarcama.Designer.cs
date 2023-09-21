@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EkHarcama));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -37,18 +41,16 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_harcamaAd = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt_HarcamaMiktar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.Fatura_Tablosu = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.Btn_İptal = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_harcamaAd = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.txt_HarcamaMiktar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.Btn_Onayla = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Btn_İptal = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Btn_Guncelle = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Btn_Sil = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Fatura_Tablosu)).BeginInit();
             this.SuspendLayout();
@@ -66,6 +68,8 @@
             this.tableLayoutPanel1.Controls.Add(this.txt_harcamaAd, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.txt_HarcamaMiktar, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.Btn_Onayla, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.Btn_Guncelle, 2, 6);
+            this.tableLayoutPanel1.Controls.Add(this.Btn_Sil, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.Btn_İptal, 1, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -81,6 +85,79 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // Fatura_Tablosu
+            // 
+            this.Fatura_Tablosu.AllowCustomTheming = false;
+            this.Fatura_Tablosu.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            this.Fatura_Tablosu.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.Fatura_Tablosu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Fatura_Tablosu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            this.Fatura_Tablosu.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Fatura_Tablosu.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.Fatura_Tablosu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Fatura_Tablosu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.Fatura_Tablosu.ColumnHeadersHeight = 40;
+            this.tableLayoutPanel1.SetColumnSpan(this.Fatura_Tablosu, 4);
+            this.Fatura_Tablosu.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.Fatura_Tablosu.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.Fatura_Tablosu.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.Fatura_Tablosu.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.Fatura_Tablosu.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.Fatura_Tablosu.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.Fatura_Tablosu.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.Fatura_Tablosu.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Fatura_Tablosu.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.Fatura_Tablosu.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.Fatura_Tablosu.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.Fatura_Tablosu.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.Fatura_Tablosu.CurrentTheme.Name = null;
+            this.Fatura_Tablosu.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.Fatura_Tablosu.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.Fatura_Tablosu.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.Fatura_Tablosu.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.Fatura_Tablosu.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Fatura_Tablosu.DefaultCellStyle = dataGridViewCellStyle7;
+            this.Fatura_Tablosu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Fatura_Tablosu.EnableHeadersVisualStyles = false;
+            this.Fatura_Tablosu.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.Fatura_Tablosu.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.Fatura_Tablosu.HeaderBgColor = System.Drawing.Color.Empty;
+            this.Fatura_Tablosu.HeaderForeColor = System.Drawing.Color.White;
+            this.Fatura_Tablosu.Location = new System.Drawing.Point(3, 3);
+            this.Fatura_Tablosu.Name = "Fatura_Tablosu";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Fatura_Tablosu.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.Fatura_Tablosu.RowHeadersVisible = false;
+            this.tableLayoutPanel1.SetRowSpan(this.Fatura_Tablosu, 3);
+            this.Fatura_Tablosu.RowTemplate.Height = 40;
+            this.Fatura_Tablosu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Fatura_Tablosu.Size = new System.Drawing.Size(794, 186);
+            this.Fatura_Tablosu.TabIndex = 65;
+            this.Fatura_Tablosu.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.Fatura_Tablosu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Fatura_Tablosu_CellClick);
+            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -92,6 +169,18 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "Harcama Adı:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(163, 275);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(207, 25);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "Harcama Miktarı:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txt_harcamaAd
             // 
@@ -168,18 +257,6 @@
             this.txt_harcamaAd.UseSystemPasswordChar = false;
             this.txt_harcamaAd.WordWrap = true;
             // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(163, 275);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(207, 25);
-            this.label2.TabIndex = 41;
-            this.label2.Text = "Harcama Miktarı:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // txt_HarcamaMiktar
             // 
             this.txt_HarcamaMiktar.AcceptsReturn = false;
@@ -255,76 +332,32 @@
             this.txt_HarcamaMiktar.UseSystemPasswordChar = false;
             this.txt_HarcamaMiktar.WordWrap = true;
             // 
-            // Fatura_Tablosu
+            // Btn_Onayla
             // 
-            this.Fatura_Tablosu.AllowCustomTheming = false;
-            this.Fatura_Tablosu.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            this.Fatura_Tablosu.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.Fatura_Tablosu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.Fatura_Tablosu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.Fatura_Tablosu.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Fatura_Tablosu.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.Fatura_Tablosu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Fatura_Tablosu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.Fatura_Tablosu.ColumnHeadersHeight = 40;
-            this.tableLayoutPanel1.SetColumnSpan(this.Fatura_Tablosu, 4);
-            this.Fatura_Tablosu.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.Fatura_Tablosu.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Fatura_Tablosu.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.Fatura_Tablosu.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.Fatura_Tablosu.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.Fatura_Tablosu.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.Fatura_Tablosu.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.Fatura_Tablosu.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.Fatura_Tablosu.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.Fatura_Tablosu.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.Fatura_Tablosu.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.Fatura_Tablosu.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.Fatura_Tablosu.CurrentTheme.Name = null;
-            this.Fatura_Tablosu.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.Fatura_Tablosu.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Fatura_Tablosu.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.Fatura_Tablosu.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.Fatura_Tablosu.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Fatura_Tablosu.DefaultCellStyle = dataGridViewCellStyle7;
-            this.Fatura_Tablosu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Fatura_Tablosu.EnableHeadersVisualStyles = false;
-            this.Fatura_Tablosu.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.Fatura_Tablosu.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.Fatura_Tablosu.HeaderForeColor = System.Drawing.Color.White;
-            this.Fatura_Tablosu.Location = new System.Drawing.Point(3, 3);
-            this.Fatura_Tablosu.Name = "Fatura_Tablosu";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Fatura_Tablosu.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.Fatura_Tablosu.RowHeadersVisible = false;
-            this.tableLayoutPanel1.SetRowSpan(this.Fatura_Tablosu, 3);
-            this.Fatura_Tablosu.RowTemplate.Height = 40;
-            this.Fatura_Tablosu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Fatura_Tablosu.Size = new System.Drawing.Size(794, 186);
-            this.Fatura_Tablosu.TabIndex = 65;
-            this.Fatura_Tablosu.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.Btn_Onayla.ActiveBorderThickness = 1;
+            this.Btn_Onayla.ActiveCornerRadius = 20;
+            this.Btn_Onayla.ActiveFillColor = System.Drawing.Color.Green;
+            this.Btn_Onayla.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_Onayla.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_Onayla.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Onayla.BackColor = System.Drawing.SystemColors.Control;
+            this.Btn_Onayla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Onayla.BackgroundImage")));
+            this.Btn_Onayla.ButtonText = "Onayla";
+            this.Btn_Onayla.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Onayla.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Onayla.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_Onayla.IdleBorderThickness = 1;
+            this.Btn_Onayla.IdleCornerRadius = 20;
+            this.Btn_Onayla.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_Onayla.IdleForecolor = System.Drawing.Color.Black;
+            this.Btn_Onayla.IdleLineColor = System.Drawing.Color.Black;
+            this.Btn_Onayla.Location = new System.Drawing.Point(378, 331);
+            this.Btn_Onayla.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_Onayla.Name = "Btn_Onayla";
+            this.Btn_Onayla.Size = new System.Drawing.Size(203, 42);
+            this.Btn_Onayla.TabIndex = 67;
+            this.Btn_Onayla.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_Onayla.Click += new System.EventHandler(this.Btn_Onayla_Click);
             // 
             // Btn_İptal
             // 
@@ -353,31 +386,59 @@
             this.Btn_İptal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Btn_İptal.Click += new System.EventHandler(this.Btn_İptal_Click);
             // 
-            // Btn_Onayla
+            // Btn_Guncelle
             // 
-            this.Btn_Onayla.ActiveBorderThickness = 1;
-            this.Btn_Onayla.ActiveCornerRadius = 20;
-            this.Btn_Onayla.ActiveFillColor = System.Drawing.Color.Green;
-            this.Btn_Onayla.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_Onayla.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.Btn_Onayla.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Onayla.BackColor = System.Drawing.SystemColors.Control;
-            this.Btn_Onayla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Onayla.BackgroundImage")));
-            this.Btn_Onayla.ButtonText = "Onayla";
-            this.Btn_Onayla.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Onayla.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Onayla.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Btn_Onayla.IdleBorderThickness = 1;
-            this.Btn_Onayla.IdleCornerRadius = 20;
-            this.Btn_Onayla.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Btn_Onayla.IdleForecolor = System.Drawing.Color.Black;
-            this.Btn_Onayla.IdleLineColor = System.Drawing.Color.Black;
-            this.Btn_Onayla.Location = new System.Drawing.Point(378, 331);
-            this.Btn_Onayla.Margin = new System.Windows.Forms.Padding(5);
-            this.Btn_Onayla.Name = "Btn_Onayla";
-            this.Btn_Onayla.Size = new System.Drawing.Size(203, 42);
-            this.Btn_Onayla.TabIndex = 67;
-            this.Btn_Onayla.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_Guncelle.ActiveBorderThickness = 1;
+            this.Btn_Guncelle.ActiveCornerRadius = 20;
+            this.Btn_Guncelle.ActiveFillColor = System.Drawing.Color.Green;
+            this.Btn_Guncelle.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_Guncelle.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_Guncelle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Guncelle.BackColor = System.Drawing.SystemColors.Control;
+            this.Btn_Guncelle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Guncelle.BackgroundImage")));
+            this.Btn_Guncelle.ButtonText = "Güncelle";
+            this.Btn_Guncelle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Guncelle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Guncelle.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_Guncelle.IdleBorderThickness = 1;
+            this.Btn_Guncelle.IdleCornerRadius = 20;
+            this.Btn_Guncelle.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_Guncelle.IdleForecolor = System.Drawing.Color.Black;
+            this.Btn_Guncelle.IdleLineColor = System.Drawing.Color.Black;
+            this.Btn_Guncelle.Location = new System.Drawing.Point(378, 396);
+            this.Btn_Guncelle.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_Guncelle.Name = "Btn_Guncelle";
+            this.Btn_Guncelle.Size = new System.Drawing.Size(203, 42);
+            this.Btn_Guncelle.TabIndex = 68;
+            this.Btn_Guncelle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_Guncelle.Click += new System.EventHandler(this.Btn_Guncelle_Click);
+            // 
+            // Btn_Sil
+            // 
+            this.Btn_Sil.ActiveBorderThickness = 1;
+            this.Btn_Sil.ActiveCornerRadius = 20;
+            this.Btn_Sil.ActiveFillColor = System.Drawing.Color.Green;
+            this.Btn_Sil.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_Sil.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_Sil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Sil.BackColor = System.Drawing.SystemColors.Control;
+            this.Btn_Sil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Sil.BackgroundImage")));
+            this.Btn_Sil.ButtonText = "Sil";
+            this.Btn_Sil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Sil.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Sil.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_Sil.IdleBorderThickness = 1;
+            this.Btn_Sil.IdleCornerRadius = 20;
+            this.Btn_Sil.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_Sil.IdleForecolor = System.Drawing.Color.Black;
+            this.Btn_Sil.IdleLineColor = System.Drawing.Color.Black;
+            this.Btn_Sil.Location = new System.Drawing.Point(165, 396);
+            this.Btn_Sil.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_Sil.Name = "Btn_Sil";
+            this.Btn_Sil.Size = new System.Drawing.Size(203, 42);
+            this.Btn_Sil.TabIndex = 69;
+            this.Btn_Sil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_Sil.Click += new System.EventHandler(this.Btn_Sil_Click);
             // 
             // EkHarcama
             // 
@@ -407,5 +468,7 @@
         private Bunifu.UI.WinForms.BunifuDataGridView Fatura_Tablosu;
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_İptal;
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_Onayla;
+        private Bunifu.Framework.UI.BunifuThinButton2 Btn_Guncelle;
+        private Bunifu.Framework.UI.BunifuThinButton2 Btn_Sil;
     }
 }

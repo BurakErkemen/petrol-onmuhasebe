@@ -1,4 +1,7 @@
-﻿using System;
+﻿using petrol_onmuhasebe_programı.Model;
+using petrol_onmuhasebe_programı.Model.Musteri_Bilgi;
+using petrol_onmuhasebe_programı.Model.vardıya_ıslemlerı;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -88,24 +91,45 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
             this.Close();
         }
 
+        private List<veresiye_raporu> veresiyeRaporları = new List<veresiye_raporu>(); // Verileri tutmak için bir liste oluşturun
+
         private void Btn_ekle_Click(object sender, EventArgs e)
         {
-            // Müşteri verilerini gridview üzerine gönderme
             try
             {
-                if (combo_Musteri.SelectedItem == null || combo_Plaka.SelectedItem == null || Txt_litre.Text == "" || combo_YakıtTuru.SelectedItem == null || Txt_tutar.Text == "")
+                if (combo_Musteri.SelectedItem == null || combo_Plaka.SelectedItem == null || Txt_litre.Text == "" || combo_YakıtTuru.SelectedItem == null || Txt_tutar.Text == "" || Txt_FisNo.Text == "")
                 {
                     MessageBox.Show("Lütfen Gerekli Tüm Alanları Doldurunuz", "Eksik Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                     musteriAdi = combo_Musteri.SelectedItem.ToString();
-                     plaka = combo_Plaka.SelectedItem.ToString();
-                     yakitTuru = combo_YakıtTuru.SelectedItem.ToString();
-                     litre = Txt_litre.Text;
-                     tutar = Txt_tutar.Text;
+                    musteriAdi = combo_Musteri.SelectedItem.ToString();
+                    plaka = combo_Plaka.SelectedItem.ToString();
+                    yakitTuru = combo_YakıtTuru.SelectedItem.ToString();
+                    litre = Txt_litre.Text;
+                    tutar = Txt_tutar.Text;
+                    int fisNo = int.Parse(Txt_FisNo.Text);
 
-                    DataGridView1.Rows.Add(musteriAdi, plaka, yakitTuru,litre, tutar);
+                    // Verileri DataGridView'da göster
+                    DataGridView1.Rows.Add(musteriAdi, plaka, yakitTuru, litre, tutar, fisNo);
+
+                    // Verileri liste içinde saklayın
+                    veresiye_raporu rapor = new veresiye_raporu
+                    {
+                        Tutar = int.Parse(Txt_tutar.Text),
+                        Litre = int.Parse(Txt_litre.Text),
+                        YakıtTürü = combo_YakıtTuru.Text,
+                        FisNo = fisNo, 
+                        PlakaKayit = GetPlakaKayit(plaka), 
+                        MusteriBilgi = GetMusteriBilgi(musteriAdi) 
+                    };
+
+                    // Veriyi veritabanına eklemek için EF kullanımı
+                    using (var context = new Context()) // Context sınıfınıza uygun bir şekilde tanımlamanız gerekiyor
+                    {
+                        context.veresiye_Raporus.Add(rapor);
+                        context.SaveChanges(); // Değişiklikleri kaydet
+                    }
                 }
             }
             catch (Exception ex)
@@ -113,19 +137,104 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
                 MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            #region Temizlik
-            combo_Musteri.SelectedIndex = -1;
-            combo_Plaka.SelectedIndex = -1;
-            combo_YakıtTuru.SelectedIndex = -1;
-            Txt_litre.Clear();
-            Txt_tutar.Clear();
-            #endregion
+            // Temizleme kodları burada
+        }
+
+
+        private Plaka_kayıt GetPlakaKayit(string plakaNo)
+        {
+            using (var context = new Context())
+            {
+                return context.Plaka_Kayıts.FirstOrDefault(p => p.PlakaNo == plakaNo);
+            }
+        }
+
+        private Musterı_bılgı GetMusteriBilgi(string musteriAdi)
+        {
+            using (var context = new Context())
+            {
+                return context.Musterı_Bılgıs.FirstOrDefault(m => m.MusterıAd == musteriAdi);
+            }
         }
 
         private void Btn_gonder_Click(object sender, EventArgs e)
         {
-            //Datagridview içindeki columns ve rowlar vardiya_raporu form sayfasındaki veresiye_tablo'suna post edilecek
+            using (var context = new Context())
+            {
+                foreach (var rapor in veresiyeRaporları)
+                {
+                    context.veresiye_Raporus.Add(rapor);
+                }
+                context.SaveChanges();
+            }
+            // DataGridView'ı temizleme vb. işlemleri burada yapabilirsiniz
+        }
+       
+
+
+        private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            using (var context = new Context())
+            {
+                // Plaka_kayıt nesnesini alın (örneğin, PlakaId = 1 olan)
+                Plaka_kayıt plakaKayit = context.Plaka_Kayıts.FirstOrDefault(p => p.PlakaId == 1);
+
+                if (plakaKayit != null)
+                {
+                    // Yeni bir veresiye raporu oluşturun ve Plaka_kayıt'ı atayın
+                    var yeniVeresiyeRaporu = new veresiye_raporu
+                    {
+                        Tutar = int.Parse(Txt_tutar.Text),
+                        Litre = int.Parse(Txt_litre.Text),
+                        YakıtTürü = combo_YakıtTuru.Text.ToString(),
+                        FisNo = int.Parse(Txt_FisNo.Text), // Örnek fiş numarası
+                        PlakaKayit = plakaKayit // Plaka_kayıt'ı atayın
+                    };
+
+                    // Yeni veresiye raporu veritabanına ekleyin
+                    context.veresiye_Raporus.Add(yeniVeresiyeRaporu);
+                    context.SaveChanges();
+                }
+            }
 
         }
+
+        private void Btn_Sil_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (DataGridView1.SelectedRows.Count > 0)
+                {
+                    DataGridViewRow selectedRow = DataGridView1.SelectedRows[0];
+
+                    // Silinecek veresiye raporunun ID'sini alın
+                    int raporId = Convert.ToInt32(selectedRow.Cells["Versiyeid"].Value);
+
+                    // Veriyi DataGridView'dan sil
+                    DataGridView1.Rows.Remove(selectedRow);
+
+                    // Veritabanından da silmek için EF kullanımı
+                    using (var context = new Context()) // Context sınıfınıza uygun bir şekilde tanımlamanız gerekiyor
+                    {
+                        var rapor = context.veresiye_Raporus.FirstOrDefault(r => r.Versiyeid == raporId);
+
+                        if (rapor != null)
+                        {
+                            context.veresiye_Raporus.Remove(rapor);
+                            context.SaveChanges(); // Değişiklikleri kaydet
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Silmek için bir satır seçiniz.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
     }
 }

@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kredikart_Formu));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -45,22 +49,21 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.Btn_İptal = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.DataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.Txt_kk1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.Btn_İptal = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.Txt_kk1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.Txt_kk2 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.Txt_kk3 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.Txt_kk4 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.DataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.Btn_gonder = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Btn_ekle = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Btn_Güncelle = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.BtnSil = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -78,7 +81,6 @@
             this.tableLayoutPanel1.Controls.Add(this.DataGridView1, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.Txt_kk1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.Btn_İptal, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
@@ -86,6 +88,10 @@
             this.tableLayoutPanel1.Controls.Add(this.Txt_kk3, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.Txt_kk4, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.Btn_gonder, 5, 4);
+            this.tableLayoutPanel1.Controls.Add(this.Btn_İptal, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.BtnSil, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.Btn_Güncelle, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.Btn_ekle, 1, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -101,83 +107,77 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // Btn_İptal
+            // DataGridView1
             // 
-            this.Btn_İptal.ActiveBorderThickness = 1;
-            this.Btn_İptal.ActiveCornerRadius = 20;
-            this.Btn_İptal.ActiveFillColor = System.Drawing.Color.Red;
-            this.Btn_İptal.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_İptal.ActiveLineColor = System.Drawing.Color.Red;
-            this.Btn_İptal.BackColor = System.Drawing.SystemColors.Control;
-            this.Btn_İptal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_İptal.BackgroundImage")));
-            this.Btn_İptal.ButtonText = "İptal";
-            this.Btn_İptal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_İptal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_İptal.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Btn_İptal.IdleBorderThickness = 1;
-            this.Btn_İptal.IdleCornerRadius = 20;
-            this.Btn_İptal.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Btn_İptal.IdleForecolor = System.Drawing.Color.Green;
-            this.Btn_İptal.IdleLineColor = System.Drawing.Color.Green;
-            this.Btn_İptal.Location = new System.Drawing.Point(5, 365);
-            this.Btn_İptal.Margin = new System.Windows.Forms.Padding(5);
-            this.Btn_İptal.Name = "Btn_İptal";
-            this.Btn_İptal.Size = new System.Drawing.Size(123, 41);
-            this.Btn_İptal.TabIndex = 0;
-            this.Btn_İptal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Btn_İptal.Click += new System.EventHandler(this.Btn_İptal_Click);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 90);
-            this.label1.TabIndex = 39;
-            this.label1.Text = "Kredi Kartı Adı:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(3, 90);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 90);
-            this.label2.TabIndex = 40;
-            this.label2.Text = "Kredi Kartı Adı:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(3, 180);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 90);
-            this.label3.TabIndex = 41;
-            this.label3.Text = "Kredi Kartı Adı:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(3, 270);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 90);
-            this.label4.TabIndex = 42;
-            this.label4.Text = "Kredi Kartı Adı:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.DataGridView1.AllowCustomTheming = false;
+            this.DataGridView1.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            this.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DataGridView1.ColumnHeadersHeight = 40;
+            this.tableLayoutPanel1.SetColumnSpan(this.DataGridView1, 3);
+            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.DataGridView1.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.DataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.DataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.DataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.DataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.DataGridView1.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.DataGridView1.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.DataGridView1.CurrentTheme.Name = null;
+            this.DataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.DataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.DataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.DataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.DataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataGridView1.EnableHeadersVisualStyles = false;
+            this.DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.DataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.DataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
+            this.DataGridView1.HeaderForeColor = System.Drawing.Color.White;
+            this.DataGridView1.Location = new System.Drawing.Point(402, 3);
+            this.DataGridView1.Name = "DataGridView1";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.DataGridView1.RowHeadersVisible = false;
+            this.tableLayoutPanel1.SetRowSpan(this.DataGridView1, 4);
+            this.DataGridView1.RowTemplate.Height = 40;
+            this.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DataGridView1.Size = new System.Drawing.Size(395, 354);
+            this.DataGridView1.TabIndex = 58;
+            this.DataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
             // Txt_kk1
             // 
@@ -254,6 +254,84 @@
             this.Txt_kk1.TextPlaceholder = "KrediKart Değerini Giriniz";
             this.Txt_kk1.UseSystemPasswordChar = false;
             this.Txt_kk1.WordWrap = true;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 90);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "Kredi Kartı Adı:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // Btn_İptal
+            // 
+            this.Btn_İptal.ActiveBorderThickness = 1;
+            this.Btn_İptal.ActiveCornerRadius = 20;
+            this.Btn_İptal.ActiveFillColor = System.Drawing.Color.Red;
+            this.Btn_İptal.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_İptal.ActiveLineColor = System.Drawing.Color.Red;
+            this.Btn_İptal.BackColor = System.Drawing.SystemColors.Control;
+            this.Btn_İptal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_İptal.BackgroundImage")));
+            this.Btn_İptal.ButtonText = "İptal";
+            this.Btn_İptal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_İptal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_İptal.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_İptal.IdleBorderThickness = 1;
+            this.Btn_İptal.IdleCornerRadius = 20;
+            this.Btn_İptal.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_İptal.IdleForecolor = System.Drawing.Color.Green;
+            this.Btn_İptal.IdleLineColor = System.Drawing.Color.Green;
+            this.Btn_İptal.Location = new System.Drawing.Point(5, 365);
+            this.Btn_İptal.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_İptal.Name = "Btn_İptal";
+            this.Btn_İptal.Size = new System.Drawing.Size(123, 41);
+            this.Btn_İptal.TabIndex = 0;
+            this.Btn_İptal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_İptal.Click += new System.EventHandler(this.Btn_İptal_Click);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(3, 90);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(127, 90);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "Kredi Kartı Adı:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(3, 180);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(127, 90);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "Kredi Kartı Adı:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(3, 270);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(127, 90);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "Kredi Kartı Adı:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Txt_kk2
             // 
@@ -483,77 +561,6 @@
             this.Txt_kk4.UseSystemPasswordChar = false;
             this.Txt_kk4.WordWrap = true;
             // 
-            // DataGridView1
-            // 
-            this.DataGridView1.AllowCustomTheming = false;
-            this.DataGridView1.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DataGridView1.ColumnHeadersHeight = 40;
-            this.tableLayoutPanel1.SetColumnSpan(this.DataGridView1, 3);
-            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.DataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.DataGridView1.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.DataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.DataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.DataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.DataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.DataGridView1.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.DataGridView1.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.DataGridView1.CurrentTheme.Name = null;
-            this.DataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.DataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.DataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.DataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.DataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DataGridView1.EnableHeadersVisualStyles = false;
-            this.DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.DataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.DataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.DataGridView1.Location = new System.Drawing.Point(402, 3);
-            this.DataGridView1.Name = "DataGridView1";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.DataGridView1.RowHeadersVisible = false;
-            this.tableLayoutPanel1.SetRowSpan(this.DataGridView1, 4);
-            this.DataGridView1.RowTemplate.Height = 40;
-            this.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView1.Size = new System.Drawing.Size(395, 354);
-            this.DataGridView1.TabIndex = 58;
-            this.DataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            // 
             // Btn_gonder
             // 
             this.Btn_gonder.ActiveBorderThickness = 1;
@@ -579,6 +586,81 @@
             this.Btn_gonder.TabIndex = 59;
             this.Btn_gonder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Btn_gonder.Click += new System.EventHandler(this.Btn_gonder_Click);
+            // 
+            // Btn_ekle
+            // 
+            this.Btn_ekle.ActiveBorderThickness = 1;
+            this.Btn_ekle.ActiveCornerRadius = 20;
+            this.Btn_ekle.ActiveFillColor = System.Drawing.Color.Green;
+            this.Btn_ekle.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_ekle.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_ekle.BackColor = System.Drawing.SystemColors.Control;
+            this.Btn_ekle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_ekle.BackgroundImage")));
+            this.Btn_ekle.ButtonText = "Ekle";
+            this.Btn_ekle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_ekle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ekle.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_ekle.IdleBorderThickness = 1;
+            this.Btn_ekle.IdleCornerRadius = 20;
+            this.Btn_ekle.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_ekle.IdleForecolor = System.Drawing.Color.Black;
+            this.Btn_ekle.IdleLineColor = System.Drawing.Color.Black;
+            this.Btn_ekle.Location = new System.Drawing.Point(138, 365);
+            this.Btn_ekle.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_ekle.Name = "Btn_ekle";
+            this.Btn_ekle.Size = new System.Drawing.Size(123, 35);
+            this.Btn_ekle.TabIndex = 60;
+            this.Btn_ekle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Btn_Güncelle
+            // 
+            this.Btn_Güncelle.ActiveBorderThickness = 1;
+            this.Btn_Güncelle.ActiveCornerRadius = 20;
+            this.Btn_Güncelle.ActiveFillColor = System.Drawing.Color.Green;
+            this.Btn_Güncelle.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_Güncelle.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_Güncelle.BackColor = System.Drawing.SystemColors.Control;
+            this.Btn_Güncelle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Güncelle.BackgroundImage")));
+            this.Btn_Güncelle.ButtonText = "Güncelle";
+            this.Btn_Güncelle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Güncelle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Güncelle.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_Güncelle.IdleBorderThickness = 1;
+            this.Btn_Güncelle.IdleCornerRadius = 20;
+            this.Btn_Güncelle.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_Güncelle.IdleForecolor = System.Drawing.Color.Black;
+            this.Btn_Güncelle.IdleLineColor = System.Drawing.Color.Black;
+            this.Btn_Güncelle.Location = new System.Drawing.Point(271, 365);
+            this.Btn_Güncelle.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_Güncelle.Name = "Btn_Güncelle";
+            this.Btn_Güncelle.Size = new System.Drawing.Size(123, 35);
+            this.Btn_Güncelle.TabIndex = 61;
+            this.Btn_Güncelle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BtnSil
+            // 
+            this.BtnSil.ActiveBorderThickness = 1;
+            this.BtnSil.ActiveCornerRadius = 20;
+            this.BtnSil.ActiveFillColor = System.Drawing.Color.Red;
+            this.BtnSil.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.BtnSil.ActiveLineColor = System.Drawing.Color.Red;
+            this.BtnSil.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnSil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSil.BackgroundImage")));
+            this.BtnSil.ButtonText = "Sil";
+            this.BtnSil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSil.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSil.ForeColor = System.Drawing.Color.SeaGreen;
+            this.BtnSil.IdleBorderThickness = 1;
+            this.BtnSil.IdleCornerRadius = 20;
+            this.BtnSil.IdleFillColor = System.Drawing.Color.Transparent;
+            this.BtnSil.IdleForecolor = System.Drawing.Color.Black;
+            this.BtnSil.IdleLineColor = System.Drawing.Color.Black;
+            this.BtnSil.Location = new System.Drawing.Point(404, 365);
+            this.BtnSil.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnSil.Name = "BtnSil";
+            this.BtnSil.Size = new System.Drawing.Size(123, 35);
+            this.BtnSil.TabIndex = 62;
+            this.BtnSil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Kredikart_Formu
             // 
@@ -611,5 +693,8 @@
         private Bunifu.UI.WinForms.BunifuTextBox Txt_kk4;
         private Bunifu.UI.WinForms.BunifuDataGridView DataGridView1;
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_gonder;
+        private Bunifu.Framework.UI.BunifuThinButton2 BtnSil;
+        private Bunifu.Framework.UI.BunifuThinButton2 Btn_Güncelle;
+        private Bunifu.Framework.UI.BunifuThinButton2 Btn_ekle;
     }
 }

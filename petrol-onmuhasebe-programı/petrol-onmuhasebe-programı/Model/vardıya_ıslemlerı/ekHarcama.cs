@@ -16,4 +16,5 @@ namespace petrol_onmuhasebe_programı.Model.vardıya_ıslemlerı
         public int VardiyaID { get; set; }
         public virtual Vardıya_formu Vardıya { get; set; }
     }
+
 }

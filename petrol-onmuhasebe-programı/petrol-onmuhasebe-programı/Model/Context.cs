@@ -38,6 +38,10 @@ namespace petrol_onmuhasebe_programı.Model
 
         //vardiya_islemleri
         public DbSet<Vardıya_formu> Vardıya_Formus { get; set; }
+        public DbSet<ekHarcama> ekHarcamas { get; set; }
+        public DbSet<veresiye_raporu> veresiye_Raporus { get; set; }
+
+        
 
     }
 }

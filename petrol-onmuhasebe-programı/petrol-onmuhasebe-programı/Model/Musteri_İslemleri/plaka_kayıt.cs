@@ -1,4 +1,5 @@
-﻿using System;
+﻿using petrol_onmuhasebe_programı.Model.vardıya_ıslemlerı;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity.ModelConfiguration;
@@ -21,6 +22,7 @@ namespace petrol_onmuhasebe_programı.Model.Musteri_Bilgi
         {
             return this.PlakaNo; // Tank_ad özelliğini döndürerek sütunun verisini Tank_ad'a göre göster
         }
+        public virtual ICollection<veresiye_raporu> VeresiyeRaporlar { get; set; }
     }
 
 }

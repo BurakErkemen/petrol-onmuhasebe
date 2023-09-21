@@ -97,15 +97,17 @@
             this.txt_optimum_tutar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.Btn_veresiye_ekle = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Btn_kredikart_gir = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.KrediKartTablosu = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.veresiye_tablosu = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.Btn_Onayla = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Btn_EkHarcama = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lbl_ToplamTutar = new System.Windows.Forms.Label();
             this.Lbl_ToplamLitre = new System.Windows.Forms.Label();
+            this.Btn_KartVeriGetir = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Btn_VeresiyeVerileriniGetir = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KrediKartTablosu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.veresiye_tablosu)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,13 +147,15 @@
             this.tableLayoutPanel1.Controls.Add(this.txt_optimum_tutar, 1, 9);
             this.tableLayoutPanel1.Controls.Add(this.Btn_veresiye_ekle, 1, 12);
             this.tableLayoutPanel1.Controls.Add(this.Btn_kredikart_gir, 0, 12);
-            this.tableLayoutPanel1.Controls.Add(this.bunifuDataGridView1, 2, 9);
+            this.tableLayoutPanel1.Controls.Add(this.KrediKartTablosu, 2, 9);
             this.tableLayoutPanel1.Controls.Add(this.veresiye_tablosu, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.label13, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.Btn_Onayla, 4, 15);
             this.tableLayoutPanel1.Controls.Add(this.Btn_EkHarcama, 0, 13);
             this.tableLayoutPanel1.Controls.Add(this.lbl_ToplamTutar, 3, 13);
             this.tableLayoutPanel1.Controls.Add(this.Lbl_ToplamLitre, 2, 13);
+            this.tableLayoutPanel1.Controls.Add(this.Btn_KartVeriGetir, 1, 15);
+            this.tableLayoutPanel1.Controls.Add(this.Btn_VeresiyeVerileriniGetir, 2, 15);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 16;
@@ -1039,19 +1043,19 @@
             this.Btn_kredikart_gir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Btn_kredikart_gir.Click += new System.EventHandler(this.Btn_kredikart_gir_Click);
             // 
-            // bunifuDataGridView1
+            // KrediKartTablosu
             // 
-            this.bunifuDataGridView1.AllowCustomTheming = false;
-            this.bunifuDataGridView1.AllowUserToOrderColumns = true;
+            this.KrediKartTablosu.AllowCustomTheming = false;
+            this.KrediKartTablosu.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bunifuDataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.KrediKartTablosu.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.KrediKartTablosu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.KrediKartTablosu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.KrediKartTablosu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            this.KrediKartTablosu.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.KrediKartTablosu.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.KrediKartTablosu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
@@ -1059,27 +1063,27 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuDataGridView1.ColumnHeadersHeight = 40;
-            this.tableLayoutPanel1.SetColumnSpan(this.bunifuDataGridView1, 3);
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.Name = null;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.KrediKartTablosu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.KrediKartTablosu.ColumnHeadersHeight = 40;
+            this.tableLayoutPanel1.SetColumnSpan(this.KrediKartTablosu, 3);
+            this.KrediKartTablosu.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.KrediKartTablosu.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.KrediKartTablosu.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.KrediKartTablosu.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.KrediKartTablosu.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.KrediKartTablosu.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.KrediKartTablosu.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.KrediKartTablosu.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.KrediKartTablosu.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.KrediKartTablosu.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.KrediKartTablosu.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.KrediKartTablosu.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.KrediKartTablosu.CurrentTheme.Name = null;
+            this.KrediKartTablosu.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.KrediKartTablosu.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.KrediKartTablosu.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.KrediKartTablosu.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.KrediKartTablosu.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -1087,14 +1091,14 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
-            this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
-            this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.Location = new System.Drawing.Point(595, 471);
-            this.bunifuDataGridView1.Name = "bunifuDataGridView1";
+            this.KrediKartTablosu.DefaultCellStyle = dataGridViewCellStyle3;
+            this.KrediKartTablosu.EnableHeadersVisualStyles = false;
+            this.KrediKartTablosu.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.KrediKartTablosu.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.KrediKartTablosu.HeaderBgColor = System.Drawing.Color.Empty;
+            this.KrediKartTablosu.HeaderForeColor = System.Drawing.Color.White;
+            this.KrediKartTablosu.Location = new System.Drawing.Point(595, 471);
+            this.KrediKartTablosu.Name = "KrediKartTablosu";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -1102,14 +1106,14 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.bunifuDataGridView1.RowHeadersVisible = false;
-            this.tableLayoutPanel1.SetRowSpan(this.bunifuDataGridView1, 4);
-            this.bunifuDataGridView1.RowTemplate.Height = 40;
-            this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridView1.Size = new System.Drawing.Size(883, 202);
-            this.bunifuDataGridView1.TabIndex = 57;
-            this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.KrediKartTablosu.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.KrediKartTablosu.RowHeadersVisible = false;
+            this.tableLayoutPanel1.SetRowSpan(this.KrediKartTablosu, 4);
+            this.KrediKartTablosu.RowTemplate.Height = 40;
+            this.KrediKartTablosu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.KrediKartTablosu.Size = new System.Drawing.Size(883, 202);
+            this.KrediKartTablosu.TabIndex = 57;
+            this.KrediKartTablosu.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
             // veresiye_tablosu
             // 
@@ -1274,6 +1278,60 @@
             this.Lbl_ToplamLitre.Text = "Toplam Litre";
             this.Lbl_ToplamLitre.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // Btn_KartVeriGetir
+            // 
+            this.Btn_KartVeriGetir.ActiveBorderThickness = 1;
+            this.Btn_KartVeriGetir.ActiveCornerRadius = 20;
+            this.Btn_KartVeriGetir.ActiveFillColor = System.Drawing.Color.Green;
+            this.Btn_KartVeriGetir.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_KartVeriGetir.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_KartVeriGetir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_KartVeriGetir.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Btn_KartVeriGetir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_KartVeriGetir.BackgroundImage")));
+            this.Btn_KartVeriGetir.ButtonText = "Kredi Kart Verilerini Getir";
+            this.Btn_KartVeriGetir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_KartVeriGetir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_KartVeriGetir.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_KartVeriGetir.IdleBorderThickness = 1;
+            this.Btn_KartVeriGetir.IdleCornerRadius = 20;
+            this.Btn_KartVeriGetir.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_KartVeriGetir.IdleForecolor = System.Drawing.Color.Black;
+            this.Btn_KartVeriGetir.IdleLineColor = System.Drawing.Color.Black;
+            this.Btn_KartVeriGetir.Location = new System.Drawing.Point(301, 787);
+            this.Btn_KartVeriGetir.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_KartVeriGetir.Name = "Btn_KartVeriGetir";
+            this.Btn_KartVeriGetir.Size = new System.Drawing.Size(286, 42);
+            this.Btn_KartVeriGetir.TabIndex = 64;
+            this.Btn_KartVeriGetir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_KartVeriGetir.Click += new System.EventHandler(this.Btn_KartVeriGetir_Click);
+            // 
+            // Btn_VeresiyeVerileriniGetir
+            // 
+            this.Btn_VeresiyeVerileriniGetir.ActiveBorderThickness = 1;
+            this.Btn_VeresiyeVerileriniGetir.ActiveCornerRadius = 20;
+            this.Btn_VeresiyeVerileriniGetir.ActiveFillColor = System.Drawing.Color.Green;
+            this.Btn_VeresiyeVerileriniGetir.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_VeresiyeVerileriniGetir.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_VeresiyeVerileriniGetir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_VeresiyeVerileriniGetir.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Btn_VeresiyeVerileriniGetir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_VeresiyeVerileriniGetir.BackgroundImage")));
+            this.Btn_VeresiyeVerileriniGetir.ButtonText = "Veresiye Verilerini Getir";
+            this.Btn_VeresiyeVerileriniGetir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_VeresiyeVerileriniGetir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_VeresiyeVerileriniGetir.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_VeresiyeVerileriniGetir.IdleBorderThickness = 1;
+            this.Btn_VeresiyeVerileriniGetir.IdleCornerRadius = 20;
+            this.Btn_VeresiyeVerileriniGetir.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_VeresiyeVerileriniGetir.IdleForecolor = System.Drawing.Color.Black;
+            this.Btn_VeresiyeVerileriniGetir.IdleLineColor = System.Drawing.Color.Black;
+            this.Btn_VeresiyeVerileriniGetir.Location = new System.Drawing.Point(597, 787);
+            this.Btn_VeresiyeVerileriniGetir.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_VeresiyeVerileriniGetir.Name = "Btn_VeresiyeVerileriniGetir";
+            this.Btn_VeresiyeVerileriniGetir.Size = new System.Drawing.Size(286, 42);
+            this.Btn_VeresiyeVerileriniGetir.TabIndex = 65;
+            this.Btn_VeresiyeVerileriniGetir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_VeresiyeVerileriniGetir.Click += new System.EventHandler(this.Btn_VeresiyeVerileriniGetir_Click);
+            // 
             // Vardıya_raporu_gır
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1287,7 +1345,7 @@
             this.Load += new System.EventHandler(this.Vardıya_raporu_gır_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KrediKartTablosu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.veresiye_tablosu)).EndInit();
             this.ResumeLayout(false);
 
@@ -1323,12 +1381,14 @@
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_veresiye_ekle;
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_kredikart_gir;
         private Bunifu.UI.WinForms.BunifuDataGridView veresiye_tablosu;
-        private Bunifu.UI.WinForms.BunifuDataGridView bunifuDataGridView1;
+        private Bunifu.UI.WinForms.BunifuDataGridView KrediKartTablosu;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_Onayla;
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_EkHarcama;
         private System.Windows.Forms.Label lbl_ToplamTutar;
         private System.Windows.Forms.Label Lbl_ToplamLitre;
+        private Bunifu.Framework.UI.BunifuThinButton2 Btn_KartVeriGetir;
+        private Bunifu.Framework.UI.BunifuThinButton2 Btn_VeresiyeVerileriniGetir;
     }
 }

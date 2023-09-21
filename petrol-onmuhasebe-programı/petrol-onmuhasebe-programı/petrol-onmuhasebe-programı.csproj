@@ -223,6 +223,7 @@
     <Compile Include="Model\Persolel_islemleri\personel_bilgi.cs" />
     <Compile Include="Model\vardıya_ıslemlerı\ekHarcama.cs" />
     <Compile Include="Model\vardıya_ıslemlerı\vardıya_formu.cs" />
+    <Compile Include="Model\vardıya_ıslemlerı\veresiye_raporu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FormPages\Vardıya_Bılgılerı\Kredikart_Formu.cs">
