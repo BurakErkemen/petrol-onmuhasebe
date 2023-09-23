@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -21,8 +22,10 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
         {
             InitializeComponent();
         }
+
         public int user_role_ıd;
         public int harcamaID;
+        private int vardıyaId = 1;
         public class ComboBoxItem
         {
             public string Text { get; set; }
@@ -35,8 +38,6 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
         }
         private void Vardıya_raporu_gır_Load(object sender, EventArgs e)
         {
-            label13.Visible = false;
-            label14.Visible = false;
             using (var context = new Context())
             {
                 // Personel tablosundan verileri çekin ve ComboBox'lara ekleyin
@@ -63,10 +64,9 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
             }
             lbl_ToplamTutar.Visible = false;
             Lbl_ToplamLitre.Visible = false;
-            veresiye_tablosu.Visible = false;
-            KrediKartTablosu.Visible = false;
             this.WindowState = FormWindowState.Maximized;
-
+            GridYükleVeresiye();
+            GridYükleKrediKart();
             #region combobox
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -97,10 +97,12 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
             if (Kredikart_formu == null || Kredikart_formu.IsDisposed)
             {
                 Kredikart_formu = new Kredikart_Formu();
+                Kredikart_formu.VardiyaID = vardıyaId;
                 Kredikart_formu.Show();
             }
             else
             {
+                Kredikart_formu.VardiyaID = vardıyaId;
                 Kredikart_formu.BringToFront();
             }
         }
@@ -110,6 +112,7 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
             if (Veresiye_Formu == null || Veresiye_Formu.IsDisposed)
             {
                 Veresiye_Formu = new Veresiye_formu();
+                Veresiye_Formu.VardiyaID = vardıyaId;
                 Veresiye_Formu.Show();
             }
             else
@@ -123,11 +126,12 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
             if (ekHarcama == null || ekHarcama.IsDisposed)
             {
                 ekHarcama = new EkHarcama();
+                ekHarcama.VardiyaID = vardıyaId;
                 ekHarcama.Show();
             }
             else
             {
-                Veresiye_Formu.BringToFront();
+                ekHarcama.BringToFront();
             }
         }
 
@@ -186,65 +190,110 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
             Lbl_ToplamLitre.Text = (lt1 + lt2 + lt3 + lt4).ToString();
         }
         #endregion
-
-        private void GridYükle()
+      
+        private void GridYükleKrediKart()
         {
+            try
+            {
+                using (var context = new Context()) // Veritabanı bağlantısını oluşturun
+                {
+                    // VardıyaId değeri 6 olan veresiye raporlarını sorgulayın
+                    var veresiyeRaporları = context.KrediKartVardiyaSatislars.Include("Kart").Include("Vardiya")
+                        .Where(vr => vr.VardıyaId == vardıyaId)
+                        .ToList();
 
+                    // DataGridView'ı veresiye raporları ile doldurun
+                    KrediKartTablosu.DataSource = veresiyeRaporları;
+                    KrediKartTablosu.Columns["Kk_satıs_ıd"].Visible = false;
+                    KrediKartTablosu.Columns["Vardiya"].Visible = false;
+                    KrediKartTablosu.Columns["Kart"].Visible = false;
+                    KrediKartTablosu.Columns["Kart_ıd"].Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.ToString(), "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-        private void Btn_VeresiyeVerileriniGetir_Click(object sender, EventArgs e)
+        private void GridYükleVeresiye()
         {
+            try
+            {
+                using (var context = new Context()) // Veritabanı bağlantısını oluşturun
+                {
+                    // VardıyaId değeri 6 olan veresiye raporlarını sorgulayın
+                    var veresiyeRaporları = context.veresiye_Raporus.Include("PlakaKayit").Include("MusteriBilgi").Include("Vardiya")
+                        .Where(vr => vr.VardıyaId == vardıyaId)
+                        .ToList();
 
+                    // DataGridView'ı veresiye raporları ile doldurun
+                    veresiye_tablosu.DataSource = veresiyeRaporları;
+                    veresiye_tablosu.Columns["PlakaId"].Visible = false;
+                    veresiye_tablosu.Columns["Versiyeid"].Visible = false;
+                    veresiye_tablosu.Columns["PlakaId"].Visible = false;
+                    veresiye_tablosu.Columns["Vardiya"].Visible = false;
+                    veresiye_tablosu.Columns["MusteriBilgi"].Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.ToString(), "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-        private void Btn_KartVeriGetir_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private int personel1;
-        private int personel2;
         private void Btn_Onayla_Click(object sender, EventArgs e)
         {
             try
             {
                 if (MessageBox.Show("İşlemleriniz tamamladığınızdan emin misin?", "Bildirim", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
                 {
-                    var SelectedPersonel1 = comboBox1.Text.ToString();
-                    var SelectedPersonel2 = comboBox2.Text.ToString();
+                    string combo = comboBox3.Text;
                     using (var context = new Context())
                     {
+                        // Vardıya bilgilerini oluşturun
+                        var vardıya = new Vardıya_formu
+                        {
+                            Vardıya_sıra_no = Convert.ToInt32(combo),
+                            Vardıya_tarıhı = DateTime.Now, // Şu anki tarihi alabilirsiniz
+                            Otogaz_lirte = Convert.ToInt32(txt_otogaz_litre.Text),
+                            Otogaz_tutar = Convert.ToInt32(txt_otogaz_tutar.Text),
+                            Motorin_litre = Convert.ToInt32(txt_motorin_litre.Text),
+                            Motorin_tutar = Convert.ToInt32(txt_motorin_tutar.Text),
+                            Optimum_litre = Convert.ToInt32(txt_optimum_litre.Text),
+                            Optimum_tutar = Convert.ToInt32(txt_optimum_tutar.Text),
+                            Benzin_litre = Convert.ToInt32(txt_benzin_litre.Text),
+                            Benzin_tutar = Convert.ToInt32(txt_benzin_tutar.Text),
+                        };
+
+                        // İlgili personelleri atayın
                         if (comboBox1.SelectedItem != null)
                         {
-                            var row = context.Personel_Bilgis.FirstOrDefault(i => i.PersonelAd == SelectedPersonel1);
-                            if (row != null)
-                            {
-                                comboBox1.Text = row.PersonelAd + row.PersonelSoyad;
-                                personel1 = row.PersonelId; // DepoAd'ı bir int olarak tanımlayın
-                            }
+                            vardıya.Personel1 = context.Personel_Bilgis.FirstOrDefault(p => p.PersonelId == ((ComboBoxItem)comboBox1.SelectedItem).Value);
                         }
 
                         if (comboBox2.SelectedItem != null)
                         {
-                            var row = context.Personel_Bilgis.FirstOrDefault(i => i.PersonelAd == SelectedPersonel2);
-                            if (row != null)
-                            {
-                                comboBox2.Text = row.PersonelAd + row.PersonelSoyad;
-                                personel2 = row.PersonelId;
-                            }
+                            vardıya.Personel2 = context.Personel_Bilgis.FirstOrDefault(p => p.PersonelId == ((ComboBoxItem)comboBox2.SelectedItem).Value);
                         }
 
-                        var onayla = new Vardıya_formu
-                        {
+                        // Vardıya bilgilerini veritabanına ekleyin
+                        context.Vardıya_Formus.Add(vardıya);
+                        context.SaveChanges();
 
-                        };
+                        // Vardıya'nın ID'sini alın ve diğer formlarda kullanmak için saklayın
+                        vardıyaId = vardıya.VardıyaId;
+                        MessageBox.Show("Vardıya başarıyla kaydedildi. Vardiya ID: " + vardıyaId, "Bildiri", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        GridYükleKrediKart();
+                        GridYükleVeresiye();
                     }
-
-                    GridYükle();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hata: " + ex.ToString(), "Bildiri", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hata: " + ex.Message, "Bildiri", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
 }

@@ -1,5 +1,6 @@
 ﻿using petrol_onmuhasebe_programı.FormPages.DepoForm;
 using petrol_onmuhasebe_programı.FormPages.Kredikart;
+using petrol_onmuhasebe_programı.FormPages.kullanıcıTanımlama;
 using petrol_onmuhasebe_programı.FormPages.PersonelForm;
 using petrol_onmuhasebe_programı.FormPages.VeresiyeMüşteri;
 using petrol_onmuhasebe_programı.Model;
@@ -24,6 +25,7 @@ namespace petrol_onmuhasebe_programı
         private DepoAyarları depoAyarları;
         private PersonelAyarları personelAyarları;
         private Musteri_Islemlerı veresiyeMusteri;
+        private KullanıcıYetkiTanımlama yetkiTanımlama;
         public Homepage()
         {
             InitializeComponent();
@@ -135,14 +137,14 @@ namespace petrol_onmuhasebe_programı
 
         private void Btn_kullanıcı_tanımlama_Click(object sender, EventArgs e)
         {
-            if (veresiyeMusteri == null || veresiyeMusteri.IsDisposed)
+            if (yetkiTanımlama == null || yetkiTanımlama.IsDisposed)
             {
-                veresiyeMusteri = new Musteri_Islemlerı();
-                veresiyeMusteri.Show();
+                yetkiTanımlama = new KullanıcıYetkiTanımlama();
+                yetkiTanımlama.Show();
             }
             else
             {
-                veresiyeMusteri.BringToFront();
+                yetkiTanımlama.BringToFront();
             }
         }
         private kredikart kredikart;

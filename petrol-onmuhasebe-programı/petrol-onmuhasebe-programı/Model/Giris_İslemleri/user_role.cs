@@ -16,4 +16,5 @@ namespace petrol_onmuhasebe_programı.Model
         //Bir rol birden fazla kişide olabilir
         public ICollection<user> user { get; set; }
     }
+
 }

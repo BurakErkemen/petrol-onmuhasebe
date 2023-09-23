@@ -22,4 +22,5 @@ namespace petrol_onmuhasebe_programı.Model
         //Kullanıcı birden fazla giriş yapabilir.
         public ICollection<giris_tarihleri> Giris_Tarihi { get; set; }
     }
+
 }

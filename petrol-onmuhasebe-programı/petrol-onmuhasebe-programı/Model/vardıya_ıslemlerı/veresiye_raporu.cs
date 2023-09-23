@@ -15,11 +15,14 @@ namespace petrol_onmuhasebe_programı.Model.vardıya_ıslemlerı
         public int Tutar { get; set; }
         public int Litre { get; set; }
         public string YakıtTürü { get; set; }
-        public int FisNo {  get; set; }
+        public int FisNo { get; set; }
         // Her veresiye raporu bir Plaka_kayıt'a bağlı olacak
         public int PlakaId { get; set; }
         public virtual Plaka_kayıt PlakaKayit { get; set; }
         public Musterı_bılgı MusteriBilgi { get; internal set; }
+        public int VardıyaId { get; set; }
+        public virtual Vardıya_formu Vardiya { get; set; }
+
     }
 
 }

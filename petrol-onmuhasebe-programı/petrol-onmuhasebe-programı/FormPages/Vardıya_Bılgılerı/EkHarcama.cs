@@ -18,6 +18,7 @@ namespace petrol_onmuhasebe_programı.FormPages.Vardıya_Bılgılerı
         {
             InitializeComponent();
         }
+        public int VardiyaID = 1;
         private void EkHarcama_Load(object sender, EventArgs e)
         {
             CenterToScreen();
@@ -69,7 +70,8 @@ namespace petrol_onmuhasebe_programı.FormPages.Vardıya_Bılgılerı
                 var yeniHarcama = new ekHarcama
                 {
                     HarcamaAdı = txt_harcamaAd.Text,
-                    HarcamaTutarı = int.Parse(txt_HarcamaMiktar.Text)
+                    HarcamaTutarı = int.Parse(txt_HarcamaMiktar.Text),
+                    VardiyaID = VardiyaID
                 };
 
                 // ekHarcama kaydını veritabanına ekleyin

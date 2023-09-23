@@ -180,6 +180,12 @@
     <Compile Include="FormPages\Kredikart\kredikart.Designer.cs">
       <DependentUpon>kredikart.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPages\kullanıcıTanımlama\KullanıcıYetkiTanımlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPages\kullanıcıTanımlama\KullanıcıYetkiTanımlama.Designer.cs">
+      <DependentUpon>KullanıcıYetkiTanımlama.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPages\login_Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,7 +222,7 @@
     <Compile Include="Model\Giris_İslemleri\user.cs" />
     <Compile Include="Model\Giris_İslemleri\user_role.cs" />
     <Compile Include="Model\kredikart_islemleri\kredıkart_turu_ekleme.cs" />
-    <Compile Include="Model\kredikart_islemleri\kredıkart_vardıya_satıs.cs" />
+    <Compile Include="Model\vardıya_ıslemlerı\kredıkart_vardıya_satıs.cs" />
     <Compile Include="Model\Musteri_İslemleri\Musterı_bılgı.cs" />
     <Compile Include="Model\Musteri_İslemleri\musterı_odeme.cs" />
     <Compile Include="Model\Musteri_İslemleri\plaka_kayıt.cs" />
@@ -255,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPages\Kredikart\kredikart.resx">
       <DependentUpon>kredikart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPages\kullanıcıTanımlama\KullanıcıYetkiTanımlama.resx">
+      <DependentUpon>KullanıcıYetkiTanımlama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPages\login_Page.resx">
       <DependentUpon>login_Page.cs</DependentUpon>

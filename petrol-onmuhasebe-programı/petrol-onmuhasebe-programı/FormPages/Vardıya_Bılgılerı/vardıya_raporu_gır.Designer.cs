@@ -1303,7 +1303,6 @@
             this.Btn_KartVeriGetir.Size = new System.Drawing.Size(286, 42);
             this.Btn_KartVeriGetir.TabIndex = 64;
             this.Btn_KartVeriGetir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Btn_KartVeriGetir.Click += new System.EventHandler(this.Btn_KartVeriGetir_Click);
             // 
             // Btn_VeresiyeVerileriniGetir
             // 
@@ -1330,7 +1329,6 @@
             this.Btn_VeresiyeVerileriniGetir.Size = new System.Drawing.Size(286, 42);
             this.Btn_VeresiyeVerileriniGetir.TabIndex = 65;
             this.Btn_VeresiyeVerileriniGetir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Btn_VeresiyeVerileriniGetir.Click += new System.EventHandler(this.Btn_VeresiyeVerileriniGetir_Click);
             // 
             // Vardıya_raporu_gır
             // 

@@ -8,9 +8,11 @@ using System.Data;
 using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Context = petrol_onmuhasebe_programı.Model.Context;
 
 namespace petrol_onmuhasebe_programı.FormPages.VeresiyeMüşteri
 {
@@ -61,12 +63,12 @@ namespace petrol_onmuhasebe_programı.FormPages.VeresiyeMüşteri
             try
             {
                 // Seçili müşteriyi bulmak için MusterıID'yi alın
-                int selectedMusteriID = Convert.ToInt32(MüsteriTablosu.CurrentRow.Cells["MusterıID"].Value);
+                int musteriID = Convert.ToInt32(MüsteriTablosu.CurrentRow.Cells["MusterıID"].Value);
 
                 using (var context = new Context())
                 {
                     // Musterı_bılgı tablosundan seçilen müşteriyi bulun
-                    var musteri = context.Musterı_Bılgıs.FirstOrDefault(m => m.MusterıID == selectedMusteriID);
+                    var musteri = context.Musterı_Bılgıs.FirstOrDefault(m => m.MusterıID == musteriID);
 
                     if (musteri != null)
                     {
@@ -78,10 +80,32 @@ namespace petrol_onmuhasebe_programı.FormPages.VeresiyeMüşteri
                         // Değişiklikleri veritabanına kaydedin
                         context.SaveChanges();
 
-                        // Grid'i güncelleyin
-                        GridYükle();
+                        // Plaka güncellemesi
+                        string plakaGir = Txt_PlakaGir.Text;
 
-                        MessageBox.Show("Müşteri bilgileri güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (!string.IsNullOrEmpty(plakaGir))
+                        {
+                            // İlgili müşterinin plakalarına erişin
+                            var plakalar = musteri.Plaka_Kayıts;
+
+                            // İlgili plaka bilgisini güncelleyin
+                            foreach (var plaka in plakalar)
+                            {
+                                plaka.PlakaNo = plakaGir;
+                            }
+
+                            context.SaveChanges();
+
+                            GridYükle();
+
+                            MessageBox.Show("Müşteri bilgileri ve plaka güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            GridYükle();
+
+                            MessageBox.Show("Müşteri bilgileri güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
                     }
                     else
                     {
@@ -95,12 +119,29 @@ namespace petrol_onmuhasebe_programı.FormPages.VeresiyeMüşteri
             }
         }
 
+
+
         #region TxtBox_Upper
+
+        Context context = new Context();
         private void Txt_MusteriAra_TextChanged(object sender, EventArgs e)
         {
-            Txt_MusteriAra.Text = Txt_MusteriAra.Text.ToUpper();
-            Txt_MusteriAra.SelectionStart = Txt_MusteriAra.Text.Length;
+            string arananMetin = Txt_MusteriAra.Text.ToUpper();
+
+            var arananMusteriler = context.Musterı_Bılgıs
+                .Where(m => (m.MusterıAd + " " + m.MusterıSoyad).ToUpper().Contains(arananMetin))
+                .ToList();
+
+
+            BindingList<Musterı_bılgı> musterilerBindingList = (BindingList<Musterı_bılgı>)MüsteriTablosu.DataSource;
+            musterilerBindingList.Clear();
+
+            foreach (var musteri in arananMusteriler)
+            {
+                musterilerBindingList.Add(musteri);
+            }
         }
+
 
         private void Txt_MusteriAdı_TextChanged(object sender, EventArgs e)
         {

@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using petrol_onmuhasebe_programı.Model;
+using petrol_onmuhasebe_programı.Model.Giris_İslemleri;
+
 namespace petrol_onmuhasebe_programı
 {
     public partial class Login_Page : Form
@@ -43,6 +45,14 @@ namespace petrol_onmuhasebe_programı
                     MessageBox.Show("Giriş başarılı!", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     homepage.Show();
                     this.Hide();
+                    giris_tarihleri yeniGirisTarihi = new giris_tarihleri
+                    {
+                        giris_tarih = DateTime.Now, // Şu anki tarihi kullanabilirsiniz
+                        ıd = user.ıd
+                    };
+
+                    db.Giris_tarihleris.Add(yeniGirisTarihi);
+                    db.SaveChanges();
                 }
                 else
                 {

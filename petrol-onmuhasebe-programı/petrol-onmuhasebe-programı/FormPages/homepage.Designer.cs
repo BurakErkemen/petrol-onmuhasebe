@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btn_kullanıcı_tanımlama = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_musterı_ayar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_personel_ayar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Btn_depo_ayar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Btn_vardiya_raporu = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_kullanıcı_tanımlama = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Txt_KartTanımlama = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -69,33 +69,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1305, 657);
             this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // btn_kullanıcı_tanımlama
-            // 
-            this.btn_kullanıcı_tanımlama.ActiveBorderThickness = 1;
-            this.btn_kullanıcı_tanımlama.ActiveCornerRadius = 20;
-            this.btn_kullanıcı_tanımlama.ActiveFillColor = System.Drawing.Color.Silver;
-            this.btn_kullanıcı_tanımlama.ActiveForecolor = System.Drawing.Color.Blue;
-            this.btn_kullanıcı_tanımlama.ActiveLineColor = System.Drawing.Color.Blue;
-            this.btn_kullanıcı_tanımlama.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_kullanıcı_tanımlama.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_kullanıcı_tanımlama.BackgroundImage")));
-            this.btn_kullanıcı_tanımlama.ButtonText = "Kullanıcı Tanımla Ayarları";
-            this.btn_kullanıcı_tanımlama.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_kullanıcı_tanımlama.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_kullanıcı_tanımlama.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_kullanıcı_tanımlama.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btn_kullanıcı_tanımlama.IdleBorderThickness = 1;
-            this.btn_kullanıcı_tanımlama.IdleCornerRadius = 20;
-            this.btn_kullanıcı_tanımlama.IdleFillColor = System.Drawing.Color.DarkGray;
-            this.btn_kullanıcı_tanımlama.IdleForecolor = System.Drawing.Color.WhiteSmoke;
-            this.btn_kullanıcı_tanımlama.IdleLineColor = System.Drawing.Color.DarkGray;
-            this.btn_kullanıcı_tanımlama.Location = new System.Drawing.Point(935, 5);
-            this.btn_kullanıcı_tanımlama.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_kullanıcı_tanımlama.Name = "btn_kullanıcı_tanımlama";
-            this.btn_kullanıcı_tanımlama.Size = new System.Drawing.Size(176, 99);
-            this.btn_kullanıcı_tanımlama.TabIndex = 20;
-            this.btn_kullanıcı_tanımlama.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_kullanıcı_tanımlama.Click += new System.EventHandler(this.Btn_kullanıcı_tanımlama_Click);
             // 
             // btn_musterı_ayar
             // 
@@ -216,6 +189,33 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // btn_kullanıcı_tanımlama
+            // 
+            this.btn_kullanıcı_tanımlama.ActiveBorderThickness = 1;
+            this.btn_kullanıcı_tanımlama.ActiveCornerRadius = 20;
+            this.btn_kullanıcı_tanımlama.ActiveFillColor = System.Drawing.Color.Silver;
+            this.btn_kullanıcı_tanımlama.ActiveForecolor = System.Drawing.Color.Blue;
+            this.btn_kullanıcı_tanımlama.ActiveLineColor = System.Drawing.Color.Blue;
+            this.btn_kullanıcı_tanımlama.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_kullanıcı_tanımlama.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_kullanıcı_tanımlama.BackgroundImage")));
+            this.btn_kullanıcı_tanımlama.ButtonText = "Kullanıcı Tanımla Ayarları";
+            this.btn_kullanıcı_tanımlama.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_kullanıcı_tanımlama.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_kullanıcı_tanımlama.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_kullanıcı_tanımlama.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_kullanıcı_tanımlama.IdleBorderThickness = 1;
+            this.btn_kullanıcı_tanımlama.IdleCornerRadius = 20;
+            this.btn_kullanıcı_tanımlama.IdleFillColor = System.Drawing.Color.DarkGray;
+            this.btn_kullanıcı_tanımlama.IdleForecolor = System.Drawing.Color.WhiteSmoke;
+            this.btn_kullanıcı_tanımlama.IdleLineColor = System.Drawing.Color.DarkGray;
+            this.btn_kullanıcı_tanımlama.Location = new System.Drawing.Point(935, 5);
+            this.btn_kullanıcı_tanımlama.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_kullanıcı_tanımlama.Name = "btn_kullanıcı_tanımlama";
+            this.btn_kullanıcı_tanımlama.Size = new System.Drawing.Size(176, 99);
+            this.btn_kullanıcı_tanımlama.TabIndex = 20;
+            this.btn_kullanıcı_tanımlama.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_kullanıcı_tanımlama.Click += new System.EventHandler(this.Btn_kullanıcı_tanımlama_Click);
             // 
             // Txt_KartTanımlama
             // 

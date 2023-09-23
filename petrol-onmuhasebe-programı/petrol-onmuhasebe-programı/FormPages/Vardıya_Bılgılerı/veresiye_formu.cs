@@ -26,6 +26,7 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
         string yakitTuru;
         string litre;
         string tutar;
+        public int VardiyaID = 1;
         private void Veresiye_formu_Load(object sender, EventArgs e)
         {
             CenterToScreen();
@@ -38,11 +39,27 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
             combo_YakıtTuru.Items.Add("Optimum");
             combo_YakıtTuru.Items.Add("Otogaz");
             combo_YakıtTuru.Items.Add("Benzin");
+            using (var context = new Context())
+            {
+                // Müşteri bilgilerini Musterı_Bılgıs tablosundan çekin
+                var musteriBilgileri = context.Musterı_Bılgıs.ToList();
 
-            combo_Musteri.Items.Add("musteri1");
-            combo_Musteri.Items.Add("musteri");
-            combo_Plaka.Items.Add("plaka1");
-            combo_Plaka.Items.Add("plaka2");
+                // ComboBox'a müşteri adlarını ekleyin
+                foreach (var musteri in musteriBilgileri)
+                {
+                    combo_Musteri.Items.Add(musteri.MusterıAd);
+                }
+
+                // Plaka kayıtlarını Plaka_Kayıts tablosundan çekin
+                var plakaKayitlari = context.Plaka_Kayıts.ToList();
+
+                // ComboBox'a plaka numaralarını ekleyin
+                foreach (var plaka in plakaKayitlari)
+                {
+                    combo_Plaka.Items.Add(plaka.PlakaNo);
+                }
+            }
+
             #endregion
 
             #region GridviewColumnName
@@ -121,7 +138,8 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
                         YakıtTürü = combo_YakıtTuru.Text,
                         FisNo = fisNo, 
                         PlakaKayit = GetPlakaKayit(plaka), 
-                        MusteriBilgi = GetMusteriBilgi(musteriAdi) 
+                        MusteriBilgi = GetMusteriBilgi(musteriAdi), 
+                        VardıyaId = VardiyaID,
                     };
 
                     // Veriyi veritabanına eklemek için EF kullanımı
@@ -137,7 +155,6 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
                 MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            // Temizleme kodları burada
         }
 
 
@@ -157,19 +174,8 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
             }
         }
 
-        private void Btn_gonder_Click(object sender, EventArgs e)
-        {
-            using (var context = new Context())
-            {
-                foreach (var rapor in veresiyeRaporları)
-                {
-                    context.veresiye_Raporus.Add(rapor);
-                }
-                context.SaveChanges();
-            }
-            // DataGridView'ı temizleme vb. işlemleri burada yapabilirsiniz
-        }
-       
+
+
 
 
         private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

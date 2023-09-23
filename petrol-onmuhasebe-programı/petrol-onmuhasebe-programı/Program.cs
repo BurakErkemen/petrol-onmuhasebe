@@ -1,4 +1,5 @@
-﻿using petrol_onmuhasebe_programı.FormPages.VeresiyeMüşteri;
+﻿using petrol_onmuhasebe_programı.FormPages.kullanıcıTanımlama;
+using petrol_onmuhasebe_programı.FormPages.VeresiyeMüşteri;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace petrol_onmuhasebe_programı
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Homepage());
+            Application.Run(new Login_Page());
         }
     }
 }

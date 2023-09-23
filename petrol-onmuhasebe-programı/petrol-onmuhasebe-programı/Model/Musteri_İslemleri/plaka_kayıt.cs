@@ -20,7 +20,7 @@ namespace petrol_onmuhasebe_programı.Model.Musteri_Bilgi
         public virtual Musterı_bılgı Musterı_Bılgı { get; set; }
         public override string ToString()
         {
-            return this.PlakaNo; // Tank_ad özelliğini döndürerek sütunun verisini Tank_ad'a göre göster
+            return this.PlakaNo; 
         }
         public virtual ICollection<veresiye_raporu> VeresiyeRaporlar { get; set; }
     }
