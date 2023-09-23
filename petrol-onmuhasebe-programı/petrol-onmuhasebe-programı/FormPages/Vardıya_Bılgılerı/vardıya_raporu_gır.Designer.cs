@@ -104,8 +104,6 @@
             this.Btn_EkHarcama = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lbl_ToplamTutar = new System.Windows.Forms.Label();
             this.Lbl_ToplamLitre = new System.Windows.Forms.Label();
-            this.Btn_KartVeriGetir = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.Btn_VeresiyeVerileriniGetir = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.KrediKartTablosu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.veresiye_tablosu)).BeginInit();
@@ -154,8 +152,6 @@
             this.tableLayoutPanel1.Controls.Add(this.Btn_EkHarcama, 0, 13);
             this.tableLayoutPanel1.Controls.Add(this.lbl_ToplamTutar, 3, 13);
             this.tableLayoutPanel1.Controls.Add(this.Lbl_ToplamLitre, 2, 13);
-            this.tableLayoutPanel1.Controls.Add(this.Btn_KartVeriGetir, 1, 15);
-            this.tableLayoutPanel1.Controls.Add(this.Btn_VeresiyeVerileriniGetir, 2, 15);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 16;
@@ -1278,58 +1274,6 @@
             this.Lbl_ToplamLitre.Text = "Toplam Litre";
             this.Lbl_ToplamLitre.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Btn_KartVeriGetir
-            // 
-            this.Btn_KartVeriGetir.ActiveBorderThickness = 1;
-            this.Btn_KartVeriGetir.ActiveCornerRadius = 20;
-            this.Btn_KartVeriGetir.ActiveFillColor = System.Drawing.Color.Green;
-            this.Btn_KartVeriGetir.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_KartVeriGetir.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.Btn_KartVeriGetir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_KartVeriGetir.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Btn_KartVeriGetir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_KartVeriGetir.BackgroundImage")));
-            this.Btn_KartVeriGetir.ButtonText = "Kredi Kart Verilerini Getir";
-            this.Btn_KartVeriGetir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_KartVeriGetir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_KartVeriGetir.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Btn_KartVeriGetir.IdleBorderThickness = 1;
-            this.Btn_KartVeriGetir.IdleCornerRadius = 20;
-            this.Btn_KartVeriGetir.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Btn_KartVeriGetir.IdleForecolor = System.Drawing.Color.Black;
-            this.Btn_KartVeriGetir.IdleLineColor = System.Drawing.Color.Black;
-            this.Btn_KartVeriGetir.Location = new System.Drawing.Point(301, 787);
-            this.Btn_KartVeriGetir.Margin = new System.Windows.Forms.Padding(5);
-            this.Btn_KartVeriGetir.Name = "Btn_KartVeriGetir";
-            this.Btn_KartVeriGetir.Size = new System.Drawing.Size(286, 42);
-            this.Btn_KartVeriGetir.TabIndex = 64;
-            this.Btn_KartVeriGetir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Btn_VeresiyeVerileriniGetir
-            // 
-            this.Btn_VeresiyeVerileriniGetir.ActiveBorderThickness = 1;
-            this.Btn_VeresiyeVerileriniGetir.ActiveCornerRadius = 20;
-            this.Btn_VeresiyeVerileriniGetir.ActiveFillColor = System.Drawing.Color.Green;
-            this.Btn_VeresiyeVerileriniGetir.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_VeresiyeVerileriniGetir.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.Btn_VeresiyeVerileriniGetir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_VeresiyeVerileriniGetir.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Btn_VeresiyeVerileriniGetir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_VeresiyeVerileriniGetir.BackgroundImage")));
-            this.Btn_VeresiyeVerileriniGetir.ButtonText = "Veresiye Verilerini Getir";
-            this.Btn_VeresiyeVerileriniGetir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_VeresiyeVerileriniGetir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_VeresiyeVerileriniGetir.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Btn_VeresiyeVerileriniGetir.IdleBorderThickness = 1;
-            this.Btn_VeresiyeVerileriniGetir.IdleCornerRadius = 20;
-            this.Btn_VeresiyeVerileriniGetir.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Btn_VeresiyeVerileriniGetir.IdleForecolor = System.Drawing.Color.Black;
-            this.Btn_VeresiyeVerileriniGetir.IdleLineColor = System.Drawing.Color.Black;
-            this.Btn_VeresiyeVerileriniGetir.Location = new System.Drawing.Point(597, 787);
-            this.Btn_VeresiyeVerileriniGetir.Margin = new System.Windows.Forms.Padding(5);
-            this.Btn_VeresiyeVerileriniGetir.Name = "Btn_VeresiyeVerileriniGetir";
-            this.Btn_VeresiyeVerileriniGetir.Size = new System.Drawing.Size(286, 42);
-            this.Btn_VeresiyeVerileriniGetir.TabIndex = 65;
-            this.Btn_VeresiyeVerileriniGetir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Vardıya_raporu_gır
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1386,7 +1330,5 @@
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_EkHarcama;
         private System.Windows.Forms.Label lbl_ToplamTutar;
         private System.Windows.Forms.Label Lbl_ToplamLitre;
-        private Bunifu.Framework.UI.BunifuThinButton2 Btn_KartVeriGetir;
-        private Bunifu.Framework.UI.BunifuThinButton2 Btn_VeresiyeVerileriniGetir;
     }
 }

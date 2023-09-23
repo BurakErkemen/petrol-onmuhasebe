@@ -76,7 +76,49 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
             comboBox3.Items.Add('2');
             comboBox3.Items.Add('3');
             #endregion
+            #region idTanımlama
+            if (user_role_ıd > 2)
+            {
+                Btn_EkHarcama.Visible = false;
+                Btn_Onayla.Visible = false;
+                Btn_veresiye_ekle.Visible = false;
+                Btn_kredikart_gir.Visible = false;
+                foreach (DataGridViewRow row in veresiye_tablosu.Rows)
+                {
+                    bool rowIsEmpty = true; // Satırın boş olduğunu varsayın
 
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+                        if (cell.Value != null && !string.IsNullOrWhiteSpace(cell.Value.ToString()))
+                        {
+                            // Hücrede veri varsa, satır boş değildir.
+                            rowIsEmpty = false;
+                            break;
+                        }
+                    }
+
+                    // Satırın boş olup olmadığını kontrol edin ve boşsa gizleyin
+                    row.Visible = rowIsEmpty;
+                }
+                foreach (DataGridViewRow row in KrediKartTablosu.Rows)
+                {
+                    bool rowIsEmpty = true; // Satırın boş olduğunu varsayın
+
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+                        if (cell.Value != null && !string.IsNullOrWhiteSpace(cell.Value.ToString()))
+                        {
+                            // Hücrede veri varsa, satır boş değildir.
+                            rowIsEmpty = false;
+                            break;
+                        }
+                    }
+
+                    // Satırın boş olup olmadığını kontrol edin ve boşsa gizleyin
+                    row.Visible = rowIsEmpty;
+                }
+            }
+            #endregion
             #region tab_index
             txt_otogaz_litre.TabIndex = 0;
             txt_otogaz_tutar.TabIndex = 1;
@@ -190,7 +232,7 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
             Lbl_ToplamLitre.Text = (lt1 + lt2 + lt3 + lt4).ToString();
         }
         #endregion
-      
+
         private void GridYükleKrediKart()
         {
             try

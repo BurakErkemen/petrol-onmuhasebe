@@ -26,27 +26,20 @@ namespace petrol_onmuhasebe_programı
         private PersonelAyarları personelAyarları;
         private Musteri_Islemlerı veresiyeMusteri;
         private KullanıcıYetkiTanımlama yetkiTanımlama;
+        private kredikart kredikart;
         public Homepage()
         {
             InitializeComponent();
         }
         private void Homepage_Load(object sender, EventArgs e)
         {
-
-            //user_role_ıd 'ye göre homepage üzerinde görünmesini istemediğimiz bazı durumları saklayacağız
-            if (User_role_ıd > 2)
-            {
-                Btn_depo_ayar.Visible = false;
-                btn_personel_ayar.Visible=false;
-                btn_kullanıcı_tanımlama.Visible=false;
-            }
-            else if (User_role_ıd == 2)
-            {
-                btn_kullanıcı_tanımlama.Enabled = false;
-            }
-
             this.WindowState = FormWindowState.Maximized;
-            
+
+            //user_role_ıd 'ye göre homepage üzerinde engeller kuracağız
+            if (User_role_ıd != 1)
+            {
+                btn_kullanıcı_tanımlama.Visible = false;
+            }            
             if (!string.IsNullOrEmpty(Username))
             {
                 label1.Text ="Hoş Geldin " + Username.ToString();
@@ -81,13 +74,14 @@ namespace petrol_onmuhasebe_programı
             this.Hide();
         }
 
+        #region Geçişler
         private void Btn_vardiya_raporu_Click_1(object sender, EventArgs e)
         {
             if (vardıya_Raporu == null || vardıya_Raporu.IsDisposed)
             {
                 vardıya_Raporu = new Vardıya_raporu_gır();
-                vardıya_Raporu.Show();
                 vardıya_Raporu.user_role_ıd = User_role_ıd;
+                vardıya_Raporu.Show();
             }
             else
             {
@@ -100,6 +94,7 @@ namespace petrol_onmuhasebe_programı
             if (depoAyarları == null || depoAyarları.IsDisposed)
             {
                 depoAyarları = new DepoAyarları();
+                depoAyarları.user_rol_ıd = User_role_ıd;
                 depoAyarları.Show();
             }
             else
@@ -113,6 +108,7 @@ namespace petrol_onmuhasebe_programı
             if (personelAyarları == null || personelAyarları.IsDisposed)
             {
                 personelAyarları = new PersonelAyarları();
+                personelAyarları.user_rol_ıd = User_role_ıd;
                 personelAyarları.Show();
             }
             else
@@ -126,6 +122,7 @@ namespace petrol_onmuhasebe_programı
             if (veresiyeMusteri == null || veresiyeMusteri.IsDisposed)
             {
                 veresiyeMusteri = new Musteri_Islemlerı();
+                veresiyeMusteri.user_rol_ıd = User_role_ıd;
                 veresiyeMusteri.Show();
             }
             else
@@ -147,12 +144,12 @@ namespace petrol_onmuhasebe_programı
                 yetkiTanımlama.BringToFront();
             }
         }
-        private kredikart kredikart;
         private void Txt_KartTanımlama_Click(object sender, EventArgs e)
         {
             if (kredikart == null || kredikart.IsDisposed)
             {
                 kredikart = new kredikart();
+                kredikart.user_rol_ıd = User_role_ıd;
                 kredikart.Show();
             }
             else
@@ -160,5 +157,6 @@ namespace petrol_onmuhasebe_programı
                 kredikart.BringToFront();
             }
         }
+        #endregion
     }
 }

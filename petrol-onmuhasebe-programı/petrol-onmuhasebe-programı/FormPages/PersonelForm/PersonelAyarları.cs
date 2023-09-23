@@ -21,14 +21,38 @@ namespace petrol_onmuhasebe_programı.FormPages.PersonelForm
         {
             InitializeComponent();
         }
+        public int user_rol_ıd;
         private void PersonelAyarları_Load(object sender, EventArgs e)
         {
             CenterToScreen();
-            #region LoadAyarları
-            Btn_Güncelle.Visible = false;
-            Btn_Sil.Visible = false;
-            #endregion
             GridYükle();
+
+            #region LoadAyarları
+            
+            if (user_rol_ıd > 2)
+            {
+                Btn_Güncelle.Visible = false;
+                Btn_Onayla.Visible = false;
+                Btn_Sil.Visible = false;
+                foreach (DataGridViewRow row in PersonelListesi.Rows)
+                {
+                    bool rowIsEmpty = true; // Satırın boş olduğunu varsayın
+
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+                        if (cell.Value != null && !string.IsNullOrWhiteSpace(cell.Value.ToString()))
+                        {
+                            // Hücrede veri varsa, satır boş değildir.
+                            rowIsEmpty = false;
+                            break;
+                        }
+                    }
+
+                    // Satırın boş olup olmadığını kontrol edin ve boşsa gizleyin
+                    row.Visible = rowIsEmpty;
+                }
+            }
+            #endregion
             Personel_AyrılısTarıhı.Text = DateTime.Now.ToString();
             Personel_BaslangıcTarıhı.Text = DateTime.Now.ToString();
         }

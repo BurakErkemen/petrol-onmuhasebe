@@ -19,16 +19,40 @@ namespace petrol_onmuhasebe_programı.FormPages.DepoForm
         {
             InitializeComponent();
         }
-
+        public int user_rol_ıd;
         private void DepoAyarları_Load(object sender, EventArgs e)
         {
             CenterToScreen();
             GridYükle();
             DoldurComboBox();
-            #region Combobox
+            #region sayfaAyarları
             combo_depo.DropDownStyle = ComboBoxStyle.DropDownList;
-            #endregion
 
+            if (user_rol_ıd>2)
+            {
+                Btn_DepoTanımla.Visible = false;
+                Btn_Guncelle.Visible = false;
+                Btn_onayla.Visible = false;
+                Btn_Sil.Visible = false;
+                foreach (DataGridViewRow row in Fatura_Tablosu.Rows)
+                {
+                    bool rowIsEmpty = true; // Satırın boş olduğunu varsayın
+
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+                        if (cell.Value != null && !string.IsNullOrWhiteSpace(cell.Value.ToString()))
+                        {
+                            // Hücrede veri varsa, satır boş değildir.
+                            rowIsEmpty = false;
+                            break;
+                        }
+                    }
+
+                    // Satırın boş olup olmadığını kontrol edin ve boşsa gizleyin
+                    row.Visible = rowIsEmpty;
+                }
+            }
+            #endregion
         }
         private void GridYükle()
         {
