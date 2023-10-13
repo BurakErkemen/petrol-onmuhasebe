@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kredikart_Formu));
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.DataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Txt_kk4 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.Btn_gonder = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Btn_İptal = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.BtnSil = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.Btn_Güncelle = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Txt_kk4 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.Btn_ekle = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Btn_Güncelle = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.BtnSil = new Bunifu.Framework.UI.BunifuThinButton2();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
@@ -91,22 +91,22 @@
             // 
             this.DataGridView1.AllowCustomTheming = false;
             this.DataGridView1.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            this.DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            this.DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.DataGridView1.ColumnHeadersHeight = 40;
             this.tableLayoutPanel1.SetColumnSpan(this.DataGridView1, 3);
             this.DataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
@@ -127,14 +127,14 @@
             this.DataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.DataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.DataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
             this.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGridView1.EnableHeadersVisualStyles = false;
             this.DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
@@ -143,14 +143,14 @@
             this.DataGridView1.HeaderForeColor = System.Drawing.Color.White;
             this.DataGridView1.Location = new System.Drawing.Point(402, 3);
             this.DataGridView1.Name = "DataGridView1";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.DataGridView1.RowHeadersVisible = false;
             this.tableLayoutPanel1.SetRowSpan(this.DataGridView1, 4);
             this.DataGridView1.RowTemplate.Height = 40;
@@ -169,95 +169,6 @@
             this.label1.TabIndex = 39;
             this.label1.Text = "Kredi Kartı Adı:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(3, 90);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 90);
-            this.label4.TabIndex = 42;
-            this.label4.Text = "Miktar:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // Txt_kk4
-            // 
-            this.Txt_kk4.AcceptsReturn = false;
-            this.Txt_kk4.AcceptsTab = false;
-            this.Txt_kk4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.Txt_kk4.AnimationSpeed = 200;
-            this.Txt_kk4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.Txt_kk4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.Txt_kk4.BackColor = System.Drawing.Color.Transparent;
-            this.Txt_kk4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Txt_kk4.BackgroundImage")));
-            this.Txt_kk4.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.Txt_kk4.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.Txt_kk4.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.Txt_kk4.BorderColorIdle = System.Drawing.Color.Silver;
-            this.Txt_kk4.BorderRadius = 15;
-            this.Txt_kk4.BorderThickness = 1;
-            this.Txt_kk4.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.tableLayoutPanel1.SetColumnSpan(this.Txt_kk4, 2);
-            this.Txt_kk4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Txt_kk4.DefaultFont = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.Txt_kk4.DefaultText = "";
-            this.Txt_kk4.FillColor = System.Drawing.Color.White;
-            this.Txt_kk4.HideSelection = true;
-            this.Txt_kk4.IconLeft = null;
-            this.Txt_kk4.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.Txt_kk4.IconPadding = 10;
-            this.Txt_kk4.IconRight = null;
-            this.Txt_kk4.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.Txt_kk4.Lines = new string[0];
-            this.Txt_kk4.Location = new System.Drawing.Point(136, 115);
-            this.Txt_kk4.MaxLength = 32767;
-            this.Txt_kk4.MinimumSize = new System.Drawing.Size(1, 1);
-            this.Txt_kk4.Modified = false;
-            this.Txt_kk4.Multiline = false;
-            this.Txt_kk4.Name = "Txt_kk4";
-            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_kk4.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.Txt_kk4.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_kk4.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Txt_kk4.OnIdleState = stateProperties12;
-            this.Txt_kk4.Padding = new System.Windows.Forms.Padding(3);
-            this.Txt_kk4.PasswordChar = '\0';
-            this.Txt_kk4.PlaceholderForeColor = System.Drawing.Color.DimGray;
-            this.Txt_kk4.PlaceholderText = "Miktarı Giriniz";
-            this.Txt_kk4.ReadOnly = false;
-            this.Txt_kk4.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.Txt_kk4.SelectedText = "";
-            this.Txt_kk4.SelectionLength = 0;
-            this.Txt_kk4.SelectionStart = 0;
-            this.Txt_kk4.ShortcutsEnabled = true;
-            this.Txt_kk4.Size = new System.Drawing.Size(260, 39);
-            this.Txt_kk4.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.Txt_kk4.TabIndex = 57;
-            this.Txt_kk4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Txt_kk4.TextMarginBottom = 0;
-            this.Txt_kk4.TextMarginLeft = 3;
-            this.Txt_kk4.TextMarginTop = 0;
-            this.Txt_kk4.TextPlaceholder = "Miktarı Giriniz";
-            this.Txt_kk4.UseSystemPasswordChar = false;
-            this.Txt_kk4.WordWrap = true;
             // 
             // Btn_gonder
             // 
@@ -311,55 +222,94 @@
             this.Btn_İptal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Btn_İptal.Click += new System.EventHandler(this.Btn_İptal_Click);
             // 
-            // BtnSil
+            // label4
             // 
-            this.BtnSil.ActiveBorderThickness = 1;
-            this.BtnSil.ActiveCornerRadius = 20;
-            this.BtnSil.ActiveFillColor = System.Drawing.Color.Red;
-            this.BtnSil.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.BtnSil.ActiveLineColor = System.Drawing.Color.Red;
-            this.BtnSil.BackColor = System.Drawing.SystemColors.Control;
-            this.BtnSil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSil.BackgroundImage")));
-            this.BtnSil.ButtonText = "Sil";
-            this.BtnSil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSil.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSil.ForeColor = System.Drawing.Color.SeaGreen;
-            this.BtnSil.IdleBorderThickness = 1;
-            this.BtnSil.IdleCornerRadius = 20;
-            this.BtnSil.IdleFillColor = System.Drawing.Color.Transparent;
-            this.BtnSil.IdleForecolor = System.Drawing.Color.Black;
-            this.BtnSil.IdleLineColor = System.Drawing.Color.Black;
-            this.BtnSil.Location = new System.Drawing.Point(271, 185);
-            this.BtnSil.Margin = new System.Windows.Forms.Padding(5);
-            this.BtnSil.Name = "BtnSil";
-            this.BtnSil.Size = new System.Drawing.Size(123, 35);
-            this.BtnSil.TabIndex = 62;
-            this.BtnSil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(3, 90);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(127, 90);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "Miktar:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Btn_Güncelle
+            // Txt_kk4
             // 
-            this.Btn_Güncelle.ActiveBorderThickness = 1;
-            this.Btn_Güncelle.ActiveCornerRadius = 20;
-            this.Btn_Güncelle.ActiveFillColor = System.Drawing.Color.Green;
-            this.Btn_Güncelle.ActiveForecolor = System.Drawing.Color.Transparent;
-            this.Btn_Güncelle.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.Btn_Güncelle.BackColor = System.Drawing.SystemColors.Control;
-            this.Btn_Güncelle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Güncelle.BackgroundImage")));
-            this.Btn_Güncelle.ButtonText = "Güncelle";
-            this.Btn_Güncelle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Güncelle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Güncelle.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Btn_Güncelle.IdleBorderThickness = 1;
-            this.Btn_Güncelle.IdleCornerRadius = 20;
-            this.Btn_Güncelle.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Btn_Güncelle.IdleForecolor = System.Drawing.Color.Black;
-            this.Btn_Güncelle.IdleLineColor = System.Drawing.Color.Black;
-            this.Btn_Güncelle.Location = new System.Drawing.Point(138, 185);
-            this.Btn_Güncelle.Margin = new System.Windows.Forms.Padding(5);
-            this.Btn_Güncelle.Name = "Btn_Güncelle";
-            this.Btn_Güncelle.Size = new System.Drawing.Size(123, 35);
-            this.Btn_Güncelle.TabIndex = 61;
-            this.Btn_Güncelle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Txt_kk4.AcceptsReturn = false;
+            this.Txt_kk4.AcceptsTab = false;
+            this.Txt_kk4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Txt_kk4.AnimationSpeed = 200;
+            this.Txt_kk4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.Txt_kk4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.Txt_kk4.BackColor = System.Drawing.Color.Transparent;
+            this.Txt_kk4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Txt_kk4.BackgroundImage")));
+            this.Txt_kk4.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.Txt_kk4.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Txt_kk4.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.Txt_kk4.BorderColorIdle = System.Drawing.Color.Silver;
+            this.Txt_kk4.BorderRadius = 15;
+            this.Txt_kk4.BorderThickness = 1;
+            this.Txt_kk4.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.tableLayoutPanel1.SetColumnSpan(this.Txt_kk4, 2);
+            this.Txt_kk4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Txt_kk4.DefaultFont = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Txt_kk4.DefaultText = "";
+            this.Txt_kk4.FillColor = System.Drawing.Color.White;
+            this.Txt_kk4.HideSelection = true;
+            this.Txt_kk4.IconLeft = null;
+            this.Txt_kk4.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.Txt_kk4.IconPadding = 10;
+            this.Txt_kk4.IconRight = null;
+            this.Txt_kk4.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.Txt_kk4.Lines = new string[0];
+            this.Txt_kk4.Location = new System.Drawing.Point(136, 115);
+            this.Txt_kk4.MaxLength = 32767;
+            this.Txt_kk4.MinimumSize = new System.Drawing.Size(1, 1);
+            this.Txt_kk4.Modified = false;
+            this.Txt_kk4.Multiline = false;
+            this.Txt_kk4.Name = "Txt_kk4";
+            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_kk4.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.Txt_kk4.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_kk4.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Txt_kk4.OnIdleState = stateProperties8;
+            this.Txt_kk4.Padding = new System.Windows.Forms.Padding(3);
+            this.Txt_kk4.PasswordChar = '\0';
+            this.Txt_kk4.PlaceholderForeColor = System.Drawing.Color.DimGray;
+            this.Txt_kk4.PlaceholderText = "Miktarı Giriniz";
+            this.Txt_kk4.ReadOnly = false;
+            this.Txt_kk4.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Txt_kk4.SelectedText = "";
+            this.Txt_kk4.SelectionLength = 0;
+            this.Txt_kk4.SelectionStart = 0;
+            this.Txt_kk4.ShortcutsEnabled = true;
+            this.Txt_kk4.Size = new System.Drawing.Size(260, 39);
+            this.Txt_kk4.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.Txt_kk4.TabIndex = 57;
+            this.Txt_kk4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Txt_kk4.TextMarginBottom = 0;
+            this.Txt_kk4.TextMarginLeft = 3;
+            this.Txt_kk4.TextMarginTop = 0;
+            this.Txt_kk4.TextPlaceholder = "Miktarı Giriniz";
+            this.Txt_kk4.UseSystemPasswordChar = false;
+            this.Txt_kk4.WordWrap = true;
             // 
             // Btn_ekle
             // 
@@ -387,13 +337,65 @@
             this.Btn_ekle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Btn_ekle.Click += new System.EventHandler(this.Btn_ekle_Click);
             // 
+            // Btn_Güncelle
+            // 
+            this.Btn_Güncelle.ActiveBorderThickness = 1;
+            this.Btn_Güncelle.ActiveCornerRadius = 20;
+            this.Btn_Güncelle.ActiveFillColor = System.Drawing.Color.Green;
+            this.Btn_Güncelle.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.Btn_Güncelle.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Btn_Güncelle.BackColor = System.Drawing.SystemColors.Control;
+            this.Btn_Güncelle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Güncelle.BackgroundImage")));
+            this.Btn_Güncelle.ButtonText = "Güncelle";
+            this.Btn_Güncelle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Güncelle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Güncelle.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Btn_Güncelle.IdleBorderThickness = 1;
+            this.Btn_Güncelle.IdleCornerRadius = 20;
+            this.Btn_Güncelle.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Btn_Güncelle.IdleForecolor = System.Drawing.Color.Black;
+            this.Btn_Güncelle.IdleLineColor = System.Drawing.Color.Black;
+            this.Btn_Güncelle.Location = new System.Drawing.Point(138, 185);
+            this.Btn_Güncelle.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_Güncelle.Name = "Btn_Güncelle";
+            this.Btn_Güncelle.Size = new System.Drawing.Size(123, 35);
+            this.Btn_Güncelle.TabIndex = 61;
+            this.Btn_Güncelle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Btn_Güncelle.Click += new System.EventHandler(this.Btn_Güncelle_Click);
+            // 
+            // BtnSil
+            // 
+            this.BtnSil.ActiveBorderThickness = 1;
+            this.BtnSil.ActiveCornerRadius = 20;
+            this.BtnSil.ActiveFillColor = System.Drawing.Color.Red;
+            this.BtnSil.ActiveForecolor = System.Drawing.Color.Transparent;
+            this.BtnSil.ActiveLineColor = System.Drawing.Color.Red;
+            this.BtnSil.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnSil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSil.BackgroundImage")));
+            this.BtnSil.ButtonText = "Sil";
+            this.BtnSil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSil.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSil.ForeColor = System.Drawing.Color.SeaGreen;
+            this.BtnSil.IdleBorderThickness = 1;
+            this.BtnSil.IdleCornerRadius = 20;
+            this.BtnSil.IdleFillColor = System.Drawing.Color.Transparent;
+            this.BtnSil.IdleForecolor = System.Drawing.Color.Black;
+            this.BtnSil.IdleLineColor = System.Drawing.Color.Black;
+            this.BtnSil.Location = new System.Drawing.Point(271, 185);
+            this.BtnSil.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnSil.Name = "BtnSil";
+            this.BtnSil.Size = new System.Drawing.Size(123, 35);
+            this.BtnSil.TabIndex = 62;
+            this.BtnSil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
+            // 
             // comboBox1
             // 
             this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.comboBox1, 2);
             this.comboBox1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(136, 22);
+            this.comboBox1.Location = new System.Drawing.Point(136, 28);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(260, 33);
             this.comboBox1.TabIndex = 63;

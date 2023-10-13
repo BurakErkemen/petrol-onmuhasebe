@@ -126,11 +126,8 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
                     litre = Txt_litre.Text;
                     tutar = Txt_tutar.Text;
                     int fisNo = int.Parse(Txt_FisNo.Text);
-
-                    // Verileri DataGridView'da göster
                     DataGridView1.Rows.Add(musteriAdi, plaka, yakitTuru, litre, tutar, fisNo);
 
-                    // Verileri liste içinde saklayın
                     veresiye_raporu rapor = new veresiye_raporu
                     {
                         Tutar = int.Parse(Txt_tutar.Text),
@@ -141,12 +138,10 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
                         MusteriBilgi = GetMusteriBilgi(musteriAdi), 
                         VardıyaId = VardiyaID,
                     };
-
-                    // Veriyi veritabanına eklemek için EF kullanımı
-                    using (var context = new Context()) // Context sınıfınıza uygun bir şekilde tanımlamanız gerekiyor
+                    using (var context = new Context()) 
                     {
                         context.veresiye_Raporus.Add(rapor);
-                        context.SaveChanges(); // Değişiklikleri kaydet
+                        context.SaveChanges(); 
                     }
                 }
             }
@@ -212,22 +207,15 @@ namespace petrol_onmuhasebe_programı.Vardıya_Bılgılerı
                 if (DataGridView1.SelectedRows.Count > 0)
                 {
                     DataGridViewRow selectedRow = DataGridView1.SelectedRows[0];
-
-                    // Silinecek veresiye raporunun ID'sini alın
                     int raporId = Convert.ToInt32(selectedRow.Cells["Versiyeid"].Value);
-
-                    // Veriyi DataGridView'dan sil
                     DataGridView1.Rows.Remove(selectedRow);
-
-                    // Veritabanından da silmek için EF kullanımı
-                    using (var context = new Context()) // Context sınıfınıza uygun bir şekilde tanımlamanız gerekiyor
+                    using (var context = new Context()) 
                     {
                         var rapor = context.veresiye_Raporus.FirstOrDefault(r => r.Versiyeid == raporId);
-
                         if (rapor != null)
                         {
                             context.veresiye_Raporus.Remove(rapor);
-                            context.SaveChanges(); // Değişiklikleri kaydet
+                            context.SaveChanges(); 
                         }
                     }
                 }
